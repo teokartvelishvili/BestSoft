@@ -1,0 +1,68 @@
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* Make sure the background image covers the entire area */
+    /* background-image: url(../../Assets/Property\ 1=switch-btn-fruit-lemon.png); */
+    
+  }
+  /* .dark .slider {
+    background-image: url(../../Assets/Property\ 1=switch-btn-fruit-orange.png);
+  } */
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    width: 24px; /* Adjust the width as needed */
+    height: 24px; /* Adjust the height as needed */
+    left: 8px;
+    bottom: 4px;
+    background-size: cover; /* Make sure the background image covers the entire area */
+    /* background-image: url("../../Assets/Property 1=switch-btn-fruit-orange.png");  */
+    transition: transform 0.6s;
+    /* background-color: blueviolet; */
+    background-image: url(../../Assets/moon-icon.png);
+   
+  }
+  .dark  .slider:before {
+    /* background-color: blueviolet; */
+    /* background-color: black; */
+    /* background-image: url(../../Assets/Property\ 1=switch-btn-fruit-lemon.png); */
+    background-image: url(../../Assets/sun-icon.png);
+  }
+  
+  /* input:checked + .slider {
+    background-image: url(../../Assets/Property\ 1=orange\,\ Property\ 2=on.png);
+
+ 
+  } */
+  
+  input:checked + .slider:before {
+    transform: translateX(40px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

@@ -1,0 +1,30 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    text-align: center;
+    background-color: rgba(243, 217, 220, 1); /* Light background for dark theme */
+    color: rgba(27, 10, 72, 1); 
+}
+
+.footerContainer.dark {
+    background-color: rgba(2, 48, 71, 1); 
+    color: rgba(90, 169, 230, 1);
+}
+
+
+.footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footerContent p {
+    margin: 0;
+    font-size: 1em;
+}
+.footerContent .socIcons a img {
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+}

@@ -1,0 +1,8 @@
+.page {
+    background-color: white;
+}
+
+.dark .page {
+    background-color: rgba(3, 63, 93, 1);
+    color: white;
+}
