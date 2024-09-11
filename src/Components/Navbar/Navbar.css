@@ -25,6 +25,7 @@
       text-decoration: none;
       color: rgba(27, 10, 72, 1);
       position: relative;
+      
   }
   
   .UlCont li a::after {
@@ -32,7 +33,7 @@
       position: absolute;
       left: 0;
       right: 0;
-      bottom: -5px;
+      bottom: -9px;
       height: 6px;
       background-color: rgba(255, 228, 94, 1);
       border-radius: 6px;
@@ -40,6 +41,7 @@
       margin-left: -10%;
       opacity: 0; /* საწყისი მდგომარეობა უხილავია */
       transition: opacity 0.3s ease; /* ეფექტი გადასვლისთვის */
+      
   }
   
   .UlCont li a:hover::after {
