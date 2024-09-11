@@ -9,7 +9,7 @@
   .UlCont {
     display: grid;
     grid-auto-flow: column; 
-    grid-gap: 110px; 
+    grid-gap: 70px; 
     list-style: none;
   }
   
