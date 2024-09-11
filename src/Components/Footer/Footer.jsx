@@ -7,8 +7,15 @@ import "./Footer.css";
 import BSLogo from '../../Assets/BSLogo.png'
 import InstagramIcon from '../../Assets/InstagramIcon.png'
 import FacebookIcon from '../../Assets/FacebookIcon.png';
-import LinkedinIcon from '../../Assets/LinkedInIcon.png' 
-
+import LinkedinIcon from '../../Assets/LinkedInIcon.png' ;
+import LocationIcon from '../../Assets/LocationIcon.png'
+import LocationIcondark from '../../Assets/LocationIcondark.png'
+import PhoneIcon from '../../Assets/PhoneIcon.png'
+import PhoneIcondark from '../../Assets/PhoneIconDark.png'
+import MobileIcon from '../../Assets/MobileIcon.png';
+import MobileIconDark from '../../Assets/MobileIconDark.png';
+import EmailIcon from '../../Assets/EmailIcon.png'
+import EmailIconDark from '../../Assets/EmailIconDark.png'
 const Footer = () => {
   const { theme } = useContext(ThemeContext);
   const { language, setLanguage } = useContext(LanguageContext);
@@ -48,7 +55,7 @@ const Footer = () => {
         <div className={`footerContent2 ${theme}`}>
           
           <ul>
-                <li>Links</li>
+                <li>{TEXTS[language].links}</li>
                 <li><Link to="/">{TEXTS[language].home}</Link> </li>
                 <li><Link to="/Service">{TEXTS[language].service}</Link> </li>
                 <li><Link to="/About">{TEXTS[language].about}</Link> </li>
@@ -57,17 +64,43 @@ const Footer = () => {
         </div>
         <div className={`footerContent3 ${theme}`}>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          {TEXTS[language].contactInfo}
+            <li> 
+            <img
+                alt="logo"
+                src={theme === "dark" ? LocationIcondark : LocationIcon}
+                className="logo"></img>
+                <p>{TEXTS[language].geoTB}</p>
+            </li>
+            <li> 
+            <img
+                alt="logo"
+                src={theme === "dark" ? MobileIconDark : MobileIcon}
+                className="logo"></img>
+                <p>+995 555 500 500</p>
+            </li>
+            <li> 
+            <img
+                alt="logo"
+                src={theme === "dark" ? PhoneIcondark : PhoneIcon}
+                className="logo"></img>
+                <p>+995 032 500 500</p>
+            </li>
+            <li> 
+            <img
+                alt="logo"
+                src={theme === "dark" ? EmailIconDark : EmailIcon}
+                className="logo"></img>
+                <p>BestSoft@gmail.com</p>
+            </li>
+
           </ul>
         </div>
-        {/* <div><p>&copy; 2024. All rights reserved</p></div> */}
+        
 
 
       </div>
+      <div className="copyRight"><p> Copyright &copy; BestSoft 2024</p></div>
     </footer>
   );
 };
