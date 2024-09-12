@@ -1,8 +1,52 @@
-.page {
-    background-color: white;
-}
-
-.dark .page {
+.dark .aboutMainCont{
     background-color: rgba(3, 63, 93, 1);
-    color: white;
+}
+.aboutConts {
+    padding-top: 30px;
+    padding-bottom: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+}
+.aboutCont1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    height: auto;
+}
+.aboutCont1 img {
+    height: auto;
+    width: 100%;
+}
+.aboutCont2,
+.aboutCont3,
+.aboutUsCont {
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  gap: 40px;
+  text-align: center;
+}
+.aboutCont2 h1, 
+.aboutCont3 h1,
+.aboutUsCont h1 {
+    color: rgba(255, 99, 146, 1);
+}
+.aboutCont2 p,
+.aboutUsCont p {
+    color: rgba(0, 0, 0, 1);
+}
+.aboutCont3 p {
+    text-align: start;
+}
+.nino {
+    display: flex;
+}
+.nino img {
+    width: 50%;
+    height: auto;
 }

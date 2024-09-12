@@ -1,0 +1,19 @@
+.teamMember {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .teamMember img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .aboutUsTextCont {
+    padding: 20px;
+  }
+  
+  .aboutSocMediaIcons {
+    display: flex;
+    gap: 10px;
+  }
+  
