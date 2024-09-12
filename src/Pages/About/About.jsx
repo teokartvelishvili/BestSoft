@@ -6,7 +6,10 @@ import "./About.css";
 import TeamMember from '../../Components/TeamMember/TeamMember';
 import aboutPoster from '../../Assets/aboutPagePoster.png';
 import aboutPosterdark from '../../Assets/aboutPagePosterDark.png';
+import ani from '../../Assets/ani.png'
+import teo from '../../Assets/teo.png'
 import nino from '../../Assets/nino.png';
+import mari from '../../Assets/mari.png'
 
 const About = () => {
   const { theme } = useContext(ThemeContext);
@@ -40,7 +43,7 @@ const About = () => {
 </div>
 
 <div className={`aboutCont3 ${theme}`}>
-  <h1>Our Mission and Vision</h1>
+  <h1 >Our Mission and Vision</h1>
   <p>
     At BestSoft, we envision a world where technology and creativity seamlessly integrate to transform ideas into impactful digital experiences. We strive to be at the forefront of innovation, crafting solutions that not only meet the needs of today but anticipate the challenges of tomorrow. Our vision is to empower businesses to achieve their full potential through cutting-edge digital solutions that are as functional as they are beautiful.
 
@@ -61,10 +64,33 @@ const About = () => {
 
         
 
-        <div className={`aboutUsCont ${theme}`}>
-          <h1>Meet Our Team</h1>
+        <div className={`members ${theme}`}>
+          <h1 id="aboutUsMainH1"> Meet Our Team</h1>
           <p>At BestSoft, our strength lies in our talented and diverse team. Meet the creative minds who bring your visions to life. Each member of our team is a specialist in their field, working together to deliver exceptional digital solutions. We are passionate about what we do, and we are here to help you succeed.</p>
 
+
+           <TeamMember
+        name="Ani Beroshvili"
+        title="Front-End Development"
+        bio="Ani Beroshvili is a skilled Front-End Developer at BestSoft, known for her passion for creating responsive and interactive user interfaces. With expertise in HTML5, CSS3, JavaScript, and frameworks such as React and Angular, Ani brings web designs to life with precision and creativity. She is dedicated to ensuring that every website is both visually appealing and highly functional, providing users with an exceptional browsing experience. Ani's commitment to staying updated with the latest front-end technologies ensures that BestSoft's solutions are always cutting-edge."
+        image={ani}
+        portfolioLink="https://nino-portfolio.com"
+        contactLink="https://nino-contact.com"
+        socialMediaLinks={['https://facebook.com/nino', 'https://instagram.com/nino', 'https://linkedin.com/nino']}
+        className={`member ${theme}`} // Custom className
+        id="ani" // Custom ID
+      />
+           <TeamMember
+        name="Teona KartveliShvili"
+        title="Front-End and Back-End Development"
+        bio="Teona Kartvelishvili is an expert Front-End and Back-End Developer at BestSoft, with a strong background in server-side technologies and database management. Specializing in languages like Python and Node.js, as well as various database systems, Teona ensures that our applications are robust, secure, and scalable. Her attention to detail and problem-solving skills enable her to build the backbone of complex digital solutions, seamlessly integrating with front-end interfaces to deliver a smooth user experience. Teona's dedication to optimizing performance and security makes her an invaluable asset to the BestSoft team"
+        image={teo}
+        portfolioLink="https://nino-portfolio.com"
+        contactLink="https://nino-contact.com"
+        socialMediaLinks={['https://facebook.com/nino', 'https://instagram.com/nino', 'https://linkedin.com/nino']}
+        className={`member ${theme}`} // Custom className
+        id="teo" // Custom ID
+      />
            <TeamMember
         name="Nino Barjadze"
         title="UX/UI Designer, Graphic Designer"
@@ -73,11 +99,21 @@ const About = () => {
         portfolioLink="https://nino-portfolio.com"
         contactLink="https://nino-contact.com"
         socialMediaLinks={['https://facebook.com/nino', 'https://instagram.com/nino', 'https://linkedin.com/nino']}
-        className={`nino ${theme}`} // Custom className
+        className={`member ${theme}`} // Custom className
         id="nino" // Custom ID
       />
-
-          {/* Repeat for Teona and Mari with different socialLinks */}
+           <TeamMember
+        name="Nino Barjadze"
+        title="UX/UI Designer, Graphic Designer"
+        bio="Nino is a talented graphic designer who brings creativity and innovation to every project. She excels in creating unique and compelling designs."
+        image={mari}
+        portfolioLink="https://nino-portfolio.com"
+        contactLink="https://nino-contact.com"
+        socialMediaLinks={['https://facebook.com/nino', 'https://instagram.com/nino', 'https://linkedin.com/nino']}
+        className={`member ${theme}`} // Custom className
+        id="mari" // Custom ID
+      />
+          {/* Repeat for Teona, ani and Mari with different socialLinks */}
         </div>
       </div>
     </div>

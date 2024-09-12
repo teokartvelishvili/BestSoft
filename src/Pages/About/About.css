@@ -22,7 +22,7 @@
 }
 .aboutCont2,
 .aboutCont3,
-.aboutUsCont {
+.members {
   display: flex;  
   flex-direction: column;
   align-items: center;
@@ -33,20 +33,26 @@
 }
 .aboutCont2 h1, 
 .aboutCont3 h1,
-.aboutUsCont h1 {
+#aboutUsMainH1 {
     color: rgba(255, 99, 146, 1);
 }
 .aboutCont2 p,
-.aboutUsCont p {
+.members p {
     color: rgba(0, 0, 0, 1);
 }
 .aboutCont3 p {
     text-align: start;
 }
-.nino {
+/* .member {
     display: flex;
 }
-.nino img {
+.member img {
     width: 50%;
     height: auto;
+} */
+#teo,
+#mari {
+    display: flex;
+    flex-direction: row-reverse;
 }
+
