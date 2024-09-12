@@ -52,6 +52,7 @@
 .homeCont1Texts h2 {
   max-width: 85%; /* გაფართოვებული სიგანე h2-სთვის */
   align-items: center;
+  text-align: center;
   margin: 0 auto;
   font-size: 1.9rem; /* შესაძლო ზომა */
   color: rgba(255, 99, 146, 1);
@@ -85,13 +86,13 @@
   color: rgba(255, 99, 146, 1);
 }
 .homeContTexts p {
-  text-align: justify;
+  text-align: center;
   max-width: 65%; /* პოტექსტის სიგანე */
   margin: 10px auto; /* ზღვარი h2-ის ქვემოთ */
   font-size: 1rem; /* პოტექსტის ზომა */
   line-height: 1.2; /* ხაზებს შორის მანძილი */
   color: rgba(2, 48, 71, 1);
-  word-spacing: 3px; /* სიტყვებს შორის 5px მანძილი */
+  /* word-spacing: 3px;  */
   letter-spacing: 1.1px; /* ასოებს შორის 1px მანძილი */
 }
 .homeContTexts p {
