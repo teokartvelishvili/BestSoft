@@ -1,81 +1,120 @@
 .footerContainer {
     display: flex;
     flex-direction: column;
-    height: 200px;
+    width: 100%;
+    height: auto; /* სიმაღლე ავტომატურად */
     text-align: center;
-    background-color: rgba(243, 217, 220, 1); /* Light background for dark theme */
+    background-color: rgba(243, 217, 220, 1); 
     color: rgba(27, 10, 72, 1); 
+    padding: 20px 0; /* დამატებითი padding სიმაღლისთვის */
+    position: relative; /* მომავალში საჭიროებისთვის */
 }
 
 .footerContainer.dark {
     background-color: rgba(2, 48, 71, 1); 
     color: rgba(90, 169, 230, 1);
 }
-.footerContents{
+
+.footerContents {
     display: flex;
-    justify-content: space-around;
-    padding: 0px 40px 0px 0px;
-}
-.footerContent1 {
+    justify-content: space-around; /* თანაბრად გაშლილი ელემენტები */
+    align-items: flex-start; /* კონტენტების გასწორება ზემოთ */
+    flex-wrap: wrap; /* მცირე ეკრანებზე კონტენტი რომ გადაეწყოს */
+    padding: 0 5%; /* მარცხნიდან და მარჯვნიდან 5% padding */
+} 
+
+/* Footer content blocks */
+.footerContent1, .footerContent2, .footerContent3 {
+    flex: 1 1 200px; /* ყველა კონტენტი მოქნილი */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
+}
+.footerContent1 img{
+    width: 270px;
+    height: 100%;
+}
+
+.footerContent1{
+    gap: 12px;
 }
 .footerContent1 .socialIcons {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 58px;
 }
+
 .socialIcons img {
     height: 32px;
     width: 32px;
     background-color: white;
     border-radius: 30%;
-    
 }
+
 .socialIcons img:hover {
     cursor: pointer;
-  transform: scale(1.05);
-  transition: transform 0.2s ease;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
 }
 
 .footerContent2 ul {
     list-style: none;
-    text-align: center;
-    line-height: 2.0;
+    text-align: start;
+    line-height: 1.9;
 }
+
 .footerContent2 li a {
     text-decoration: none;
-    color: rgba(27, 10, 72, 1); 
+    color: rgba(27, 10, 72, 1);
 }
+
 .dark .footerContent2 li a {
     color: rgba(90, 169, 230, 1);
 }
+
 .dark .footerContent2 li a:hover,
 .dark .footerContent3 ul li:hover {
     color: rgb(144, 192, 229);
 }
+
 .footerContent2 li a:hover,
 .footerContent3 ul li:hover {
     text-decoration: none;
-    color: rgb(81, 56, 151); 
+    color: rgb(81, 56, 151);
 }
-.footerContent3 ul li{
-display: flex;
-align-items: center;
-gap: 30px;
-line-height: 0.3;
+.footerContent3 ul{
+    text-align: start;
+    line-height: 1.9;
+    white-space: nowrap;
+}
+.footerContent3 ul li {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-.footerContent3 ul li img{
+.footerContent3 ul li img {
     height: 24px;
     width: 24px;
 }
+
+/* Copyright section */
 .copyRight {
-    display: flex;
-    justify-content: end;
-    background-color: inherit;
-    margin-top: -10px;
-    padding: 0px 20px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 12px;
+    color: rgba(27, 10, 72, 1);
+}
+
+.dark .copyRight {
+    color: rgba(90, 169, 230, 1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footerContents {
+        flex-direction: column; /* მცირე ეკრანებზე კონტენტი ერთ колонად გადაეწყოს */
+        align-items: center;
+        gap: 20px;
+    }
 }

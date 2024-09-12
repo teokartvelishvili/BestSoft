@@ -1,3 +1,181 @@
-.page {
-    height: 70vh;
+.dark .homeMainCont {
+  background-color: rgba(3, 63, 93, 1);
+}
+.homeConts {
+  padding-top: 30px;
+  padding-bottom: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+}
+
+.homeCont1,
+.homeCont2,
+.homeCont3,
+.homeCont4,
+.homeCont5 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  height: 50vh;
+}
+
+.homeCont1 {
+  background-color: rgba(243, 217, 220, 1);
+}
+.dark .homeCont1 {
+  background-color: rgba(90, 169, 230, 0.6);
+}
+
+.homeCont1 img,
+.homeCont2 img,
+.homeCont3 img,
+.homeCont4 img,
+.homeCont5 img {
+  height: 100%;
+  width: auto;
+}
+
+.homeCont1Texts {
+  position: relative;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 50%;
+}
+
+.homeCont1Texts h2 {
+  max-width: 85%; /* გაფართოვებული სიგანე h2-სთვის */
+  margin: 0 auto;
+  font-size: 1.3rem; /* შესაძლო ზომა */
+  color: rgba(255, 99, 146, 1);
+  text-align: justify;
+  margin: 10px auto;
+}
+
+.homeCont1Texts p {
+  text-align: justify;
+  max-width: 70%; /* პოტექსტის სიგანე */
+  margin: 10px auto; /* ზღვარი h2-ის ქვემოთ */
+  font-size: 1rem; /* პოტექსტის ზომა */
+  line-height: 1.1; /* ხაზებს შორის მანძილი */
+  color: rgba(255, 255, 255, 1);
+}
+
+.homeContTexts {
+  padding-top: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 50%;
+  gap: 8px;
+}
+.homeContTexts h1 {
+  max-width: 85%; /* გაფართოვებული სიგანე h2-სთვის */
+  text-align: center; /* ცენტრალური გასწორება */
+  margin: 0 auto;
+  font-size: 1.8rem; /* შესაძლო ზომა */
+  color: rgba(255, 99, 146, 1);
+}
+.homeContTexts p {
+  text-align: justify;
+  max-width: 65%; /* პოტექსტის სიგანე */
+  margin: 10px auto; /* ზღვარი h2-ის ქვემოთ */
+  font-size: 1rem; /* პოტექსტის ზომა */
+  line-height: 1.2; /* ხაზებს შორის მანძილი */
+  color: rgba(2, 48, 71, 1);
+  word-spacing: 3px; /* სიტყვებს შორის 5px მანძილი */
+  letter-spacing: 1.1px; /* ასოებს შორის 1px მანძილი */
+}
+.homeContTexts p {
+  color: rgba(90, 169, 230, 1);
+}
+.homeCont2,
+.homeCont3,
+.homeCont4,
+.homeCont5 {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.homeContTexts button {
+  background-color: rgba(255, 99, 146, 0.6);
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  width: 200px;
+  padding: 12px;
+  border: 2px solid rgba(255, 99, 146, 1); /* შავი ფერი ბორდერისთვის */
+  border-radius: 18px;
+}
+.homeContTexts button:hover {
+  cursor: pointer;
+  background-color: rgba(244, 193, 199, 1);
+}
+
+/* Styles for small screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .homeConts {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    gap: 60px;
+  }
+
+  .homeCont1,
+  .homeCont2,
+  .homeCont3,
+  .homeCont4,
+  .homeCont5 {
+    flex-direction: column;
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .homeCont1 {
+    background-color: rgba(243, 217, 220, 1);
+  }
+
+  .homeCont1 img,
+  .homeCont2 img,
+  .homeCont3 img,
+  .homeCont4 img,
+  .homeCont5 img {
+    height: auto;
+    width: 100%;
+  }
+
+  .homeCont1Texts,
+  .homeContTexts {
+    width: 90%;
+    padding-top: 30px;
+  }
+
+  .homeCont1Texts h2,
+  .homeContTexts h1 {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+
+  .homeCont1Texts p,
+  .homeContTexts p {
+    max-width: 90%;
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  .homeContTexts button {
+    width: 150px;
+    font-size: 14px;
+  }
+
+  .homeCont3,
+  .homeCont5 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

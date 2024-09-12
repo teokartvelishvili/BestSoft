@@ -54,8 +54,9 @@ const Footer = () => {
         </div>
         <div className={`footerContent2 ${theme}`}>
           
+        
           <ul>
-                <li>{TEXTS[language].links}</li>
+              <h3>{TEXTS[language].links} </h3>
                 <li><Link to="/">{TEXTS[language].home}</Link> </li>
                 <li><Link to="/Service">{TEXTS[language].service}</Link> </li>
                 <li><Link to="/About">{TEXTS[language].about}</Link> </li>
@@ -63,8 +64,10 @@ const Footer = () => {
             </ul>
         </div>
         <div className={`footerContent3 ${theme}`}>
+        
           <ul>
-          {TEXTS[language].contactInfo}
+            <h3>{TEXTS[language].contactInfo}</h3>
+          
             <li> 
             <img
                 alt="logo"
@@ -97,8 +100,6 @@ const Footer = () => {
           </ul>
         </div>
         
-
-
       </div>
       <div className="copyRight"><p> Copyright &copy; BestSoft 2024</p></div>
     </footer>
