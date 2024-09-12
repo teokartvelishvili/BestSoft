@@ -1,0 +1,67 @@
+.pageService {
+  background-color: #fff;
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 66px;
+  color: #023047;
+}
+.dark .pageService {
+  background-color: rgba(3, 63, 93, 1);
+  color: #5aa9e6;
+}
+.pageService ul {
+  margin-left: 20px;
+}
+
+.pageService .image {
+  width: 100%;
+  height: 70vh;
+}
+.servBox {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.servText {
+  text-align: center;
+  margin-bottom: 95px;
+}
+.servText h1 {
+  color: #ff6392;
+  text-align: center;
+  font-family: "Montserrat Alternates";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.servText p {
+  text-align: center;
+  font-family: "Montserrat Alternates";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 34px;
+}
+.overview-container {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.boxImage {
+  max-width: 463px;
+  height: 376px;
+}
+.servBox2 {
+  gap: 30px;
+}
+.lineServ {
+  max-width: 80vw;
+}
