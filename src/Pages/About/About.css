@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 90%;
+    width: 80%;
     height: auto;
 }
 .aboutCont1 img {
@@ -26,7 +26,7 @@
   display: flex;  
   flex-direction: column;
   align-items: center;
-  width: 90%;
+  width: 80%;
   height: auto;
   gap: 40px;
   text-align: center;
