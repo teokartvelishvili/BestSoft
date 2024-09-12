@@ -51,10 +51,10 @@
 
 .homeCont1Texts h2 {
   max-width: 85%; /* გაფართოვებული სიგანე h2-სთვის */
+  align-items: center;
   margin: 0 auto;
-  font-size: 1.3rem; /* შესაძლო ზომა */
+  font-size: 1.9rem; /* შესაძლო ზომა */
   color: rgba(255, 99, 146, 1);
-  text-align: justify;
   margin: 10px auto;
 }
 
