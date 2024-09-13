@@ -1,17 +1,26 @@
 import "./TeamMember.css";
-import React from 'react';
-import FbIcon from '../../Assets/FacebookIcon.png';
-import InstIcon from '../../Assets/InstagramIcon.png';
-import LinkdIcon from '../../Assets/LinkedInIcon.png';
+import React from "react";
+import FbIcon from "../../Assets/FacebookIcon.png";
+import InstIcon from "../../Assets/InstagramIcon.png";
+import LinkdIcon from "../../Assets/LinkedInIcon.png";
 
-const TeamMember = ({ name, title, bio, image, portfolioLink, contactLink, socialMediaLinks, className = "", id = "" }) => {
-
+const TeamMember = ({
+  name,
+  title,
+  bio,
+  image,
+  portfolioLink,
+  contactLink,
+  socialMediaLinks,
+  className = "",
+  id = "",
+}) => {
   const getSocialIcon = (link) => {
-    if (link.includes('facebook.com')) {
+    if (link.includes("facebook.com")) {
       return FbIcon;
-    } else if (link.includes('instagram.com')) {
+    } else if (link.includes("instagram.com")) {
       return InstIcon;
-    } else if (link.includes('linkedin.com')) {
+    } else if (link.includes("linkedin.com")) {
       return LinkdIcon;
     } else {
       return null; // სხვა ლინკების შემთხვევაში დამატებით შეგიძლია დაამატო სხვა აიკონები ან გაუმკლავდე სხვანაირად
@@ -30,14 +39,29 @@ const TeamMember = ({ name, title, bio, image, portfolioLink, contactLink, socia
         <div className="socialMediaLinks">
           <h2>Social Media Links:</h2>
           {socialMediaLinks.map((link, index) => (
-            <a key={index} href={link} target="_blank" rel="noopener noreferrer">
+            <a
+              key={index}
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={getSocialIcon(link)} alt="social-icon" />
             </a>
           ))}
         </div>
-        <button onClick={() => window.open(portfolioLink, "_blank")}>Portfolio</button><br />
-        <button onClick={() => window.open(contactLink, "_blank")}>Contact Us</button>
-
+        <button
+          className="portfBtn"
+          onClick={() => window.open(portfolioLink, "_blank")}
+        >
+          Portfolio
+        </button>
+        <br />
+        <button
+          className="contactBtn"
+          onClick={() => window.open(contactLink, "_blank")}
+        >
+          Contact Us
+        </button>
       </div>
     </div>
   );
