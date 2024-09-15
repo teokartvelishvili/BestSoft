@@ -9,9 +9,9 @@
   height: 400px;
   width: auto;
 }
-#ani {
+/* #ani {
   gap: 100px;
-}
+} */
 .member {
   display: flex;
   justify-content: space-between;

@@ -62,10 +62,16 @@
   display: flex;
   flex-direction: row-reverse;
 }
+.socialMediaLinks h2 {
+  margin-bottom: 6%;
+}
 
 @media screen and (max-width: 800px) {
   .aboutCont1 img {
     height: auto;
+  }
+  #ani img {
+    margin-bottom: -100px;
   }
 }
 
