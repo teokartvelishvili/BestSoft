@@ -63,7 +63,8 @@ hr {
 }
 .burger,
 ul li img,
-ul hr {
+ul hr,
+.mobileImageNavbar {
   display: none;
 }
 
