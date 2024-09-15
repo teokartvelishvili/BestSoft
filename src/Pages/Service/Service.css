@@ -72,3 +72,35 @@
 .lineServ {
   max-width: 80vw;
 }
+@media screen and (max-width: 800px) {
+  .pageService .image {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pageService .image {
+    height: auto;
+  }
+
+  .pageService,
+  .contact {
+    font-size: 1.5rem;
+    padding: 3% 0%;
+  }
+  .servSect2 {
+    padding: 2% 8%;
+  }
+  .servBox {
+    flex-direction: column-reverse;
+  }
+  .boxImage {
+    height: auto;
+  }
+  .pageService h1 {
+    font-size: 2rem;
+  }
+  .overview-container {
+    font-size: 12px;
+  }
+}

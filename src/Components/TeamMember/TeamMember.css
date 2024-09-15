@@ -126,6 +126,6 @@
   }
   #teo,
   #mari {
-    flex-direction: row-reverse;
+    flex-direction: column;
   }
 }
