@@ -154,10 +154,13 @@ textarea {
 }
 
 .contact h1 {
-  margin-bottom: -20px;
+  padding-bottom: -20px;
 }
 .contactTextLast h1 {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+.contactTextLast {
+  padding-bottom: 120px;
 }
 
 .submit-overlay {
@@ -203,7 +206,7 @@ textarea {
     display: none;
   }
   .contactTextLast {
-    margin-top: 80px;
+    padding-top: 80px;
   }
 }
 
@@ -223,6 +226,6 @@ textarea {
   }
 
   .contactTextLast h1 {
-    margin-bottom: 15px;
+    padding-bottom: 15px;
   }
 }
