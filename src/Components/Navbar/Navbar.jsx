@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { ThemeContext } from "../../Hooks/ThemeContext";
 import { LanguageContext } from "../../Hooks/LanguageContext";
 import { TEXTS } from "../../Hooks/Languages";
@@ -30,6 +30,17 @@ const Navbar = () => {
   const closeMenu = () => {
     setIsOpen(false);
   };
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    // Cleanup function to reset body overflow when component unmounts or state changes
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
 
   return (
     <div className={`NavCont ${theme}`}>
@@ -48,7 +59,7 @@ const Navbar = () => {
             onClick={closeMenu}
           />
         )}
-        <li>
+        <li onClick={closeMenu}>
           <img
             src={theme === "dark" ? homeIconLight : homeIcon}
             alt="homeIcon"
@@ -56,7 +67,7 @@ const Navbar = () => {
           <Link to="/">{TEXTS[language].home}</Link>{" "}
         </li>
         <hr />
-        <li>
+        <li onClick={closeMenu}>
           <img
             src={theme === "dark" ? sercvIconLight : sercvIcon}
             alt="sersvIcon"
@@ -64,7 +75,7 @@ const Navbar = () => {
           <Link to="/Service">{TEXTS[language].ourService}</Link>{" "}
         </li>
         <hr />
-        <li>
+        <li onClick={closeMenu}>
           <img
             src={theme === "dark" ? priceIconLight : priceIcon}
             alt="priceIcon"
@@ -72,7 +83,7 @@ const Navbar = () => {
           <Link to="/Prices">{TEXTS[language].prices}</Link>{" "}
         </li>
         <hr />
-        <li>
+        <li onClick={closeMenu}>
           <img
             src={theme === "dark" ? aboutIconLight : aboutIcon}
             alt="aboutIcon"
@@ -80,7 +91,7 @@ const Navbar = () => {
           <Link to="/About">{TEXTS[language].about}</Link>{" "}
         </li>
         <hr />
-        <li>
+        <li onClick={closeMenu}>
           <img
             src={theme === "dark" ? contactIconLight : contactIcon}
             alt="contactIcon"

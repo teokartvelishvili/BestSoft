@@ -50,9 +50,23 @@
   gap: 0px;
   margin: -2px;
 }
+.ToggleGR p {
+  display: block;
+}
 
 @media screen and (max-width: 800px) {
   .headerLogoCont {
     transform: translateX(180%);
+    cursor: pointer;
+  }
+  .headerLogoCont:hover {
+    transform: translateX(190%);
+    transition: transform 0.2s ease;
+  }
+  .ToggleGR p {
+    display: none;
+  }
+  .lang {
+    width: 150%;
   }
 }
