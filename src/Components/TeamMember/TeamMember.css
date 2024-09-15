@@ -9,9 +9,9 @@
   height: 400px;
   width: auto;
 }
-/* #ani {
-  gap: 100px;
-} */
+#ani img {
+  margin-bottom: 5px;
+}
 .member {
   display: flex;
   justify-content: space-between;
@@ -83,7 +83,7 @@
   margin-top: 3%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .teamMember {
     flex-direction: column;
     text-align: center;
