@@ -61,8 +61,8 @@ hr {
   color: grey;
 }
 .burger,
-ul li img,
-ul hr,
+.UlCont li img,
+.UlCont hr,
 .mobileImageNavbar {
   display: none;
 }
@@ -147,11 +147,11 @@ ul hr,
   .burger.open .line:nth-child(3) {
     transform: translateY(-8px) rotate(45deg);
   }
-  ul li img,
-  ul hr {
+  .UlCont li img,
+  .UlCont hr {
     display: block;
   }
-  li {
+  .UlCont li {
     display: flex;
     justify-content: space-around;
     gap: 50%;
@@ -166,7 +166,7 @@ ul hr,
     color: #fff !important;
   }
 
-  hr {
+  .UlCont hr {
     background: rgba(255, 255, 255, 0.3);
     height: 1px;
     z-index: 999999;

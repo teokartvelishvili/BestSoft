@@ -56,11 +56,11 @@
 
 @media screen and (max-width: 800px) {
   .headerLogoCont {
-    transform: translateX(180%);
+    transform: translateX(100%);
     cursor: pointer;
   }
   .headerLogoCont:hover {
-    transform: translateX(190%);
+    transform: translateX(110%);
     transition: transform 0.2s ease;
   }
   .ToggleGR p {
@@ -68,5 +68,8 @@
   }
   .lang {
     width: 150%;
+  }
+  .logo {
+    width: 30vw;
   }
 }
