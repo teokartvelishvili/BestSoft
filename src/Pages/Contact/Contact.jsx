@@ -1,16 +1,146 @@
-import React, { useContext } from "react"
+import React, { useContext, useState } from "react";
 import { ThemeContext } from "../../Hooks/ThemeContext";
 import { LanguageContext } from "../../Hooks/LanguageContext";
 import { TEXTS } from "../../Hooks/Languages";
 import "./Contact.css";
-
+import contactImage from "./images/contactPhoto.png";
+import contactImageDark from "./images/contactImageDark.png";
+import facebook from "./images/Facebook (1).png";
+import instagram from "./images/Instagram (1).png";
+import Linkedin from "./images/LinkedIn.png";
+import contactLogo from "./images/contactLogo.png";
 
 const Contact = () => {
   const { theme } = useContext(ThemeContext);
-  const { language, setLanguage } = useContext(LanguageContext);
+  const { language } = useContext(LanguageContext);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+    // handle form submission
+  };
 
   return (
-    <div className={`page ${theme}`}>{TEXTS[language].contact}</div>
+    <div className="contact">
+      <div className="servSect1 contactSect1">
+        <img
+          alt="contactImage"
+          src={theme === "dark" ? contactImageDark : contactImage}
+          className="image"
+        />
+        <div className="border"></div>
+      </div>
+
+      <p>
+        We're here to help you bring your digital visions to life. Whether you
+        have a project in mind, need technical support, or just want to learn
+        more about our services, feel free to reach out to us. We look forward
+        to hearing from you!
+      </p>
+      <h1>{TEXTS[language]?.reachOut || "Reach Out to Us"}</h1>
+
+      <form onSubmit={handleSubmit} className="contact-form">
+        <label htmlFor="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          placeholder="Name"
+        />
+
+        <label htmlFor="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          placeholder="E-mail"
+        />
+
+        <label htmlFor="phone">Phone Number:</label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          value={formData.phone}
+          onChange={handleChange}
+          placeholder="Phone Number"
+        />
+
+        <label htmlFor="subject">Subject:</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          value={formData.subject}
+          onChange={handleChange}
+          placeholder="E.g. UX/UI Design / Front-End development"
+        />
+
+        <label htmlFor="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          placeholder="Text Area"
+        />
+
+        <button type="submit" className="submit-button">
+          Submit
+        </button>
+      </form>
+      <h1>Our Contact Information</h1>
+      <div className="contact-details">
+        <div>
+          <strong>
+            <h3>Details: </h3>
+          </strong>
+          <p>Address: BestSoft HQ 1234 Tbilisi, Georgia</p>
+          <p>Phone: +(995) 555 56 86 63</p>
+          <p>Email: contact@bestsoft.com</p>
+        </div>
+        <div>
+          <strong>
+            <h3>Working Hours: </h3>
+          </strong>
+
+          <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+          <p>Saturday: 10:00 AM - 4:00 PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+      </div>
+      <h1>Connect with Us</h1>
+      <p>
+        Stay connected and keep up to date with the latest news, updates, and
+        projects from BestSoft. Follow us on social media to join our community
+        and see how we're transforming digital experiences every day.
+      </p>
+      <div className="socNetworks">
+        <img alt="facebook" src={facebook} />
+        <img alt="instagram" src={instagram} />
+        <img alt="linkedin" src={Linkedin} />
+      </div>
+
+      <div className="contactLogo">
+        <img alt="logo" src={contactLogo} />
+      </div>
+    </div>
   );
 };
 
