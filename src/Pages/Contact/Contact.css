@@ -128,3 +128,8 @@ textarea {
 .contactLogo {
   align-self: center;
 }
+@media screen and (max-width: 800px) {
+  .contact-form {
+    width: 85%;
+  }
+}
