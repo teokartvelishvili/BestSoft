@@ -8,7 +8,6 @@
 }
 
 .UlCont {
-  padding: 10% 2%;
   display: flex;
   gap: 5%;
   align-items: flex-start;
@@ -55,6 +54,18 @@
 .dark .UlCont li a {
   color: rgba(90, 169, 230, 1);
 }
+.x {
+  display: none;
+}
+
+hr {
+  color: grey;
+}
+.burger,
+ul li img,
+ul hr {
+  display: none;
+}
 
 /* Media queries for responsiveness */
 @media (max-width: 800px) {
@@ -62,21 +73,31 @@
     width: 70vw; /* მცირე ეკრანებზე სიგანე 70%-ზე */
     justify-content: flex-end;
   }
+  .x {
+    display: block;
+    position: absolute;
+    right: 13px;
+  }
 
   .UlCont {
     flex-direction: column;
     position: fixed;
+    left: 0;
     top: 9%;
     right: 5%;
     height: 100vh;
     background-color: #f3d9dc;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 0px 8px 8px 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     opacity: 0;
     transform: scale(0.3) translateY(-70px);
     transition: opacity 0.5s ease, transform 0.9s ease;
     z-index: 2;
+  }
+  .dark .UlCont {
+    border-radius: 0px 8px 8px 0px;
+    background: #5ba9e6;
   }
 
   .UlCont.open {
@@ -125,5 +146,33 @@
 
   .burger.open .line:nth-child(3) {
     transform: translateY(-8px) rotate(45deg);
+  }
+  ul li img,
+  ul hr {
+    display: block;
+  }
+  li {
+    display: flex;
+    justify-content: space-around;
+    gap: 50%;
+    align-items: center;
+    margin-left: 6%;
+  }
+  .dark .UlCont li a {
+    color: #fff !important;
+  }
+
+  hr {
+    background: rgba(255, 255, 255, 0.3);
+    height: 1px;
+    z-index: 999999;
+    width: 90%;
+    align-self: center;
+  }
+  .dark hr {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  .mobileImageNavbar {
+    align-self: center;
   }
 }
