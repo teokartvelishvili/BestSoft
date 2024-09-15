@@ -4,6 +4,7 @@
   gap: 30px;
   margin: 72px auto;
   max-width: 560px;
+  font-size: 24px;
 }
 
 .ourTeamBtn {
@@ -15,7 +16,7 @@
   text-align: center;
   text-shadow: 0px 4px 4px rgba(255, 99, 146, 0.78);
   font-family: "Montserrat Alternates";
-  font-size: 24px;
+
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -25,7 +26,6 @@
   cursor: pointer;
   border-radius: 18px;
   border: 2px solid #ff6392;
-
   background: #f4c1c7;
 
   box-shadow: 0px 4px 6px 0px rgba(255, 99, 146, 0.35);
@@ -37,7 +37,6 @@
   text-align: center;
   text-shadow: 0px 4px 4px #5aa9e6;
   font-family: "Montserrat Alternates";
-  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -46,4 +45,13 @@
 .contactBtn:hover {
   cursor: pointer;
   box-shadow: 0px 4px 6px 0px #5aa9e6;
+}
+
+@media screen and (max-width: 600px) {
+  .buttons {
+    width: 70%;
+    align-self: center;
+    font-size: 1.25rem;
+    gap: 15px;
+  }
 }

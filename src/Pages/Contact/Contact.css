@@ -1,8 +1,17 @@
+.contact {
+  padding: 3% 10%;
+}
+
 .contactSect1 {
   position: relative;
 }
 .contactSect1 img {
   max-width: 100%;
+}
+.sect2Contact {
+  display: flex;
+  flex-direction: column;
+  gap: 66px;
 }
 
 .border {
@@ -16,11 +25,14 @@
 .dark .border {
   border: 6px solid #5aa9e6;
 }
+.contact p {
+  margin-left: 6%;
+}
 .contact h1 {
   color: #ff6392;
   text-align: center;
   font-family: "Nanum Brush Script";
-  font-size: 96px;
+  font-size: 6rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -62,7 +74,7 @@ textarea {
   border-radius: 12px;
   border: 2px solid #ff6392;
   background: rgba(255, 99, 146, 0.33);
-  color: #c4c4c4;
+  color: #877878;
 }
 .dark input,
 .dark textarea {
@@ -76,6 +88,11 @@ textarea::placeholder {
 
 textarea {
   height: 150px;
+}
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
 }
 
 .submit-button {
@@ -118,19 +135,93 @@ textarea {
 
 .socNetworks {
   display: flex;
-  gap: 99px;
+  justify-content: space-between;
   align-self: center;
+  max-width: 90%;
+  gap: 90px;
 }
 .socNetworks img {
   background: white;
   border-radius: 12px;
+  max-width: 25%;
 }
 .contactLogo {
   align-self: center;
+  max-width: 100%;
 }
+.contactLogo img {
+  width: 100%;
+}
+
+.contact h1 {
+  margin-bottom: -20px;
+}
+.contactTextLast h1 {
+  margin-bottom: 50px;
+}
+
+.submit-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.submit-overlay img {
+  width: 100%;
+}
+
+.contact {
+  position: relative;
+  z-index: 1;
+}
+
 @media screen and (max-width: 800px) {
+  .contact {
+    font-size: 20px;
+  }
   .contact-form {
     width: 85%;
     font-size: 18px;
+  }
+  .socNetworks {
+    gap: 25px;
+  }
+  .contact h1 {
+    font-size: 4rem;
+  }
+  .contact-details {
+    font-size: 20px;
+  }
+  .socNetworks,
+  .contactLogo {
+    display: none;
+  }
+  .contactTextLast {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form {
+    width: 100%;
+  }
+  .contact h1 {
+    font-size: 3rem;
+  }
+  .sect2Contact {
+    padding: 1% 5%;
+  }
+
+  .contact-details {
+    font-size: 16px;
+  }
+
+  .contactTextLast h1 {
+    margin-bottom: 15px;
   }
 }

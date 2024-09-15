@@ -119,6 +119,9 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .footerContainer {
+    margin-top: 80px;
+  }
   .footerContents {
     flex-direction: column; /* მცირე ეკრანებზე კონტენტი ერთ колонად გადაეწყოს */
     align-items: center;
