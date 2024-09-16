@@ -5,6 +5,37 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* body {
-  overflow-x: hidden;
-} */
+@font-face {
+  font-family: "BPGNinoMtavruliNormal";
+  src: url("./bpg_nino_mtavruli_normal.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+body.ge {
+  font-family: "BPGNinoMtavruliNormal", sans-serif;
+  /* background-color: rgb(30, 31, 32); */
+}
+body.en {
+  font-family: "Montserrat Alternates" !important;
+  /* background-color: rgb(30, 31, 32); */
+}
+.pageService.ge,
+.contact.ge,
+.prices.ge,
+.homeMainCont.ge,
+.aboutMainCont.ge,
+.NavCont.ge,
+footer.ge,
+.header.ge {
+  font-family: "BPGNinoMtavruliNormal", sans-serif !important;
+}
+.pageService.en,
+.contact.en,
+.prices.en,
+.homeMainCont.en,
+.aboutMainCont.en,
+.NavCont.en,
+footer.en,
+.header.en {
+  font-family: "Montserrat Alternates" !important;
+}

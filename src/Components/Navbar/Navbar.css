@@ -72,6 +72,7 @@ hr {
   .NavCont {
     width: 70vw; /* მცირე ეკრანებზე სიგანე 70%-ზე */
     justify-content: flex-end;
+    font-size: 1.5rem;
   }
   .x {
     display: block;
@@ -136,17 +137,6 @@ hr {
     margin-left: 20px;
   }
 
-  .burger.open .line:nth-child(1) {
-    transform: translateY(8px) rotate(-45deg);
-  }
-
-  .burger.open .line:nth-child(2) {
-    opacity: 0;
-  }
-
-  .burger.open .line:nth-child(3) {
-    transform: translateY(-8px) rotate(45deg);
-  }
   .UlCont li img,
   .UlCont hr {
     display: block;
