@@ -6,12 +6,12 @@
   flex-direction: column;
   gap: 66px;
   color: #023047;
-  font-family: "Montserrat Alternates";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
+
 .dark .pageService,
 .dark .contact {
   background-color: rgba(3, 63, 93, 1);
