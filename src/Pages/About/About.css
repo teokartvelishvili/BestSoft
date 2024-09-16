@@ -1,6 +1,18 @@
 .dark .aboutMainCont {
   background-color: rgba(3, 63, 93, 1);
 }
+
+.aboutMainCont p,
+.aboutMainCont h1,
+.aboutMainCont h2 {
+  color: #023047;
+}
+
+.dark .aboutMainCont p,
+.dark .aboutMainCont h1,
+.dark .aboutMainCont h2 {
+  color: #5aa9e6;
+}
 .aboutConts {
   padding-top: 30px;
   padding-bottom: 180px;
@@ -42,10 +54,7 @@
   font-weight: 400;
   line-height: normal;
 }
-.aboutCont2 p,
-.members p {
-  color: rgba(0, 0, 0, 1);
-}
+
 .aboutCont3 p {
   text-align: start;
 }

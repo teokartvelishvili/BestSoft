@@ -11,6 +11,9 @@
   font-weight: 600;
   line-height: normal;
 }
+.en .header {
+  font-family: Montserrat;
+}
 .dark .header {
   background-color: rgba(2, 48, 71, 1);
   color: rgba(90, 169, 230, 1);
@@ -50,6 +53,16 @@
 }
 .ToggleGR p {
   display: block;
+}
+@media screen and (max-width: 1250px) {
+  .header {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 800px) {
