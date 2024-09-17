@@ -26,7 +26,7 @@ const About = () => {
           />
         </div>
         <div className={`aboutCont2 ${theme}`}>
-          <h1>About Us</h1>
+          <h1 className="colorPink">About Us</h1>
           <p>
             BestSoft was born out of the shared vision and passion of four best
             friends: Nino Barjadze, Ani Beroshvili, Teona Kartvelishvili, and
@@ -58,7 +58,7 @@ const About = () => {
         </div>
 
         <div className={`aboutCont3 ${theme}`}>
-          <h1>Our Mission and Vision</h1>
+          <h1 className="colorPink">Our Mission and Vision</h1>
           <p>
             At BestSoft, we envision a world where technology and creativity
             seamlessly integrate to transform ideas into impactful digital

@@ -13,6 +13,9 @@
 .dark .aboutMainCont h2 {
   color: #5aa9e6;
 }
+.colorPink {
+  color: rgba(255, 99, 146, 1) !important;
+}
 .aboutConts {
   padding-top: 30px;
   padding-bottom: 180px;
