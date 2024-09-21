@@ -172,6 +172,6 @@ export const TEXTS = {
       nino: "Nino Barjadze",
       mari: " Mariam Lavrelashvili",
     },
-    portfolio: "Portfolio",
+    portfolio: "PORTFOLIO",
   },
 };
