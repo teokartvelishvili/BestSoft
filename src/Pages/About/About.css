@@ -51,11 +51,18 @@
 #aboutUsMainH1 {
   color: rgba(255, 99, 146, 1);
   text-align: center;
-  font-family: "Nanum Brush Script";
-  font-size: 96px;
+  font-family: "3D Unicode", sans-serif;
+  font-style: italic;
+  font-size: 70px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.en .aboutCont2 h1,
+.en .aboutCont3 h1,
+.en #aboutUsMainH1 {
+  font-family: "Nanum Brush Script";
+  font-size: 96px;
 }
 
 .aboutCont3 p {

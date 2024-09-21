@@ -61,11 +61,15 @@
   color: rgba(255, 99, 146, 1);
   margin: 10px auto;
   text-align: center;
-  font-family: "Nanum Brush Script";
+  font-family: "3D Unicode", sans-serif;
+  font-style: italic;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.en .homeCont1Texts h2 {
+  font-family: "Nanum Brush Script";
 }
 
 .homeCont1Texts p {
@@ -158,6 +162,11 @@
     height: auto;
     width: 70%;
     margin-top: 3%;
+  }
+  .homeCont1 img,
+  .homeCont1 {
+    align-self: center;
+    align-items: center;
   }
 
   .homeCont1Texts,
