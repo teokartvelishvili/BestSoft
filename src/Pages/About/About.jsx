@@ -47,7 +47,6 @@ const About = () => {
             bio={TEXTS[language].teamMembers.ani}
             image={ani}
             portfolioLink="https://ani-beroshvili.vercel.app/portfolio"
-            contactLink="tel:+995577300480"
             socialMediaLinks={[
               "https://facebook.com/anano303",
               "https://instagram.com/anano303",
@@ -58,15 +57,14 @@ const About = () => {
           />
           <TeamMember
             name={TEXTS[language].names.teo}
-            title="Front-End and Back-End Developer"
+            title="Full-stack Developer"
             bio={TEXTS[language].teamMembers.teo}
             image={teo}
-            portfolioLink="https://nino-portfolio.com"
-            contactLink="https://nino-contact.com"
+            portfolioLink="https://teona-kartvelishvili.vercel.app/"
             socialMediaLinks={[
-              "https://facebook.com/nino",
-              "https://instagram.com/nino",
-              "https://linkedin.com/nino",
+              "https://www.facebook.com/teo.qartvel",
+              "https://www.instagram.com/teo.kartvel?igsh=dnUzODMxcnZzN3p5&utm_source=qr",
+              "https://www.linkedin.com/in/teona-kartvelishvili-8a4005257",
             ]}
             className={`member ${theme}`} // Custom className
             id="teo" // Custom ID
@@ -77,7 +75,6 @@ const About = () => {
             bio={TEXTS[language].teamMembers.nino}
             image={nino}
             portfolioLink="https://nino-portfolio.com"
-            contactLink="https://nino-contact.com"
             socialMediaLinks={[
               "https://facebook.com/nino",
               "https://instagram.com/nino",
@@ -92,7 +89,6 @@ const About = () => {
             bio={TEXTS[language].teamMembers.mari}
             image={mari}
             portfolioLink="https://nino-portfolio.com"
-            contactLink="https://nino-contact.com"
             socialMediaLinks={[
               "https://facebook.com/nino",
               "https://instagram.com/nino",

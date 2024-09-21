@@ -54,11 +54,12 @@
 .ToggleGR p {
   display: block;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1300px) {
   .header {
     font-size: 14px;
   }
 }
+
 @media screen and (max-width: 900px) {
   .header {
     font-size: 12px;
@@ -69,15 +70,16 @@
   .header {
     font-size: 14px;
   }
+  
   .headerLogoCont {
     transform: translateX(100%);
     cursor: pointer;
   }
+    .ToggleGR p {
   .headerLogoCont:hover {
     transform: translateX(110%);
     transition: transform 0.2s ease;
   }
-  .ToggleGR p {
     display: none;
   }
   .lang {

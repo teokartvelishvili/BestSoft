@@ -71,7 +71,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div className="contact" >
       <div className="servSect1 contactSect1">
         <img
           alt="contactImage"
@@ -89,7 +89,7 @@ const Contact = () => {
         </p>
         <h1>{TEXTS[language]?.reachOut || "Reach Out to Us"}</h1>
 
-        <form onSubmit={handleSubmit} className="contact-form">
+        <form onSubmit={handleSubmit} className="contact-form" id="contactForm">
           <label htmlFor="name">Name:</label>
           <input
             type="text"
