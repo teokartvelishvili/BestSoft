@@ -2,8 +2,9 @@
   display: flex;
   margin-bottom: 30px;
   text-align: start;
-  font-family: "Montserrat Alternates";
+  /* font-family: "Montserrat Alternates"; */
 }
+
 .teamMember img {
   margin: 0px 70px;
   height: 400px;
@@ -81,6 +82,10 @@
 .teamMemberInfo h2,
 .teamMemberInfo p {
   margin-top: 3%;
+}
+
+.teamMemberInfo h1 {
+  font-family: "Montserrat Alternates";
 }
 
 @media (max-width: 800px) {

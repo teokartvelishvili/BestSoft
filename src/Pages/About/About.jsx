@@ -33,7 +33,7 @@ const About = () => {
         <div className={`aboutCont3 ${theme}`}>
           <h1 className="colorPink">{TEXTS[language].mission}</h1>
           <p>{TEXTS[language].vision}</p>
-          <br />
+
           <p>{TEXTS[language].mission2}</p>
         </div>
 

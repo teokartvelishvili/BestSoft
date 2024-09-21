@@ -42,6 +42,14 @@
   width: 60%;
 }
 
+.homeCont1 {
+  align-items: center;
+}
+.homeCont1 img {
+  height: 70vh;
+  align-self: center;
+}
+
 .homeCont1Texts {
   position: relative;
   top: 15%;
@@ -152,6 +160,7 @@
 
   .homeCont1 {
     background-color: rgba(243, 217, 220, 1);
+    width: 100%;
   }
 
   .homeCont1 img,
