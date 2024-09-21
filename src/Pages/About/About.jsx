@@ -37,7 +37,7 @@ const About = () => {
           <p>{TEXTS[language].mission2}</p>
         </div>
 
-        <div className={`members ${theme}`}>
+        <div id="" className={`members ${theme}`}>
           <h1 id="aboutUsMainH1"> {TEXTS[language].meetTeam}</h1>
           <p>{TEXTS[language].team}</p>
 

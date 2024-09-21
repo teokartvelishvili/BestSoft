@@ -193,9 +193,24 @@ const Contact = () => {
           </p>
         </div>
         <div className="socNetworks">
-          <img alt="facebook" src={facebook} />
-          <img alt="instagram" src={instagram} />
-          <img alt="linkedin" src={Linkedin} />
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <img
+                alt="logo"
+                src={facebook}
+                className="logo"></img>
+                </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img
+                alt="logo"
+                src={instagram}
+                className="logo"></img>
+                </a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <img
+                alt="logo"
+                src={Linkedin}
+                className="logo"></img>
+                </a>
         </div>
 
         <div className="contactLogo">

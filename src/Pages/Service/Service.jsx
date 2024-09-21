@@ -12,6 +12,7 @@ import Image4 from "./Images/image 4.png";
 import Buttons from "../../Components/Button/Buttons";
 import lineDark from "./Images/Line dark.png";
 import lineLight from "./Images/Line light.png";
+import LinkButton from "../../Components/LinkButton/LinkButton";
 
 const Service = () => {
   const { theme } = useContext(ThemeContext);
@@ -31,8 +32,8 @@ const Service = () => {
           <h1>{TEXTS[language].webSites}</h1>
           <p>{TEXTS[language].webSitesDescription}</p>
         </div>
-        <div className="servBox servBox1">
-          <div className="overview-container">
+        <div  className="servBox servBox1">
+          <div id="frontEnd" className="overview-container">
             {/* <div className="overview-section">
               <h3 className="overview-title">{TEXTS[language].overview}</h3>
               <ul>
@@ -90,7 +91,7 @@ const Service = () => {
         </div> */}
         <div className="servBox servBox2">
           <img className="boxImage" src={Image2} alt="img" />
-          <div className="overview-container">
+          <div id="backEnd" className="overview-container">
             {/* <div className="overview-section">
               <h3 className="overview-title">{TEXTS[language].overview}</h3>
               <ul>
@@ -140,7 +141,7 @@ const Service = () => {
         />
       </div>
 
-      <div className="servSect2">
+      <div id="graphic" className="servSect2">
         <div className="servText">
           <h1>{TEXTS[language].graphicDesign}</h1>
           <p>{TEXTS[language].graphicDesignDescription}</p>
@@ -196,7 +197,7 @@ const Service = () => {
         />
       </div>
 
-      <div className="servSect2">
+      <div id="ux" className="servSect2">
         <div className="servText">
           <h1>{TEXTS[language].uxUiDesign}</h1>
           <p>{TEXTS[language].uxUiDesignDescription}</p>
