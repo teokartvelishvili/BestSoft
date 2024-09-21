@@ -28,18 +28,21 @@ const Service = () => {
       </div>
       <div className="servSect2">
         <div className="servText">
-          <h1>{TEXTS[language].frontEnd}</h1>
-          <p>{TEXTS[language].frontEndDescription}</p>
+          <h1>{TEXTS[language].webSites}</h1>
+          <p>{TEXTS[language].webSitesDescription}</p>
         </div>
         <div className="servBox servBox1">
           <div className="overview-container">
-            <div className="overview-section">
+            {/* <div className="overview-section">
               <h3 className="overview-title">{TEXTS[language].overview}</h3>
               <ul>
                 <li>{TEXTS[language].overview1}</li>
                 <li>{TEXTS[language].overview2}</li>
               </ul>
-            </div>
+            </div> */}
+            <h1>{TEXTS[language].frontEnd}</h1>
+            <p>{TEXTS[language].frontEndDescription}</p>
+
 
             <div className="overview-section">
               <h3>{TEXTS[language].technologies}</h3>
@@ -72,29 +75,31 @@ const Service = () => {
           </div>
           <img className="boxImage" src={Image1} alt="img" />
         </div>
-        <Buttons />
+        {/* <Buttons />
         <img
           className="lineServ"
           src={theme === "dark" ? lineDark : lineLight}
           alt="line"
-        />
+        /> */}
       </div>
 
       <div className="servSect2 servSect3">
-        <div className="servText">
+        {/* <div className="servText">
           <h1>{TEXTS[language].backEnd}</h1>
           <p>{TEXTS[language].backEndDescription}</p>
-        </div>
+        </div> */}
         <div className="servBox servBox2">
           <img className="boxImage" src={Image2} alt="img" />
           <div className="overview-container">
-            <div className="overview-section">
+            {/* <div className="overview-section">
               <h3 className="overview-title">{TEXTS[language].overview}</h3>
               <ul>
                 <li>{TEXTS[language].overview1}</li>
                 <li>{TEXTS[language].overview2}</li>
               </ul>
-            </div>
+            </div> */}
+            <h1>{TEXTS[language].backEnd}</h1>
+            <p>{TEXTS[language].backEndDescription}</p>
 
             <div className="overview-section">
               <h3>{TEXTS[language].technologiesUsed}</h3>
@@ -142,13 +147,13 @@ const Service = () => {
         </div>
         <div className="servBox servBox1">
           <div className="overview-container">
-            <div className="overview-section">
+            {/* <div className="overview-section">
               <h3 className="overview-title">{TEXTS[language].overview}</h3>
               <ul>
                 <li>{TEXTS[language].overview1}</li>
                 <li>{TEXTS[language].overview2}</li>
               </ul>
-            </div>
+            </div> */}
 
             <div className="overview-section">
               <h3>{TEXTS[language].servicesOffered}</h3>
@@ -198,13 +203,13 @@ const Service = () => {
         </div>
         <div className="servBox servBox1">
           <div className="overview-container">
-            <div className="overview-section">
+            {/* <div className="overview-section">
               <h3 className="overview-title">{TEXTS[language].overview}</h3>
               <ul>
                 <li>{TEXTS[language].overview1}</li>
                 <li>{TEXTS[language].overview2}</li>
               </ul>
-            </div>
+            </div> */}
 
             <div className="overview-section">
               <h3>{TEXTS[language].toolsUsed}</h3>

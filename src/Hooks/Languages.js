@@ -15,7 +15,9 @@ export const TEXTS = {
     welcomeText: "მოგესალმებით ბესთსოფთის ოჯახში!",
     weTransform:
       "ჩვენ ვაქცევთ იდეებს ციფრულ რეალობად. ბესთსოფთი- ეს არის 4 საუკეთესო მეგობრისგან შექმნილი მჭიდრო გუნდი, რომელიც თქვენს ხედვას ციფრულ ხელოვნებად გარდაქმნის. გთავაზობთ კომპლექსურ და მაღალეფექტურ სერვისებს, რომლებიც სრულად შეესაბამება თქვენს უნიკალურ საჭიროებებს. ჩვენთან ერთად თქვენი ციფრული წარმატება იწყება",
-    frontEnd: "ფრონტ-ენდ დეველოპმენტი",
+    webSites:"ვებ გვერდების დამზადება",
+    webSitesDescription: "ჩვენ გთავაზობთ სრული ციკლის ვებ დეველოპმენტს, რომელიც მოიცავს როგორც ფრონტ-ენდის, ასევე ბექ-ენდის დეველოპმენტს. ვქმნით თანამედროვე, რესპონსიულ და ინტერაქტიულ ვებ-გვერდებს, რომლებიც უზრუნველყოფენ მაღალ მომხმარებლის გამოცდილებასა და უსაფრთხოებას. ჩვენი სერვერის მხარის გადაწყვეტილებები უზრუნველყოფენ საიტის მასშტაბირებას და სანდო მუშაობას.",
+      frontEnd: "ფრონტ-ენდ დეველოპმენტი",
     frontEndDescription:
       "შექმენით მოქნილი, ინტერაქტიული ინტერფეისები, რომლებიც უზრუნველყოფენ მომხმარებელთა გამოცდილებას.",
     backEnd: "ბექ-ენდ დეველოპმენტი",
@@ -145,7 +147,9 @@ export const TEXTS = {
     welcomeText: "Welcome to the BestSoft family!",
     weTransform:
       "We transform ideas into digital realities. As a close-knit team of four best friends, we are passionate about bringing your vision to life with our comprehensive suite of services.",
-    frontEnd: "Front-End Development",
+      webSites: "Website Development",
+      webSitesDescription: "We offer full-cycle web development that includes both front-end and back-end development. We create modern, responsive, and interactive websites that ensure excellent user experience and security. Our server-side solutions guarantee scalability and reliable performance for your website.",
+      frontEnd: "Front-End Development",
     frontEndDescription:
       "Building responsive, interactive interfaces that provide an excellent user experience.",
     backEnd: "Back-End Development",
