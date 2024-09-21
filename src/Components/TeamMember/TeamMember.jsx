@@ -3,6 +3,9 @@ import React from "react";
 import FbIcon from "../../Assets/FacebookIcon.png";
 import InstIcon from "../../Assets/InstagramIcon.png";
 import LinkdIcon from "../../Assets/LinkedInIcon.png";
+import { useContext } from "react";
+import { LanguageContext } from "../../Hooks/LanguageContext";
+import { TEXTS } from "../../Hooks/Languages";
 
 const TeamMember = ({
   name,
@@ -15,6 +18,8 @@ const TeamMember = ({
   className = "",
   id = "",
 }) => {
+  const { language } = useContext(LanguageContext);
+
   const getSocialIcon = (link) => {
     if (link.includes("facebook.com")) {
       return FbIcon;
@@ -37,7 +42,7 @@ const TeamMember = ({
         <h2>{name}</h2>
         <p>{bio}</p>
         <div className="socialMediaLinks">
-          <h2>Social Media Links:</h2>
+          <h2>{TEXTS[language].socialMediaLinks}</h2>
           {socialMediaLinks.map((link, index) => (
             <a
               key={index}
@@ -53,14 +58,14 @@ const TeamMember = ({
           className="portfBtn"
           onClick={() => window.open(portfolioLink, "_blank")}
         >
-          Portfolio
+          {TEXTS[language].portfolio}
         </button>
         <br />
         <button
           className="contactBtn"
           onClick={() => window.open(contactLink, "_blank")}
         >
-          Contact Us
+          {TEXTS[language].contact}
         </button>
       </div>
     </div>
