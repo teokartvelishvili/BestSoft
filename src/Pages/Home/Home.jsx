@@ -3,11 +3,11 @@ import { ThemeContext } from "../../Hooks/ThemeContext";
 import { LanguageContext } from "../../Hooks/LanguageContext";
 import { TEXTS } from "../../Hooks/Languages";
 import "./Home.css";
-import mainPoster from '../../Assets/Rectangle 27.png';
-import img28 from '../../Assets/Rectangle 28.png';
-import img29 from '../../Assets/Rectangle 29.png';
-import img30 from '../../Assets/Rectangle 30.png';
-import img31 from '../../Assets/Rectangle 31.png';
+import mainPoster from "../../Assets/Rectangle 27.png";
+import img28 from "../../Assets/Rectangle 28.png";
+import img29 from "../../Assets/Rectangle 29.png";
+import img30 from "../../Assets/Rectangle 30.png";
+import img31 from "../../Assets/Rectangle 31.png";
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
@@ -19,6 +19,7 @@ const Home = () => {
         <div className={`homeCont1 ${theme}`}>
           <div className={`homeCont1Texts ${theme}`}>
             <h2>{TEXTS[language].welcomeText}</h2>
+            <br />
             <p>{TEXTS[language].weTransform}</p>
           </div>
           <img src={mainPoster} alt="" />
@@ -32,7 +33,9 @@ const Home = () => {
           <img src={img28} alt="" />
         </div>
         <div className={`homeCont3 ${theme}`}>
-          <div className={`homeCont3 ${theme}`}><img src={img29} alt="" /></div>
+          <div className={`homeCont3 ${theme}`}>
+            <img src={img29} alt="" />
+          </div>
           <div className={`homeContTexts ${theme}`}>
             <h1>{TEXTS[language].backEnd}</h1>
             <p>{TEXTS[language].backEndDescription}</p>
