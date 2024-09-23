@@ -59,6 +59,7 @@ const Footer = () => {
               <h3>{TEXTS[language].links} </h3>
                 <li><Link to="/">{TEXTS[language].home}</Link> </li>
                 <li><Link to="/Service">{TEXTS[language].service}</Link> </li>
+                <li><Link to="/Prices">{TEXTS[language].prices}</Link> </li>
                 <li><Link to="/About">{TEXTS[language].about}</Link> </li>
                 <li><Link to="/Contact">{TEXTS[language].contact}</Link> </li>
             </ul>
