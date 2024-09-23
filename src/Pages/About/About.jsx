@@ -37,7 +37,7 @@ const About = () => {
           <p>{TEXTS[language].mission2}</p>
         </div>
 
-        <div id="about" className={`members ${theme}`}>
+        <div className={`members ${theme}`}>
           <h1 id="aboutUsMainH1"> {TEXTS[language].meetTeam}</h1>
           <p>{TEXTS[language].team}</p>
 
@@ -47,6 +47,7 @@ const About = () => {
             bio={TEXTS[language].teamMembers.ani}
             image={ani}
             portfolioLink="https://ani-beroshvili.vercel.app/portfolio"
+            contactLink="tel:+995577300480"
             socialMediaLinks={[
               "https://facebook.com/anano303",
               "https://instagram.com/anano303",
@@ -57,14 +58,15 @@ const About = () => {
           />
           <TeamMember
             name={TEXTS[language].names.teo}
-            title="Full-stack Developer"
+            title="Front-End and Back-End Developer"
             bio={TEXTS[language].teamMembers.teo}
             image={teo}
-            portfolioLink="https://teona-kartvelishvili.vercel.app/"
+            portfolioLink="https://nino-portfolio.com"
+            contactLink="https://nino-contact.com"
             socialMediaLinks={[
-              "https://www.facebook.com/teo.qartvel",
-              "https://www.instagram.com/teo.kartvel?igsh=dnUzODMxcnZzN3p5&utm_source=qr",
-              "https://www.linkedin.com/in/teona-kartvelishvili-8a4005257",
+              "https://facebook.com/nino",
+              "https://instagram.com/nino",
+              "https://linkedin.com/nino",
             ]}
             className={`member ${theme}`} // Custom className
             id="teo" // Custom ID
@@ -74,10 +76,11 @@ const About = () => {
             title="UX/UI Designer, Graphic Designer"
             bio={TEXTS[language].teamMembers.nino}
             image={nino}
-            portfolioLink="https://nino-portfolio.com"
+            portfolioLink="https://https://www.instagram.com/nin.illustrations?igsh=bzk0c2Q4eXc1MTE3&utm_source=qr"
+            contactLink="https://nino-contact.com"
             socialMediaLinks={[
-              "https://facebook.com/nino",
-              "https://instagram.com/nino",
+              "https://www.facebook.com/ninuca.barjadze?mibextid=LQQJ4d",
+              "https://www.instagram.com/nin.illustrations?igsh=bzk0c2Q4eXc1MTE3&utm_source=qr",
               "https://linkedin.com/nino",
             ]}
             className={`member ${theme}`} // Custom className
@@ -89,6 +92,7 @@ const About = () => {
             bio={TEXTS[language].teamMembers.mari}
             image={mari}
             portfolioLink="https://nino-portfolio.com"
+            contactLink="https://nino-contact.com"
             socialMediaLinks={[
               "https://facebook.com/nino",
               "https://instagram.com/nino",

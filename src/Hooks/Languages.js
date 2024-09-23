@@ -15,9 +15,10 @@ export const TEXTS = {
     welcomeText: "მოგესალმებით ბესთსოფთის ოჯახში!",
     weTransform:
       "ჩვენ ვაქცევთ იდეებს ციფრულ რეალობად. ბესთსოფთი- ეს არის 4 საუკეთესო მეგობრისგან შექმნილი მჭიდრო გუნდი, რომელიც თქვენს ხედვას ციფრულ ხელოვნებად გარდაქმნის. გთავაზობთ კომპლექსურ და მაღალეფექტურ სერვისებს, რომლებიც სრულად შეესაბამება თქვენს უნიკალურ საჭიროებებს. ჩვენთან ერთად თქვენი ციფრული წარმატება იწყება",
-    webSites:"ვებ გვერდების დამზადება",
-    webSitesDescription: "ჩვენ გთავაზობთ სრული ციკლის ვებ დეველოპმენტს, რომელიც მოიცავს როგორც ფრონტ-ენდის, ასევე ბექ-ენდის დეველოპმენტს. ვქმნით თანამედროვე, რესპონსიულ და ინტერაქტიულ ვებ-გვერდებს, რომლებიც უზრუნველყოფენ მაღალ მომხმარებლის გამოცდილებასა და უსაფრთხოებას. ჩვენი სერვერის მხარის გადაწყვეტილებები უზრუნველყოფენ საიტის მასშტაბირებას და სანდო მუშაობას.",
-      frontEnd: "ფრონტ-ენდ დეველოპმენტი",
+    webSites: "ვებ გვერდების დამზადება",
+    webSitesDescription:
+      "ჩვენ გთავაზობთ სრული ციკლის ვებ დეველოპმენტს, რომელიც მოიცავს როგორც ფრონტ-ენდის, ასევე ბექ-ენდის დეველოპმენტს. ვქმნით თანამედროვე, რესპონსიულ და ინტერაქტიულ ვებ-გვერდებს, რომლებიც უზრუნველყოფენ მაღალ მომხმარებლის გამოცდილებასა და უსაფრთხოებას. ჩვენი სერვერის მხარის გადაწყვეტილებები უზრუნველყოფენ საიტის მასშტაბირებას და სანდო მუშაობას.",
+    frontEnd: "ფრონტ-ენდ დეველოპმენტი",
     frontEndDescription:
       "შექმენით მოქნილი, ინტერაქტიული ინტერფეისები, რომლებიც უზრუნველყოფენ მომხმარებელთა გამოცდილებას.",
     backEnd: "ბექ-ენდ დეველოპმენტი",
@@ -80,8 +81,8 @@ export const TEXTS = {
     `,
     teamMembers: {
       ani: "ანი ბეროშვილი არის გამოცდილი Full-stack  Developer BestSoft-ში, რომელიც გამოირჩევა გამართული და ინტერაქტიული მომხმარებელთა ინტერფეისების შექმნის სიყვარულით. HTML5, CSS3, JavaScript, React,  Angular, node.js, express.js, mongoDB -ის ჩარჩოების სპეციალიზაციის წყალობით, ანი ზუსტად და შემოქმედებითად რეალობად აქცევს ვებსაიტების დიზაინებს. ის  მუშაობს იმისთვის, რომ თითოეული ვებსაიტი იყოს არა მხოლოდ ვიზუალურად მიმზიდველი, არამედ მაღალი ფუნქციონალურობის მქონე, რაც მომხმარებლებს შესანიშნავ ბრაუზინგის გამოცდილებას სთავაზობს. ანის განსაკუთრებული ყურადღება აქვს უახლესი Front-End ტექნოლოგიების მიმართ, რაც უზრუნველყოფს BestSoft-ის გადაწყვეტილებების მუდამ თანამედროვე და ინოვაციური ხასიათის შენარჩუნებას.",
-      teo: "თეონა ქართველიშვილი არის პროფესიონალი ვებ-დეველოპერი, რომლის ტექნიკური უნარები მოიცავს HTML, CSS, JavaScript და React, Angular. მისი სიძლიერე Express.js, Node.js, C# და Python-ში აძლევს მას შესაძლებლობას შექმნას ძლიერი, უსაფრთხო და მასშტაბირებადი სერვერ-საიდუმლო გადაწყვეტილებები. აგრეთვე, ის ფლობს მონაცემთა ბაზებს, მათ შორის MongoDB, Microsoft SQL და PostgreSQL. მისი გამოცდილება UI/UX დიზაინსა და ეთიკურ ჰაკინგში აძლიერებს მომხმარებლის გამოცდილებას და უზრუნველყოფს ციფრული პროდუქტების უსაფრთხოებასა და შესრულებას. თეონას ინოვაციური მიდგომები და დეტალებზე ორიენტირებული მუშაობა მას საიმედო პარტნიორად აქცევს კომპლექსური პროექტების განხორციელებაში.",
-      nino: "ნინო არის ნიჭიერი გრაფიკული დიზაინერი,  რომელიც ყოველ პროექტში შემოქმედებასა და ინოვაციას სძენს. ის გამოირჩევა უნიკალური და საინტერესო დიზაინების შექმნით.",
+      teo: "თეონა ქართველიშვილი არის Front-End და Back-End Developer BestSoft-ში,  რომელსაც ძლიერი გამოცდილება აქვს სერვერული ტექნოლოგიებისა და მონაცემთა ბაზების მართვაში. Python და Node.js-ის მსგავს ენებზე სპეციალიზაციის წყალობით, თეონა უზრუნველყოფს ჩვენი აპლიკაციების სტაბილურობას, უსაფრთხოებასა და მასშტაბირებადობას. მისი ყურადღება დეტალებზე და პრობლემების გადაჭრის უნარები აძლიერებს მას კომპლექსური ციფრული გადაწყვეტილებების შექმნის პროცესში, რაც ინტერფეისების ლამაზად ინტეგრირებას უზრუნველყოფს და უნიკალურ მომხმარებლის გამოცდილებას ქმნის. თეონას უშუალო ყურადღება შესრულებისა და უსაფრთხოების ოპტიმიზაციის მიმართ მას invaluable რესურსად აქცევს BestSoft-ის გუნდში.",
+      nino: "მე ვარ ნინო, გრაფიკული და UX/UI დიზაინერი. ვქმნი როგორც გრაფიკულ, ისე მომხმარებელზე ორიენტირებულ ციფრულ გამოცდილებებს, რაც მოიცავს უნიკალურ ბრენდინგს, ლოგოებს და UX/UI დიზაინს. ჩემი მიზანია, შევქმნა ვებსაიტები და აპლიკაციები, რომლებიც არა მხოლოდ ესთეტიკურია, არამედ მარტივი და კომფორტული გამოსაყენებელი.",
       mari: "მარია არის ნიჭიერი გრაფიკული დიზაინერი,  რომელიც ყოველ პროექტში შემოქმედებასა და ინოვაციას სძენს. ის გამოირჩევა უნიკალური და საინტერესო დიზაინების შექმნით.",
     },
     socialMediaLinks: "სოციალური ქსელები",
@@ -93,13 +94,16 @@ export const TEXTS = {
     },
     portfolio: "პორტფოლიო",
     frontEnd: "ფრონტ-ენდ დეველოპმენტი",
-    frontEndDescription: "რესპონსიული და ინტერაქტიული ინტერფეისების შექმნა, რომლებიც უზრუნველყოფენ შესანიშნავ მომხმარებლის გამოცდილებას.",
+    frontEndDescription:
+      "რესპონსიული და ინტერაქტიული ინტერფეისების შექმნა, რომლებიც უზრუნველყოფენ შესანიშნავ მომხმარებლის გამოცდილებას.",
     overview: "მიმოხილვა",
     overview1: "შესავალი ფრონტ-ენდ დეველოპმენტში და მისი მნიშვნელობა.",
-    overview2: "ფრონტ-ენდ დეველოპმენტის როლი მომხმარებლის გამოცდილების გაუმჯობესებაში.",
+    overview2:
+      "ფრონტ-ენდ დეველოპმენტის როლი მომხმარებლის გამოცდილების გაუმჯობესებაში.",
     technologies: "გამოყენებული ტექნოლოგიები",
     technologies1: "HTML, CSS, SCSS, JavaScript, Typescript",
-    technologies2: "ფრეიმვორკები და ბიბლიოთეკები: React, Angular, Next.js, Bootstrap და სხვა.",
+    technologies2:
+      "ფრეიმვორკები და ბიბლიოთეკები: React, Angular, Next.js, Bootstrap და სხვა.",
     keyFeatures: "მნიშვნელოვანი მახასიათებლები",
     keyFeatures1: "რესპონსიული დიზაინი",
     keyFeatures2: "ბრაუზერის მრავალფუნქციურობა",
@@ -112,24 +116,31 @@ export const TEXTS = {
     process4: "ტესტირება და ხარისხის კონტროლი",
     process5: "განთავსება და მხარდაჭერა",
     backEnd: "ბექ-ენდ დეველოპმენტი",
-    backEndDescription: "მყარი, მასშტაბირებადი და უსაფრთხო სერვერის მხარის გადაწყვეტილებების განვითარება.",
+    backEndDescription:
+      "მყარი, მასშტაბირებადი და უსაფრთხო სერვერის მხარის გადაწყვეტილებების განვითარება.",
     technologiesUsed: "გამოყენებული ტექნოლოგიები",
     technologiesUsed1: "პროგრამირების ენები: Node.js, Python, C# და სხვა.",
     technologiesUsed2: "მონაცემთა ბაზები: MsSQL, PostgreSQL, MongoDB და სხვა.",
     technologiesUsed3: "ფრეიმვორკები: Express, Django, ASP.NET და სხვა.",
     graphicDesign: "გრაფიკული დიზაინი",
-    graphicDesignDescription: "თვალისმომჭრელი გრაფიკული და ვიზუალური კონტენტის შექმნა.",
+    graphicDesignDescription:
+      "თვალისმომჭრელი გრაფიკული და ვიზუალური კონტენტის შექმნა.",
     servicesOffered: "მომსახურებები",
     servicesOffered1: "ლოგოს დიზაინი",
     servicesOffered2: "ბრენდინგი და იდენტობა",
-    servicesOffered3: "ბეჭდვითი დიზაინი (ბროშურები, ფლაერები, პოსტერები და სხვა)",
-    servicesOffered4: "ციფრული დიზაინი (სოციალური მედიის გრაფიკა, ვებ-დიზაინი და სხვა)",
+    servicesOffered3:
+      "ბეჭდვითი დიზაინი (ბროშურები, ფლაერები, პოსტერები და სხვა)",
+    servicesOffered4:
+      "ციფრული დიზაინი (სოციალური მედიის გრაფიკა, ვებ-დიზაინი და სხვა)",
     uxUiDesign: "UX/UI დიზაინი",
-    uxUiDesignDescription: "ვიზუალურად მიმზიდველი და მომხმარებლისთვის კომფორტული ინტერფეისების შექმნა.",
+    uxUiDesignDescription:
+      "ვიზუალურად მიმზიდველი და მომხმარებლისთვის კომფორტული ინტერფეისების შექმნა.",
     toolsUsed: "გამოყენებული ინსტრუმენტები",
-    toolsUsed1: "დიზაინის ინსტრუმენტები: Sketch, Figma, Adobe XD, InVision და სხვა.",
+    toolsUsed1:
+      "დიზაინის ინსტრუმენტები: Sketch, Figma, Adobe XD, InVision და სხვა.",
     toolsUsed2: "პროტოტიპირების ინსტრუმენტები: Axure, Marvel და სხვა.",
-    introText: "აქ ვართ, რათა თქვენი ციფრული ხედვები რეალობად ვაქციოთ. თუ გაქვთ პროექტი, გჭირდებათ ტექნიკური მხარდაჭერა ან გსურთ მეტი გაიგოთ ჩვენი სერვისების შესახებ, გთხოვთ, ნუ მოგერიდებათ ჩვენთან დაკავშირება. მოუთმენლად გელით!",
+    introText:
+      "აქ ვართ, რათა თქვენი ციფრული ხედვები რეალობად ვაქციოთ. თუ გაქვთ პროექტი, გჭირდებათ ტექნიკური მხარდაჭერა ან გსურთ მეტი გაიგოთ ჩვენი სერვისების შესახებ, გთხოვთ, ნუ მოგერიდებათ ჩვენთან დაკავშირება. მოუთმენლად გელით!",
     reachOut: "დაგვიკავშირდით",
     formLabels: {
       name: "სახელი",
@@ -167,7 +178,8 @@ export const TEXTS = {
       sunday: "კვირა: დახურული",
     },
     connectWithUsTitle: "დაგვიკავშირდით",
-    connectWithUsText: "დარჩით ჩვენთან დაკავშირებული და იყავით მუდმივად ინფორმირებული BestSoft-ის სიახლეებზე, განახლებებსა და პროექტებზე. შემოგვიერთდით სოციალურ ქსელებში, იყავით ჩვენი საზოგადოების ნაწილი და ნახეთ, როგორ ვცვლით ციფრულ გამოცდილებას ყოველდღიურად.",
+    connectWithUsText:
+      "დარჩით ჩვენთან დაკავშირებული და იყავით მუდმივად ინფორმირებული BestSoft-ის სიახლეებზე, განახლებებსა და პროექტებზე. შემოგვიერთდით სოციალურ ქსელებში, იყავით ჩვენი საზოგადოების ნაწილი და ნახეთ, როგორ ვცვლით ციფრულ გამოცდილებას ყოველდღიურად.",
   },
 
   en: {
@@ -186,9 +198,10 @@ export const TEXTS = {
     welcomeText: "Welcome to the BestSoft family!",
     weTransform:
       "We transform ideas into digital realities. As a close-knit team of four best friends, we are passionate about bringing your vision to life with our comprehensive suite of services.",
-      webSites: "Website Development",
-      webSitesDescription: "We offer full-cycle web development that includes both front-end and back-end development. We create modern, responsive, and interactive websites that ensure excellent user experience and security. Our server-side solutions guarantee scalability and reliable performance for your website.",
-      frontEnd: "Front-End Development",
+    webSites: "Website Development",
+    webSitesDescription:
+      "We offer full-cycle web development that includes both front-end and back-end development. We create modern, responsive, and interactive websites that ensure excellent user experience and security. Our server-side solutions guarantee scalability and reliable performance for your website.",
+    frontEnd: "Front-End Development",
     frontEndDescription:
       "Building responsive, interactive interfaces that provide an excellent user experience.",
     backEnd: "Back-End Development",
@@ -240,10 +253,10 @@ export const TEXTS = {
       we do, and we are here to help you succeed.
     `,
     teamMembers: {
-      ani: "Bio: Ani Beroshvili is a skilled Front-End Developer at BestSoft, known for her passion for creating responsive and interactive user interfaces. With expertise in HTML5, CSS3, JavaScript,node.js, mongoDB and frameworks such as React, Angular, Next.js and express.js, Ani brings web designs to life with precision and creativity. She is dedicated to ensuring that every website is both visually appealing and highly functional, providing users with an exceptional browsing experience. Ani's commitment to staying updated with the latest front-end technologies ensures that BestSoft's solutions are always cutting-edge.",
-      teo: "Teona Kartvelishvili is a professional web developer with expertise in HTML, CSS, JavaScript, React and Angular. Her strength Express.js, Node.js, C# and Python enables her to build robust, secure, and scalable back-end solutions. She is also proficient in databases, including MongoDB, Microsoft SQL, and PostgreSQL.Her experience in UI/UX design and ethical hacking enhances the user experience and ensures security and performance in digital products. Teona's innovative approach and attention to detail make her a reliable partner for executing complex projects.",
-      nino: "Bio: Nino is a talented graphic designer who brings creativity and innovation to every project. With a keen eye for detail and a passion for visual storytelling, Nino excels in creating unique and compelling designs that resonate with audiences. Nino is dedicated to crafting user-centric designs that enhance usability and engagement. Combining user research with creative design, she ensures that our digital products are both beautiful and functional.",
-      mari: "Bio: Mariam Lavrelashvili is a passionate UX/UI Designer at BestSoft, focused on creating intuitive and engaging user experiences. Her expertise in wireframing, prototyping, and visual design helps bring innovative ideas to life. Mariam is skilled at balancing functionality with aesthetics, ensuring that each design not only looks great but also provides a seamless and enjoyable user journey. She is dedicated to staying updated with the latest design trends and technologies to deliver cutting-edge solutions.",
+      ani: "Ani Beroshvili is a skilled Front-End Developer at BestSoft, known for her passion for creating responsive and interactive user interfaces. With expertise in HTML5, CSS3, JavaScript,node.js, mongoDB and frameworks such as React, Angular, Next.js and express.js, Ani brings web designs to life with precision and creativity. She is dedicated to ensuring that every website is both visually appealing and highly functional, providing users with an exceptional browsing experience. Ani's commitment to staying updated with the latest front-end technologies ensures that BestSoft's solutions are always cutting-edge.",
+      teo: "Teona Kartvelishvili is an expert Front-End and Back-End Developer at BestSoft, with a strong background in server-side technologies and database management. Specializing in languages like Python and Node.js, as well as various database systems, Teona ensures that our applications are robust, secure, and scalable. Her attention to detail and problem-solving skills enable her to build the backbone of complex digital solutions, seamlessly integrating with front-end interfaces to deliver a smooth user experience. Teona's dedication to optimizing performance and security makes her an invaluable asset to the BestSoft team",
+      nino: "Nino is a talented graphic designer who brings creativity and innovation to every project. With a keen eye for detail and a passion for visual storytelling, Nino excels in creating unique and compelling designs that resonate with audiences. Nino is dedicated to crafting user-centric designs that enhance usability and engagement. Combining user research with creative design, she ensures that our digital products are both beautiful and functional.",
+      mari: "Mariam Lavrelashvili is a passionate UX/UI Designer at BestSoft, focused on creating intuitive and engaging user experiences. Her expertise in wireframing, prototyping, and visual design helps bring innovative ideas to life. Mariam is skilled at balancing functionality with aesthetics, ensuring that each design not only looks great but also provides a seamless and enjoyable user journey. She is dedicated to staying updated with the latest design trends and technologies to deliver cutting-edge solutions.",
     },
     socialMediaLinks: "Social Media Links ",
     names: {
@@ -254,13 +267,16 @@ export const TEXTS = {
     },
     portfolio: "Portfolio",
     frontEnd: "Front-End Development",
-    frontEndDescription: "Building responsive, interactive interfaces that provide an excellent user experience.",
+    frontEndDescription:
+      "Building responsive, interactive interfaces that provide an excellent user experience.",
     overview: "Overview",
     overview1: "Introduction to front-end development and its importance.",
-    overview2: "Explanation of how front-end development enhances user experience and interaction.",
+    overview2:
+      "Explanation of how front-end development enhances user experience and interaction.",
     technologies: "Technologies Used",
     technologies1: "HTML, CSS, JavaScript, Typescript",
-    technologies2: "Frameworks and libraries: React, Angular, Next.js, Bootstrap, etc.",
+    technologies2:
+      "Frameworks and libraries: React, Angular, Next.js, Bootstrap, etc.",
     keyFeatures: "Key Features",
     keyFeatures1: "Responsive design",
     keyFeatures2: "Cross-browser compatibility",
@@ -273,24 +289,29 @@ export const TEXTS = {
     process4: "Testing and quality assurance",
     process5: "Deployment and support",
     backEnd: "Back-End Development",
-    backEndDescription: "Developing robust, scalable, and secure server-side solutions to power your applications.",
+    backEndDescription:
+      "Developing robust, scalable, and secure server-side solutions to power your applications.",
     technologiesUsed: "Technologies Used",
     technologiesUsed1: "Programming languages: Node.js, Python, C#, etc.",
     technologiesUsed2: "Databases: MsSQL, PostgreSQL, MongoDB, etc",
     technologiesUsed3: "Frameworks: Express, Django, ASP.NET, etc.",
     graphicDesign: "Graphic Design",
-    graphicDesignDescription: "Creating eye-catching graphics and visual content that leave a lasting impression.",
+    graphicDesignDescription:
+      "Creating eye-catching graphics and visual content that leave a lasting impression.",
     servicesOffered: "Services Offered",
     servicesOffered1: "Logo design",
     servicesOffered2: "Branding and identity",
     servicesOffered3: "Print design (brochures, flyers, posters, etc.)",
-    servicesOffered4: "Digital design (social media graphics, website graphics, etc.)",
+    servicesOffered4:
+      "Digital design (social media graphics, website graphics, etc.)",
     uxUiDesign: "UX/UI Design",
-    uxUiDesignDescription: "Crafting visually appealing, user-friendly interfaces that reflect your brand identity.",
+    uxUiDesignDescription:
+      "Crafting visually appealing, user-friendly interfaces that reflect your brand identity.",
     toolsUsed: "Technologies and Tools Used",
     toolsUsed1: "Design tools: Sketch, Figma, Adobe XD, InVision, etc.",
     toolsUsed2: "Prototyping tools: Axure, Marvel, etc.",
-    introText: "We're here to help you bring your digital visions to life. Whether you have a project in mind, need technical support, or just want to learn more about our services, feel free to reach out to us. We look forward to hearing from you!",
+    introText:
+      "We're here to help you bring your digital visions to life. Whether you have a project in mind, need technical support, or just want to learn more about our services, feel free to reach out to us. We look forward to hearing from you!",
     reachOut: "Reach Out to Us",
     formLabels: {
       name: "Name",
@@ -328,7 +349,7 @@ export const TEXTS = {
       sunday: "Sunday: Closed",
     },
     connectWithUsTitle: "Connect with Us",
-    connectWithUsText: "Stay connected and keep up to date with the latest news, updates, and projects from BestSoft. Follow us on social media to join our community and see how we're transforming digital experiences every day.",
-
+    connectWithUsText:
+      "Stay connected and keep up to date with the latest news, updates, and projects from BestSoft. Follow us on social media to join our community and see how we're transforming digital experiences every day.",
   },
 };
