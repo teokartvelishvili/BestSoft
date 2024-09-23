@@ -76,11 +76,11 @@ const About = () => {
             title="UX/UI Designer, Graphic Designer"
             bio={TEXTS[language].teamMembers.nino}
             image={nino}
-            portfolioLink="https://nino-portfolio.com"
+            portfolioLink="https://https://www.instagram.com/nin.illustrations?igsh=bzk0c2Q4eXc1MTE3&utm_source=qr"
             contactLink="https://nino-contact.com"
             socialMediaLinks={[
-              "https://facebook.com/nino",
-              "https://instagram.com/nino",
+              "https://www.facebook.com/ninuca.barjadze?mibextid=LQQJ4d",
+              "https://www.instagram.com/nin.illustrations?igsh=bzk0c2Q4eXc1MTE3&utm_source=qr",
               "https://linkedin.com/nino",
             ]}
             className={`member ${theme}`} // Custom className

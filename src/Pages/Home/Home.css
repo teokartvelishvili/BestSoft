@@ -69,7 +69,8 @@
   color: rgba(255, 99, 146, 1);
   margin: 10px auto;
   text-align: center;
-  font-family: "3D Unicode", sans-serif;
+  /* font-family: "3D Unicode", sans-serif; */
+  font-family: "ALK Life", sans-serif;
   font-style: italic;
   font-size: 40px;
   font-style: normal;
