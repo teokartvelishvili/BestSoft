@@ -5,18 +5,38 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "3D Unicode";
+  src: url("https://fonts.ge/font_data/638/3D-Unicode.eot"); /* EOT ფაილი ძველი ბრაუზერებისთვის */
+  src: url("https://fonts.ge/font_data/638/3D-Unicode.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE fix */ url("https://fonts.ge/font_data/638/3D-Unicode.woff2")
+      format("woff2"),
+    /* WOFF2 ფაილი */ url("https://fonts.ge/font_data/638/3D-Unicode.woff")
+      format("woff"),
+    /* WOFF ფაილი */ url("https://fonts.ge/font_data/638/3D-Unicode.ttf")
+      format("truetype"),
+    /* TTF ფაილი */
+      url("https://fonts.ge/font_data/638/3D-Unicode.svg#3D-Unicode")
+      format("svg"); /* SVG ფაილი */
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: "BPGNinoMtavruliNormal";
   src: url("./bpg_nino_mtavruli_normal.ttf");
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "3D Unicode", sans-serif;
-  src: url("./3d_unicode.ttf");
+
+/* @font-face {
+  font-family: "ana kalandadze", sans-serif;
+  src: url("./Ana-Kalandadze_2.ttf");
   font-weight: normal;
   font-style: italic;
-}
+} */
 body.ge {
   font-family: "BPGNinoMtavruliNormal", sans-serif;
   /* background-color: rgb(30, 31, 32); */
