@@ -45,8 +45,10 @@ const Contact = () => {
       newErrors.email = TEXTS[language].errors.invalidEmail;
     }
     if (!formData.phone.trim()) newErrors.phone = TEXTS[language].errors.phone;
-    if (!formData.subject.trim()) newErrors.subject = TEXTS[language].errors.subject;
-    if (!formData.message.trim()) newErrors.message = TEXTS[language].errors.message;
+    if (!formData.subject.trim())
+      newErrors.subject = TEXTS[language].errors.subject;
+    if (!formData.message.trim())
+      newErrors.message = TEXTS[language].errors.message;
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -66,7 +68,7 @@ const Contact = () => {
           subject: "",
           message: "",
         });
-      }, 3000);
+      }, 5000);
     }
   };
 
@@ -183,13 +185,25 @@ const Contact = () => {
           <p>{TEXTS[language].connectWithUsText}</p>
         </div>
         <div className="socNetworks">
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img alt="logo" src={facebook} className="logo" />
           </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img alt="logo" src={instagram} className="logo" />
           </a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img alt="logo" src={Linkedin} className="logo" />
           </a>
         </div>
