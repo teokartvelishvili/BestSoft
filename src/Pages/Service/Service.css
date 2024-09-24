@@ -1,5 +1,6 @@
 .pageService,
-.contact {
+.contact,
+.prices {
   background-color: #fff;
   padding: 2% 10%;
   display: flex;
@@ -100,16 +101,16 @@
   .boxImage {
     max-width: 90%;
   }
+  .pageService,
+  .contact,
+  .prices {
+    font-size: 1.5rem;
+    padding: 3% 0%;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .pageService .image {
     height: auto;
-  }
-
-  .pageService,
-  .contact {
-    font-size: 1.5rem;
-    padding: 3% 0%;
   }
 }

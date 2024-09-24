@@ -73,20 +73,20 @@
   .header {
     font-size: 14px;
   }
-  
+
   .headerLogoCont {
     transform: translateX(100%);
     cursor: pointer;
   }
-    .ToggleGR p {
-  .headerLogoCont:hover {
-    transform: translateX(110%);
-    transition: transform 0.2s ease;
-  }
+  .ToggleGR p {
+    .headerLogoCont:hover {
+      transform: translateX(110%);
+      transition: transform 0.2s ease;
+    }
     display: none;
   }
   .lang {
-    width: 150%;
+    width: 120%;
   }
   .logo {
     width: 30vw;

@@ -13,9 +13,6 @@
   font-weight: 500;
   line-height: normal;
 }
-/* #webSites{
-  margin-bottom: -70px;
-} */
 
 .homeCont1,
 .homeCont2,
@@ -26,7 +23,6 @@
   justify-content: center;
   align-items: flex-start;
   width: 80%;
-  /* height: 40vh; */
 }
 
 .homeCont1 {
@@ -42,7 +38,13 @@
 .homeCont4 img,
 .homeCont5 img {
   height: auto;
-  width: 60%;
+  width: 45%;
+}
+.dsNone {
+  display: none;
+}
+.dsBlock {
+  display: block;
 }
 
 .homeCont1 {
@@ -58,38 +60,40 @@
   top: 15%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 50%;
-  width: 50%;
+  justify-content: end;
+  align-items: flex-end;
+  /* height: 50%;
+  width: 50%; */
+  align-self: flex-start;
+  margin-top: 5%;
 }
 
 .homeCont1Texts h2 {
   max-width: 85%; /* გაფართოვებული სიგანე h2-სთვის */
   align-items: center;
   text-align: center;
-  margin: 0 auto;
   color: rgba(255, 99, 146, 1);
-  margin: 10px auto;
   text-align: center;
   /* font-family: "3D Unicode", sans-serif; */
   font-family: "ALK Life", sans-serif;
   font-style: italic;
-  font-size: 40px;
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 400;
   line-height: normal;
 }
 .en .homeCont1Texts h2 {
   font-family: "Nanum Brush Script";
+  font-size: 40px;
+}
+.ge .homeCont1Texts h2 {
+  font-size: 34px;
 }
 
 .homeCont1Texts p {
-  text-align: justify;
-  max-width: 70%; /* პოტექსტის სიგანე */
-  margin: 10px auto; /* ზღვარი h2-ის ქვემოთ */
-  font-size: 1rem; /* პოტექსტის ზომა */
-  line-height: 1.1; /* ხაზებს შორის მანძილი */
+  text-align: center;
+  max-width: 70%;
+  font-size: 1rem;
+  line-height: 1.1;
   color: rgba(255, 255, 255, 1);
 }
 
@@ -145,7 +149,13 @@
   background-color: rgba(244, 193, 199, 1);
 }
 
-/* Styles for small screens (e.g., mobile devices) */
+@media screen and (max-width: 1100px) {
+  .homeCont1 img {
+    height: auto;
+    align-self: center;
+  }
+}
+
 @media (max-width: 800px) {
   .homeConts {
     padding-top: 20px;
@@ -165,6 +175,13 @@
   .homeCont1 {
     background-color: rgba(243, 217, 220, 1);
     width: 100%;
+  }
+  .dsNone {
+    display: block;
+  }
+  .dsBlock,
+  .homeCont1Texts br {
+    display: none;
   }
 
   .homeCont1 img,
@@ -187,11 +204,20 @@
     width: 90%;
     padding-top: 30px;
   }
+  .homeCont1Texts {
+    align-self: center;
+    margin-top: 1%;
+    margin-bottom: 40px;
+  }
 
   .homeCont1Texts h2,
   .homeContTexts h1 {
     font-size: 1.5rem;
     max-width: 100%;
+  }
+  .homeCont1Texts h2 {
+    text-align: center;
+    align-self: center;
   }
 
   .homeCont1Texts p,
@@ -199,6 +225,7 @@
     max-width: 90%;
     font-size: 1rem;
     line-height: 1.3;
+    margin-bottom: 3%;
   }
 
   .homeContTexts button {
