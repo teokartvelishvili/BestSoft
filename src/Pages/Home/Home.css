@@ -24,6 +24,10 @@
   align-items: flex-start;
   width: 80%;
 }
+.homeCont3,
+.homeCont5 {
+  flex-direction: row-reverse;
+}
 
 .homeCont1 {
   background-color: rgba(243, 217, 220, 1);
@@ -95,6 +99,7 @@
   font-size: 1rem;
   line-height: 1.1;
   color: rgba(255, 255, 255, 1);
+  margin-bottom: 30px;
 }
 
 .homeContTexts {
@@ -183,7 +188,9 @@
   .homeCont1Texts br {
     display: none;
   }
-
+  .mobButton {
+    margin-top: 50px;
+  }
   .homeCont1 img,
   .homeCont2 img,
   .homeCont3 img,
@@ -231,8 +238,8 @@
   }
 
   .homeContTexts button {
-    width: 150px;
     font-size: 14px;
+    width: 75%;
   }
 
   .homeCont3,
