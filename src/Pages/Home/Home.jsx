@@ -31,44 +31,60 @@ const Home = () => {
           <div className={`homeContTexts ${theme}`}>
             <h1>{TEXTS[language].frontEnd}</h1>
             <p>{TEXTS[language].frontEndDescription}</p>
-            <LinkButton href="/Service" sectionId="#frontEnd">
+            <img src={img28} alt="html/js/php" className="dsNone" />
+            <LinkButton
+              href="/Service"
+              sectionId="#frontEnd"
+              className="mobButton"
+            >
               {TEXTS[language].learnMore}
             </LinkButton>
           </div>
-          <img src={img28} alt="" />
+          <img src={img28} alt="html/js/php" className="dsBlock" />
         </div>
 
         <div className={`homeCont3 ${theme}`}>
           <div className={`homeContTexts ${theme}`}>
             <h1>{TEXTS[language].backEnd}</h1>
             <p>{TEXTS[language].backEndDescription}</p>
-            <LinkButton href="/Service" sectionId="#backEnd">
+            <img src={img29} alt="computer" className="dsNone" />
+            <LinkButton
+              href="/Service"
+              sectionId="#backEnd"
+              className="mobButton"
+            >
               {TEXTS[language].learnMore}
             </LinkButton>
           </div>
-          <img src={img29} alt="" />
+          <img src={img29} alt="computer" className="dsBlock" />
         </div>
 
         <div className={`homeCont4 ${theme}`}>
           <div className={`homeContTexts ${theme}`}>
             <h1>{TEXTS[language].graphicDesign}</h1>
             <p>{TEXTS[language].graphicDesignDescription}</p>
-            <LinkButton href="/Service" sectionId="#graphic">
+            <img src={img30} alt="graphicDesign" className="dsNone" />
+            <LinkButton
+              href="/Service"
+              sectionId="#graphic"
+              className="mobButton"
+            >
               {TEXTS[language].learnMore}
             </LinkButton>
           </div>
-          <img src={img30} alt="" />
+          <img src={img30} alt="graphicDesign" className="dsBlock" />
         </div>
 
         <div className={`homeCont5 ${theme}`}>
           <div className={`homeContTexts ${theme}`}>
             <h1>{TEXTS[language].uiUxDesign}</h1>
             <p>{TEXTS[language].uiUxDesignDescription}</p>
-            <LinkButton href="/Service" sectionId="#ux">
+            <img src={img31} alt="UX/UI Design" className="dsNone" />
+            <LinkButton href="/Service" sectionId="#ux" className="mobButton">
               {TEXTS[language].learnMore}
             </LinkButton>
           </div>
-          <img src={img31} alt="" />
+          <img src={img31} alt="UX/UI Design" className="dsBlock" />
         </div>
       </div>
     </div>
