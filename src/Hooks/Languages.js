@@ -15,6 +15,9 @@ export const TEXTS = {
     welcomeText: "მოგესალმებით ბესთსოფთის ოჯახში!",
     weTransform:
       "ჩვენ ვაქცევთ იდეებს ციფრულ რეალობად. ბესთსოფთი- ეს არის 4 საუკეთესო მეგობრისგან შექმნილი მჭიდრო გუნდი, რომელიც თქვენს ხედვას ციფრულ ხელოვნებად გარდაქმნის. გთავაზობთ კომპლექსურ და მაღალეფექტურ სერვისებს, რომლებიც სრულად შეესაბამება თქვენს უნიკალურ საჭიროებებს. ჩვენთან ერთად თქვენი ციფრული წარმატება იწყება",
+    webSites: "ვებ გვერდების დამზადება",
+    webSitesDescription:
+      "ჩვენ გთავაზობთ სრული ციკლის ვებ დეველოპმენტს, რომელიც მოიცავს როგორც ფრონტ-ენდის, ასევე ბექ-ენდის დეველოპმენტს. ვქმნით თანამედროვე, რესპონსიულ და ინტერაქტიულ ვებ-გვერდებს, რომლებიც უზრუნველყოფენ მაღალ მომხმარებლის გამოცდილებასა და უსაფრთხოებას. ჩვენი სერვერის მხარის გადაწყვეტილებები უზრუნველყოფენ საიტის მასშტაბირებას და სანდო მუშაობას.",
     frontEnd: "ფრონტ-ენდ დეველოპმენტი",
     frontEndDescription:
       "შექმენით მოქნილი, ინტერაქტიული ინტერფეისები, რომლებიც უზრუნველყოფენ მომხმარებელთა გამოცდილებას.",
@@ -90,6 +93,93 @@ export const TEXTS = {
       mari: "მარიამ ლავრელაშვილი",
     },
     portfolio: "პორტფოლიო",
+    frontEnd: "ფრონტ-ენდ დეველოპმენტი",
+    frontEndDescription:
+      "რესპონსიული და ინტერაქტიული ინტერფეისების შექმნა, რომლებიც უზრუნველყოფენ შესანიშნავ მომხმარებლის გამოცდილებას.",
+    overview: "მიმოხილვა",
+    overview1: "შესავალი ფრონტ-ენდ დეველოპმენტში და მისი მნიშვნელობა.",
+    overview2:
+      "ფრონტ-ენდ დეველოპმენტის როლი მომხმარებლის გამოცდილების გაუმჯობესებაში.",
+    technologies: "გამოყენებული ტექნოლოგიები",
+    technologies1: "HTML, CSS, SCSS, JavaScript, Typescript",
+    technologies2:
+      "ფრეიმვორკები და ბიბლიოთეკები: React, Angular, Next.js, Bootstrap და სხვა.",
+    keyFeatures: "მნიშვნელოვანი მახასიათებლები",
+    keyFeatures1: "რესპონსიული დიზაინი",
+    keyFeatures2: "ბრაუზერის მრავალფუნქციურობა",
+    keyFeatures3: "წარმადობის ოპტიმიზაცია",
+    keyFeatures4: "ხელმისაწვდომობა",
+    process: "პროცესი",
+    process1: "საწყისი კონსულტაცია და კლიენტის მოთხოვნების გაგება",
+    process2: "ვაირფრეიმინგი და პროტოტიპირება",
+    process3: "დიზაინი და განვითარება",
+    process4: "ტესტირება და ხარისხის კონტროლი",
+    process5: "განთავსება და მხარდაჭერა",
+    backEnd: "ბექ-ენდ დეველოპმენტი",
+    backEndDescription:
+      "მყარი, მასშტაბირებადი და უსაფრთხო სერვერის მხარის გადაწყვეტილებების განვითარება.",
+    technologiesUsed: "გამოყენებული ტექნოლოგიები",
+    technologiesUsed1: "პროგრამირების ენები: Node.js, Python, C# და სხვა.",
+    technologiesUsed2: "მონაცემთა ბაზები: MsSQL, PostgreSQL, MongoDB და სხვა.",
+    technologiesUsed3: "ფრეიმვორკები: Express, Django, ASP.NET და სხვა.",
+    graphicDesign: "გრაფიკული დიზაინი",
+    graphicDesignDescription:
+      "თვალისმომჭრელი გრაფიკული და ვიზუალური კონტენტის შექმნა.",
+    servicesOffered: "მომსახურებები",
+    servicesOffered1: "ლოგოს დიზაინი",
+    servicesOffered2: "ბრენდინგი და იდენტობა",
+    servicesOffered3:
+      "ბეჭდვითი დიზაინი (ბროშურები, ფლაერები, პოსტერები და სხვა)",
+    servicesOffered4:
+      "ციფრული დიზაინი (სოციალური მედიის გრაფიკა, ვებ-დიზაინი და სხვა)",
+    uxUiDesign: "UX/UI დიზაინი",
+    uxUiDesignDescription:
+      "ვიზუალურად მიმზიდველი და მომხმარებლისთვის კომფორტული ინტერფეისების შექმნა.",
+    toolsUsed: "გამოყენებული ინსტრუმენტები",
+    toolsUsed1:
+      "დიზაინის ინსტრუმენტები: Sketch, Figma, Adobe XD, InVision და სხვა.",
+    toolsUsed2: "პროტოტიპირების ინსტრუმენტები: Axure, Marvel და სხვა.",
+    introText:
+      "აქ ვართ, რათა თქვენი ციფრული ხედვები რეალობად ვაქციოთ. თუ გაქვთ პროექტი, გჭირდებათ ტექნიკური მხარდაჭერა ან გსურთ მეტი გაიგოთ ჩვენი სერვისების შესახებ, გთხოვთ, ნუ მოგერიდებათ ჩვენთან დაკავშირება. მოუთმენლად გელით!",
+    reachOut: "დაგვიკავშირდით",
+    formLabels: {
+      name: "სახელი",
+      email: "ელ.ფოსტა",
+      phone: "ტელეფონი",
+      subject: "თემა",
+      message: "მესიჯი",
+      submit: "გაგზავნა",
+    },
+    formPlaceholders: {
+      name: "სახელი",
+      email: "ელ.ფოსტა",
+      phone: "ტელეფონი",
+      subject: "მაგ. UX/UI დიზაინი",
+      message: "შეტყობინება",
+    },
+    errors: {
+      name: "სახელი აუცილებელია.",
+      emailRequired: "ელ.ფოსტა აუცილებელია.",
+      invalidEmail: "გთხოვთ, შეიყვანეთ ვალიდური ელ.ფოსტა.",
+      phone: "ტელეფონი აუცილებელია.",
+      subject: "თემა აუცილებელია.",
+      message: "მესიჯი აუცილებელია.",
+    },
+    submissionSuccess: "გაგზავნა წარმატებულია",
+    contactInfoTitle: "ჩვენი საკონტაქტო ინფორმაცია",
+    detailsTitle: "დეტალები",
+    address: "მისამართი: BestSoft HQ 1234 თბილისი, საქართველო",
+    phone: "ტელეფონი: +(995) 555 56 86 63",
+    email: "ელ.ფოსტა: contact@bestsoft.com",
+    workingHoursTitle: "სამუშაო საათები",
+    workingHours: {
+      weekdays: "ორშაბათი - პარასკევი: 9:00 AM - 6:00 PM",
+      saturday: "შაბათი: 10:00 AM - 4:00 PM",
+      sunday: "კვირა: დახურული",
+    },
+    connectWithUsTitle: "დაგვიკავშირდით",
+    connectWithUsText:
+      "დარჩით ჩვენთან დაკავშირებული და იყავით მუდმივად ინფორმირებული BestSoft-ის სიახლეებზე, განახლებებსა და პროექტებზე. შემოგვიერთდით სოციალურ ქსელებში, იყავით ჩვენი საზოგადოების ნაწილი და ნახეთ, როგორ ვცვლით ციფრულ გამოცდილებას ყოველდღიურად.",
   },
 
   en: {
@@ -108,6 +198,9 @@ export const TEXTS = {
     welcomeText: "Welcome to the BestSoft family!",
     weTransform:
       "We transform ideas into digital realities. As a close-knit team of four best friends, we are passionate about bringing your vision to life with our comprehensive suite of services.",
+    webSites: "Website Development",
+    webSitesDescription:
+      "We offer full-cycle web development that includes both front-end and back-end development. We create modern, responsive, and interactive websites that ensure excellent user experience and security. Our server-side solutions guarantee scalability and reliable performance for your website.",
     frontEnd: "Front-End Development",
     frontEndDescription:
       "Building responsive, interactive interfaces that provide an excellent user experience.",
@@ -172,6 +265,91 @@ export const TEXTS = {
       nino: "Nino Barjadze",
       mari: " Mariam Lavrelashvili",
     },
-    portfolio: "PORTFOLIO",
+    portfolio: "Portfolio",
+    frontEnd: "Front-End Development",
+    frontEndDescription:
+      "Building responsive, interactive interfaces that provide an excellent user experience.",
+    overview: "Overview",
+    overview1: "Introduction to front-end development and its importance.",
+    overview2:
+      "Explanation of how front-end development enhances user experience and interaction.",
+    technologies: "Technologies Used",
+    technologies1: "HTML, CSS, JavaScript, Typescript",
+    technologies2:
+      "Frameworks and libraries: React, Angular, Next.js, Bootstrap, etc.",
+    keyFeatures: "Key Features",
+    keyFeatures1: "Responsive design",
+    keyFeatures2: "Cross-browser compatibility",
+    keyFeatures3: "Performance optimization",
+    keyFeatures4: "Accessibility",
+    process: "Process",
+    process1: "Initial consultation and understanding client requirements",
+    process2: "Wireframing and prototyping",
+    process3: "Design and development",
+    process4: "Testing and quality assurance",
+    process5: "Deployment and support",
+    backEnd: "Back-End Development",
+    backEndDescription:
+      "Developing robust, scalable, and secure server-side solutions to power your applications.",
+    technologiesUsed: "Technologies Used",
+    technologiesUsed1: "Programming languages: Node.js, Python, C#, etc.",
+    technologiesUsed2: "Databases: MsSQL, PostgreSQL, MongoDB, etc",
+    technologiesUsed3: "Frameworks: Express, Django, ASP.NET, etc.",
+    graphicDesign: "Graphic Design",
+    graphicDesignDescription:
+      "Creating eye-catching graphics and visual content that leave a lasting impression.",
+    servicesOffered: "Services Offered",
+    servicesOffered1: "Logo design",
+    servicesOffered2: "Branding and identity",
+    servicesOffered3: "Print design (brochures, flyers, posters, etc.)",
+    servicesOffered4:
+      "Digital design (social media graphics, website graphics, etc.)",
+    uxUiDesign: "UX/UI Design",
+    uxUiDesignDescription:
+      "Crafting visually appealing, user-friendly interfaces that reflect your brand identity.",
+    toolsUsed: "Technologies and Tools Used",
+    toolsUsed1: "Design tools: Sketch, Figma, Adobe XD, InVision, etc.",
+    toolsUsed2: "Prototyping tools: Axure, Marvel, etc.",
+    introText:
+      "We're here to help you bring your digital visions to life. Whether you have a project in mind, need technical support, or just want to learn more about our services, feel free to reach out to us. We look forward to hearing from you!",
+    reachOut: "Reach Out to Us",
+    formLabels: {
+      name: "Name",
+      email: "Email",
+      phone: "Phone Number",
+      subject: "Subject",
+      message: "Message",
+      submit: "Submit",
+    },
+    formPlaceholders: {
+      name: "Name",
+      email: "E-mail",
+      phone: "Phone Number",
+      subject: "E.g. UX/UI Design",
+      message: "Text Area",
+    },
+    errors: {
+      name: "Name is required.",
+      emailRequired: "Email is required.",
+      invalidEmail: "Please enter a valid email address.",
+      phone: "Phone number is required.",
+      subject: "Subject is required.",
+      message: "Message is required.",
+    },
+    submissionSuccess: "Submission Successful",
+    contactInfoTitle: "Our Contact Information",
+    detailsTitle: "Details",
+    address: "Address: BestSoft HQ 1234 Tbilisi, Georgia",
+    phone: "Phone: +(995) 555 56 86 63",
+    email: "Email: contact@bestsoft.com",
+    workingHoursTitle: "Working Hours",
+    workingHours: {
+      weekdays: "Monday - Friday: 9:00 AM - 6:00 PM",
+      saturday: "Saturday: 10:00 AM - 4:00 PM",
+      sunday: "Sunday: Closed",
+    },
+    connectWithUsTitle: "Connect with Us",
+    connectWithUsText:
+      "Stay connected and keep up to date with the latest news, updates, and projects from BestSoft. Follow us on social media to join our community and see how we're transforming digital experiences every day.",
   },
 };

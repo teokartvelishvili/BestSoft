@@ -6,6 +6,7 @@ import LinkdIcon from "../../Assets/LinkedInIcon.png";
 import { useContext } from "react";
 import { LanguageContext } from "../../Hooks/LanguageContext";
 import { TEXTS } from "../../Hooks/Languages";
+import { useNavigate } from "react-router-dom"; // დაამატე ეს ნაწილი React Router-ისთვის
 
 const TeamMember = ({
   name,
@@ -19,6 +20,7 @@ const TeamMember = ({
   id = "",
 }) => {
   const { language } = useContext(LanguageContext);
+  const navigate = useNavigate(); // ჰუკი ნავიგაციისთვის
 
   const getSocialIcon = (link) => {
     if (link.includes("facebook.com")) {
@@ -30,6 +32,17 @@ const TeamMember = ({
     } else {
       return null; // სხვა ლინკების შემთხვევაში დამატებით შეგიძლია დაამატო სხვა აიკონები ან გაუმკლავდე სხვანაირად
     }
+  };
+
+  const handleContactClick = () => {
+    navigate("/contact"); // გადადით contact გვერდზე
+  
+    setTimeout(() => {
+      const contactSection = document.getElementById("contactForm");
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 100); 
   };
 
   return (
@@ -61,10 +74,7 @@ const TeamMember = ({
           {TEXTS[language].portfolio}
         </button>
         <br />
-        <button
-          className="contactBtn"
-          onClick={() => window.open(contactLink, "_blank")}
-        >
+        <button className="contactBtn" onClick={handleContactClick}>
           {TEXTS[language].contact}
         </button>
       </div>

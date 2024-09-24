@@ -34,7 +34,8 @@
   text-align: center;
   margin-bottom: 95px;
 }
-.servText h1 {
+.servText h1,
+#webSites {
   color: #ff6392;
   text-align: center;
   font-family: "Montserrat Alternates";

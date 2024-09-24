@@ -135,15 +135,21 @@ textarea {
 
 .socNetworks {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-self: center;
-  max-width: 90%;
-  gap: 90px;
+  margin-left: 15%;
+  /* max-width: 90%; */
+  /* gap: 90px; */
 }
 .socNetworks img {
   background: white;
   border-radius: 12px;
   max-width: 25%;
+}
+.socNetworks img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
 }
 .contactLogo {
   align-self: center;

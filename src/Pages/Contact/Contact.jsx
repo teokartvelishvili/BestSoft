@@ -38,15 +38,15 @@ const Contact = () => {
   const validateForm = () => {
     const newErrors = {};
 
-    if (!formData.name.trim()) newErrors.name = "Name is required.";
+    if (!formData.name.trim()) newErrors.name = TEXTS[language].errors.name;
     if (!formData.email.trim()) {
-      newErrors.email = "Email is required.";
+      newErrors.email = TEXTS[language].errors.emailRequired;
     } else if (!validateEmail(formData.email)) {
-      newErrors.email = "Please enter a valid email address.";
+      newErrors.email = TEXTS[language].errors.invalidEmail;
     }
-    if (!formData.phone.trim()) newErrors.phone = "Phone number is required.";
-    if (!formData.subject.trim()) newErrors.subject = "Subject is required.";
-    if (!formData.message.trim()) newErrors.message = "Message is required.";
+    if (!formData.phone.trim()) newErrors.phone = TEXTS[language].errors.phone;
+    if (!formData.subject.trim()) newErrors.subject = TEXTS[language].errors.subject;
+    if (!formData.message.trim()) newErrors.message = TEXTS[language].errors.message;
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -81,75 +81,70 @@ const Contact = () => {
         <div className="border"></div>
       </div>
       <div className="sect2Contact">
-        <p>
-          We're here to help you bring your digital visions to life. Whether you
-          have a project in mind, need technical support, or just want to learn
-          more about our services, feel free to reach out to us. We look forward
-          to hearing from you!
-        </p>
-        <h1>{TEXTS[language]?.reachOut || "Reach Out to Us"}</h1>
+        <p>{TEXTS[language].introText}</p>
+        <h1 id="contactForm">{TEXTS[language].reachOut}</h1>
 
         <form onSubmit={handleSubmit} className="contact-form">
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">{TEXTS[language].formLabels.name}:</label>
           <input
             type="text"
             id="name"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Name"
+            // placeholder={TEXTS[language].formPlaceholders.name}
           />
           {errors.name && <p className="error-message">{errors.name}</p>}
 
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">{TEXTS[language].formLabels.email}:</label>
           <input
             type="email"
             id="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="E-mail"
+            placeholder="abc@gmail.com"
             required
           />
           {errors.email && <p className="error-message">{errors.email}</p>}
 
-          <label htmlFor="phone">Phone Number:</label>
+          <label htmlFor="phone">{TEXTS[language].formLabels.phone}:</label>
           <input
             type="text"
             id="phone"
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            placeholder="Phone Number"
+            placeholder="555 55 55 55 "
             required
           />
           {errors.phone && <p className="error-message">{errors.phone}</p>}
 
-          <label htmlFor="subject">Subject:</label>
+          <label htmlFor="subject">{TEXTS[language].formLabels.subject}:</label>
           <input
             type="text"
             id="subject"
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            placeholder="E.g. UX/UI Design / Front-End development"
+            placeholder={TEXTS[language].formPlaceholders.subject}
             required
           />
           {errors.subject && <p className="error-message">{errors.subject}</p>}
 
-          <label htmlFor="message">Message:</label>
+          <label htmlFor="message">{TEXTS[language].formLabels.message}:</label>
           <textarea
             id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="Text Area"
+            // placeholder={TEXTS[language].formPlaceholders.message}
             required
           />
           {errors.message && <p className="error-message">{errors.message}</p>}
 
           <button type="submit" className="submit-button">
-            Submit
+            {TEXTS[language].formLabels.submit}
           </button>
         </form>
 
@@ -157,45 +152,46 @@ const Contact = () => {
           <div className="submit-overlay">
             <img
               src={submitImage}
-              alt="Submission Successful"
+              alt={TEXTS[language].submissionSuccess}
               className="submit-image"
             />
           </div>
         )}
 
-        <h1>Our Contact Information</h1>
+        <h1>{TEXTS[language].contactInfoTitle}</h1>
         <div className="contact-details">
           <div>
             <strong>
-              <h3>Details: </h3>
+              <h3>{TEXTS[language].detailsTitle}: </h3>
             </strong>
-            <p>Address: BestSoft HQ 1234 Tbilisi, Georgia</p>
-            <p>Phone: +(995) 555 56 86 63</p>
-            <p>Email: contact@bestsoft.com</p>
+            <p>{TEXTS[language].address}</p>
+            <p>{TEXTS[language].phone}</p>
+            <p>{TEXTS[language].email}</p>
           </div>
           <div>
             <strong>
-              <h3>Working Hours: </h3>
+              <h3>{TEXTS[language].workingHoursTitle}: </h3>
             </strong>
 
-            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-            <p>Saturday: 10:00 AM - 4:00 PM</p>
-            <p>Sunday: Closed</p>
+            <p>{TEXTS[language].workingHours.weekdays}</p>
+            <p>{TEXTS[language].workingHours.saturday}</p>
+            <p>{TEXTS[language].workingHours.sunday}</p>
           </div>
         </div>
         <div className="contactTextLast">
-          <h1>Connect with Us</h1>
-          <p>
-            Stay connected and keep up to date with the latest news, updates,
-            and projects from BestSoft. Follow us on social media to join our
-            community and see how we're transforming digital experiences every
-            day.
-          </p>
+          <h1>{TEXTS[language].connectWithUsTitle}</h1>
+          <p>{TEXTS[language].connectWithUsText}</p>
         </div>
         <div className="socNetworks">
-          <img alt="facebook" src={facebook} />
-          <img alt="instagram" src={instagram} />
-          <img alt="linkedin" src={Linkedin} />
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+            <img alt="logo" src={facebook} className="logo" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <img alt="logo" src={instagram} className="logo" />
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+            <img alt="logo" src={Linkedin} className="logo" />
+          </a>
         </div>
 
         <div className="contactLogo">
