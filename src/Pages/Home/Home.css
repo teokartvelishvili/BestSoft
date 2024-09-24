@@ -215,7 +215,9 @@
     font-size: 1.5rem;
     max-width: 100%;
   }
-  .homeCont1Texts h2 {
+  .homeCont1Texts h2,
+  .homeCont1Texts p,
+  .homeCont1Texts img {
     text-align: center;
     align-self: center;
   }
