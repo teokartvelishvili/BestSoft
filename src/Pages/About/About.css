@@ -91,15 +91,16 @@
   /* #ani img {
     margin-bottom: -100px;
   } */
+  .aboutCont1 {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .aboutConts {
     gap: 30px;
   }
-  .aboutCont1 {
-    width: 100%;
-  }
+
   .aboutCont2 h1,
   .aboutCont3 h1,
   #aboutUsMainH1 {

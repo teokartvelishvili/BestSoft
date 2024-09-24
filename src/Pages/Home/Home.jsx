@@ -21,9 +21,10 @@ const Home = () => {
           <div className={`homeCont1Texts ${theme}`}>
             <h2>{TEXTS[language].welcomeText}</h2>
             <br />
+            <img src={mainPoster} alt="mainPoster" className="dsNone" />
             <p>{TEXTS[language].weTransform}</p>
           </div>
-          <img src={mainPoster} alt="" />
+          <img src={mainPoster} alt="mainPoster" className="dsBlock" />
         </div>
 
         <div className={`homeCont2 ${theme}`}>
