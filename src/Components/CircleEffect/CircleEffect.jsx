@@ -18,7 +18,7 @@ const CircleEffect = () => {
     circle.style.top = `${y}px`;
 
     // Define the colors array
-    const colors = ['#ff69b4', '#add8e6', '#ffeb3b', '#1e90ff'];
+    const colors = ['rgba(255, 99, 146, 1)', 'rgba(90, 169, 230, 1)', 'rgba(123, 97, 255, 1)', 'rgba(255, 222, 61, 1)'];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     circle.style.background = randomColor;
 

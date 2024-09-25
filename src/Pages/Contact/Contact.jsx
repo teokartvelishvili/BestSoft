@@ -10,6 +10,7 @@ import instagram from "./images/Instagram (1).png";
 import Linkedin from "./images/LinkedIn.png";
 import contactLogo from "./images/contactLogo.png";
 import submitImage from "./images/submit.png";
+import CircleEffect from "../../Components/CircleEffect/CircleEffect";
 
 const Contact = () => {
   const { theme } = useContext(ThemeContext);
@@ -74,6 +75,7 @@ const Contact = () => {
 
   return (
     <div className="contact">
+       <CircleEffect />
       <div className="servSect1 contactSect1">
         <img
           alt="contactImage"
