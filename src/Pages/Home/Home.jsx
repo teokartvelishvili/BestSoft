@@ -9,6 +9,7 @@ import img29 from "../../Assets/Rectangle 29.png";
 import img30 from "../../Assets/Rectangle 30.png";
 import img31 from "../../Assets/Rectangle 31.png";
 import LinkButton from "../../Components/LinkButton/LinkButton";
+import CircleEffect from "../../Components/CircleEffect/CircleEffect";
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
@@ -16,6 +17,7 @@ const Home = () => {
 
   return (
     <div className={`homeMainCont ${theme}`}>
+      <CircleEffect />
       <div className={`homeConts ${theme}`}>
         <div className={`homeCont1 ${theme}`}>
           <div className={`homeCont1Texts ${theme}`}>
