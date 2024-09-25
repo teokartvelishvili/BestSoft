@@ -9,6 +9,7 @@ import { LanguageContext } from "../src/Hooks/LanguageContext";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Service from "./Pages/Service/Service.jsx";
 import Prices from "./Pages/Prices/Prices.jsx";
+import Calculation from "./Pages/Calculator/Calculation.jsx";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -72,6 +73,14 @@ function App() {
                 element={
                   <Layout>
                     <Contact />
+                  </Layout>
+                }
+              />
+              <Route
+                path="/Calculation"
+                element={
+                  <Layout>
+                    <Calculation/>
                   </Layout>
                 }
               />

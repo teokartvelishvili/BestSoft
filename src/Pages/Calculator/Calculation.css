@@ -1,0 +1,88 @@
+.calculation-page {
+    padding: 3% 10%;
+    background-color: #033f5d;
+    color: #fff;
+    font-family: "Montserrat Alternates", sans-serif;
+  }
+  
+  .calculation-title {
+    text-align: center;
+    color: #ff6392;
+    font-size: 4rem;
+    font-family: "Nanum Brush Script";
+  }
+  
+  .service-category {
+    margin-top: 2rem;
+  }
+  
+  .service-category h2 {
+    background-color: rgba(255, 99, 146, 0.6);
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sub-category {
+    margin-left: 2rem;
+    display: none;
+    flex-direction: column;
+  }
+  
+  .service-category.open .sub-category {
+    display: flex;
+  }
+  
+  .sub-category label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .custom-message-container {
+    margin-top: 2rem;
+  }
+  
+  .custom-message-container textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 2px solid #ff6392;
+    background-color: rgba(255, 99, 146, 0.33);
+    color: #fff;
+    height: 150px;
+  }
+  
+  .submit-section {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .selected-services {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 2px solid #ff6392;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    color: #000;
+  }
+  
+  .submit-button {
+    border-radius: 18px;
+    border: 2px solid #ff6392;
+    background: rgba(255, 99, 146, 0.6);
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #f4c1c7;
+  }
+  

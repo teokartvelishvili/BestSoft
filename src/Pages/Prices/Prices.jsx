@@ -2,6 +2,7 @@ import headPicture from "./head picture.png";
 import "./Prices.css";
 import CircleEffect from "../../Components/CircleEffect/CircleEffect";
 import LinkButton from "../../Components/LinkButton/LinkButton";
+import { Link } from "react-router-dom";
 
 const Prices = () => {
   return (
@@ -42,7 +43,10 @@ const Prices = () => {
             <li>პერსონალური ილუსტრაციები</li>
             <li>წიგნის ილუსტრაციები</li>
           </ul>
+          
+          <Link to="/Calculation">
           <button className="priceButton">კალკულაცია</button>
+          </Link>{" "}
         </div>
         <div className="serviceCard UX">
         <h2>UX/UI დიზაინი</h2>
