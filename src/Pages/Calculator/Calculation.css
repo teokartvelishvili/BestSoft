@@ -1,32 +1,33 @@
 /* ძირითადი სტილები */
 .calculation-page {
   font-family: 'Montserrat', sans-serif;
+  padding: 2rem;
   background-color: white;
-  padding: 10%;
   color: #333;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-h1 {
+.calculation-pageh1 {
   text-align: center;
   color: #ff6392;
   font-size: 3rem;
   font-family: 'Nanum Brush Script', cursive;
 }
 
-h2, h3 {
+.calculation-page h2,
+.calculation-page h3 {
   cursor: pointer;
   margin: 1rem 0;
 }
 
-h2 {
+.calculation-page h2 {
   color: #ff6392;
   font-size: 2rem;
   font-weight: bold;
 }
 
-h3 {
+.calculation-page h3 {
   color: #5aa9e6;
   font-size: 1.5rem;
   padding-left: 20px;
@@ -34,7 +35,7 @@ h3 {
 }
 
 /* ჩეკბოქსების სტილები */
-label {
+.calculation-page label {
   display: block;
   margin: 0.5rem 0;
   padding-left: 40px;
@@ -43,7 +44,7 @@ label {
   color: #333;
 }
 
-input[type="checkbox"] {
+.calculation-page input[type="checkbox"] {
   position: absolute;
   left: 0;
   margin-left: 20px;
@@ -51,7 +52,7 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked + label {
+.calculation-page input[type="checkbox"]:checked + label {
   color: #ff6392;
 }
 
@@ -117,33 +118,33 @@ input[type="checkbox"]:checked + label {
     padding: 1rem;
   }
 
-  h1 {
+  .calculation-page h1 {
     font-size: 2.5rem;
   }
 
-  h2 {
+  .calculation-page h2 {
     font-size: 1.8rem;
   }
 
-  h3 {
+  .calculation-page h3 {
     font-size: 1.3rem;
   }
 
-  label {
+  .calculation-page label {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 600px) {
-  h1 {
+  .calculation-page h1 {
     font-size: 2rem;
   }
 
-  h2 {
+  .calculation-page h2 {
     font-size: 1.5rem;
   }
 
-  h3 {
+  .calculation-page h3 {
     font-size: 1.2rem;
   }
 }
