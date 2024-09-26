@@ -75,6 +75,11 @@
   margin: 10px 0;
   flex-grow: 1;
 }
+@media screen and (max-width: 1100px) {
+  .ge .serviceH2 {
+    font-size: 60px;
+  }
+}
 
 @media (max-width: 768px) {
   .serviceCardsGrid {
@@ -111,6 +116,7 @@
 
   .serviceCardsGrid {
     gap: 30px;
+    padding: 2% 10%;
   }
 
   .serviceCard p {
@@ -119,7 +125,14 @@
 }
 
 @media screen and (max-width: 600px) {
+  .pageService {
+    padding: 2% 0%;
+  }
   .pageService .image {
     height: auto;
+  }
+  .serviceCardsGrid {
+    gap: 30px;
+    padding: 2% 10%;
   }
 }

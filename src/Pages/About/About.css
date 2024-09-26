@@ -49,7 +49,8 @@
 }
 .aboutCont2 h1,
 .aboutCont3 h1,
-#aboutUsMainH1 {
+#aboutUsMainH1,
+.serviceH2 {
   color: rgba(255, 99, 146, 1);
   text-align: center;
   font-family: "3D Unicode", sans-serif;
@@ -61,13 +62,15 @@
 }
 .en .aboutCont2 h1,
 .en .aboutCont3 h1,
-.en #aboutUsMainH1 {
+.en #aboutUsMainH1,
+.ge .serviceH2 {
   font-family: "Nanum Brush Script";
   font-size: 96px;
 }
 .ge .aboutCont2 h1,
 .ge .aboutCont3 h1,
-.ge #aboutUsMainH1 {
+.ge #aboutUsMainH1,
+.ge .serviceH2 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -112,7 +115,8 @@
 
   .aboutCont2 h1,
   .aboutCont3 h1,
-  #aboutUsMainH1 {
+  #aboutUsMainH1,
+  .ge .serviceH2 {
     font-size: 2.5rem;
   }
   .teamMember {
@@ -122,7 +126,8 @@
 @media screen and (max-width: 420px) {
   .aboutCont2 h1,
   .aboutCont3 h1,
-  #aboutUsMainH1 {
+  #aboutUsMainH1,
+  .ge .serviceH2 {
     font-size: 2rem;
     margin-top: 7%;
     font-style: normal;
