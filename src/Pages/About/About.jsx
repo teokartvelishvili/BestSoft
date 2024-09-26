@@ -58,7 +58,7 @@ const About = () => {
           />
           <TeamMember
             name={TEXTS[language].names.teo}
-            title="Front-End and Back-End Developer"
+            title="Full-stack Developer"
             bio={TEXTS[language].teamMembers.teo}
             image={teo}
             portfolioLink="https://nino-portfolio.com"
