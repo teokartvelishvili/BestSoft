@@ -80,10 +80,10 @@ export const TEXTS = {
 რომლებიც ერთად ქმნიან გამორჩეულ და ინოვაციურ ციფრულ გადაწყვეტილებებს.ჩვენი მიზანია არამხოლოდ მაღალი შედეგების მიღწევა, არამედ თქვენი წარმატების სრულფასოვანი უზრუნველყოფა და გამარტივება.
     `,
     teamMembers: {
-      ani: "ანი ბეროშვილი არის გამოცდილი Full-stack  Developer BestSoft-ში, რომელიც გამოირჩევა გამართული და ინტერაქტიული მომხმარებელთა ინტერფეისების შექმნის სიყვარულით. HTML5, CSS3, JavaScript, React,  Angular, node.js, express.js, mongoDB -ის ჩარჩოების სპეციალიზაციის წყალობით, ანი ზუსტად და შემოქმედებითად რეალობად აქცევს ვებსაიტების დიზაინებს. ის  მუშაობს იმისთვის, რომ თითოეული ვებსაიტი იყოს არა მხოლოდ ვიზუალურად მიმზიდველი, არამედ მაღალი ფუნქციონალურობის მქონე, რაც მომხმარებლებს შესანიშნავ ბრაუზინგის გამოცდილებას სთავაზობს. ანის განსაკუთრებული ყურადღება აქვს უახლესი Front-End ტექნოლოგიების მიმართ, რაც უზრუნველყოფს BestSoft-ის გადაწყვეტილებების მუდამ თანამედროვე და ინოვაციური ხასიათის შენარჩუნებას.",
-      teo: "თეონა ქართველიშვილი არის პროფესიონალი ვებ-დეველოპერი, რომლის ტექნიკური უნარები მოიცავს HTML, CSS, JavaScript და React, Angular. მისი სიძლიერე Express.js, Node.js, C# და Python-ში აძლევს მას შესაძლებლობას შექმნას ძლიერი, უსაფრთხო და მასშტაბირებადი სერვერ-საიდუმლო გადაწყვეტილებები. აგრეთვე, ის ფლობს მონაცემთა ბაზებს, მათ შორის MongoDB, Microsoft SQL და PostgreSQL. მისი გამოცდილება UI/UX დიზაინსა და ეთიკურ ჰაკინგში აძლიერებს მომხმარებლის გამოცდილებას და უზრუნველყოფს ციფრული პროდუქტების უსაფრთხოებასა და შესრულებას. თეონას ინოვაციური მიდგომები და დეტალებზე ორიენტირებული მუშაობა მას საიმედო პარტნიორად აქცევს კომპლექსური პროექტების განხორციელებაში.",
-      nino: "მე ვარ ნინო, გრაფიკული და UX/UI დიზაინერი. ვქმნი როგორც გრაფიკულ, ისე მომხმარებელზე ორიენტირებულ ციფრულ გამოცდილებებს, რაც მოიცავს უნიკალურ ბრენდინგს, ლოგოებს და UX/UI დიზაინს. ჩემი მიზანია, შევქმნა ვებსაიტები და აპლიკაციები, რომლებიც არა მხოლოდ ესთეტიკურია, არამედ მარტივი და კომფორტული გამოსაყენებელი.",
-      mari: "მე ვარ მარი გრაფიკული დიზაინერი. ვმუშაობ ვიზუალური ხელოვნების სფეროში და ვქმნი ინოვაციურ ბრენდინგს, ლოგოებს, მარკეტინგულ მასალებს და სოციალურ მედიის გრაფიკას. ჩემი მიზანია, ვიზუალურ იდენტობას შევქმნა ისეთი გამოსახულება, რომელიც ბრენდს უნიკალურობასა და ემოციურ კავშირებს მიანიჭებს.",
+      ani: "ანი არის გამოცდილი Full-stack  Developer BestSoft-ში, რომელიც გამოირჩევა გამართული და ინტერაქტიული მომხმარებელთა ინტერფეისების შექმნის სიყვარულით. HTML5, CSS3, JavaScript, React,  Angular, node.js, express.js, mongoDB -ის ჩარჩოების სპეციალიზაციის წყალობით, ანი ზუსტად და შემოქმედებითად რეალობად აქცევს ვებსაიტების დიზაინებს. ის  მუშაობს იმისთვის, რომ თითოეული ვებსაიტი იყოს არა მხოლოდ ვიზუალურად მიმზიდველი, არამედ მაღალი ფუნქციონალურობის მქონე, რაც მომხმარებლებს შესანიშნავ ბრაუზინგის გამოცდილებას სთავაზობს. ანის განსაკუთრებული ყურადღება აქვს უახლესი Front-End ტექნოლოგიების მიმართ, რაც უზრუნველყოფს BestSoft-ის გადაწყვეტილებების მუდამ თანამედროვე და ინოვაციური ხასიათის შენარჩუნებას.",
+      teo: "თეონა  არის პროფესიონალი ვებ-დეველოპერი, რომლის ტექნიკური უნარები მოიცავს HTML, CSS, JavaScript და React, Angular. მისი სიძლიერე Express.js, Node.js, C# და Python-ში აძლევს მას შესაძლებლობას შექმნას ძლიერი, უსაფრთხო და მასშტაბირებადი სერვერ-საიდუმლო გადაწყვეტილებები. აგრეთვე, ის ფლობს მონაცემთა ბაზებს, მათ შორის MongoDB, Microsoft SQL და PostgreSQL. მისი გამოცდილება UI/UX დიზაინსა და ეთიკურ ჰაკინგში აძლიერებს მომხმარებლის გამოცდილებას და უზრუნველყოფს ციფრული პროდუქტების უსაფრთხოებასა და შესრულებას. თეონას ინოვაციური მიდგომები და დეტალებზე ორიენტირებული მუშაობა მას საიმედო პარტნიორად აქცევს კომპლექსური პროექტების განხორციელებაში.",
+      nino: "ნინო არის გრაფიკული და UX/UI დიზაინერი. იგი ქმნის როგორც გრაფიკულ, ისე მომხმარებელზე ორიენტირებულ ციფრულ გამოცდილებებს, რაც მოიცავს უნიკალურ ბრენდინგს, ლოგოებსა და UX/UI დიზაინს. მისი მიზანია შექმნას ვებსაიტები და აპლიკაციები, რომლებიც არა მხოლოდ ესთეტიკური იქნება, არამედ მარტივი და კომფორტული გამოსაყენებლად.",
+      mari: "მარი არის გრაფიკული დიზაინერი, რომელიც მუშაობს ვიზუალური ხელოვნების სფეროში. იგი ქმნის ინოვაციურ ბრენდინგს, ლოგოებს, მარკეტინგულ მასალებსა და სოციალურ მედიის გრაფიკას. მისი მიზანია, ვიზუალურ იდენტობას მიანიჭოს ისეთი გამოსახულება, რომელიც ბრენდს უნიკალურობასა და ემოციურ კავშირებს მოუტანს.",
     },
     socialMediaLinks: "სოციალური ქსელები",
     names: {
@@ -93,52 +93,6 @@ export const TEXTS = {
       mari: "მარიამ ლავრელაშვილი",
     },
     portfolio: "პორტფოლიო",
-    frontEnd: "ფრონტ-ენდ დეველოპმენტი",
-    frontEndDescription:
-      "რესპონსიული და ინტერაქტიული ინტერფეისების შექმნა, რომლებიც უზრუნველყოფენ შესანიშნავ მომხმარებლის გამოცდილებას.",
-    overview: "მიმოხილვა",
-    overview1: "შესავალი ფრონტ-ენდ დეველოპმენტში და მისი მნიშვნელობა.",
-    overview2:
-      "ფრონტ-ენდ დეველოპმენტის როლი მომხმარებლის გამოცდილების გაუმჯობესებაში.",
-    technologies: "გამოყენებული ტექნოლოგიები",
-    technologies1: "HTML, CSS, SCSS, JavaScript, Typescript",
-    technologies2:
-      "ფრეიმვორკები და ბიბლიოთეკები: React, Angular, Next.js, Bootstrap და სხვა.",
-    keyFeatures: "მნიშვნელოვანი მახასიათებლები",
-    keyFeatures1: "რესპონსიული დიზაინი",
-    keyFeatures2: "ბრაუზერის მრავალფუნქციურობა",
-    keyFeatures3: "წარმადობის ოპტიმიზაცია",
-    keyFeatures4: "ხელმისაწვდომობა",
-    process: "პროცესი",
-    process1: "საწყისი კონსულტაცია და კლიენტის მოთხოვნების გაგება",
-    process2: "ვაირფრეიმინგი და პროტოტიპირება",
-    process3: "დიზაინი და განვითარება",
-    process4: "ტესტირება და ხარისხის კონტროლი",
-    process5: "განთავსება და მხარდაჭერა",
-    backEnd: "ბექ-ენდ დეველოპმენტი",
-    backEndDescription:
-      "მყარი, მასშტაბირებადი და უსაფრთხო სერვერის მხარის გადაწყვეტილებების განვითარება.",
-    technologiesUsed: "გამოყენებული ტექნოლოგიები",
-    technologiesUsed1: "პროგრამირების ენები: Node.js, Python, C# და სხვა.",
-    technologiesUsed2: "მონაცემთა ბაზები: MsSQL, PostgreSQL, MongoDB და სხვა.",
-    technologiesUsed3: "ფრეიმვორკები: Express, Django, ASP.NET და სხვა.",
-    graphicDesign: "გრაფიკული დიზაინი",
-    graphicDesignDescription:
-      "თვალისმომჭრელი გრაფიკული და ვიზუალური კონტენტის შექმნა.",
-    servicesOffered: "მომსახურებები",
-    servicesOffered1: "ლოგოს დიზაინი",
-    servicesOffered2: "ბრენდინგი და იდენტობა",
-    servicesOffered3:
-      "ბეჭდვითი დიზაინი (ბროშურები, ფლაერები, პოსტერები და სხვა)",
-    servicesOffered4:
-      "ციფრული დიზაინი (სოციალური მედიის გრაფიკა, ვებ-დიზაინი და სხვა)",
-    uxUiDesign: "UX/UI დიზაინი",
-    uxUiDesignDescription:
-      "ვიზუალურად მიმზიდველი და მომხმარებლისთვის კომფორტული ინტერფეისების შექმნა.",
-    toolsUsed: "გამოყენებული ინსტრუმენტები",
-    toolsUsed1:
-      "დიზაინის ინსტრუმენტები: Sketch, Figma, Adobe XD, InVision და სხვა.",
-    toolsUsed2: "პროტოტიპირების ინსტრუმენტები: Axure, Marvel და სხვა.",
     introText:
       "აქ ვართ, რათა თქვენი ციფრული ხედვები რეალობად ვაქციოთ. თუ გაქვთ პროექტი, გჭირდებათ ტექნიკური მხარდაჭერა ან გსურთ მეტი გაიგოთ ჩვენი სერვისების შესახებ, გთხოვთ, ნუ მოგერიდებათ ჩვენთან დაკავშირება. მოუთმენლად გელით!",
     reachOut: "დაგვიკავშირდით",
@@ -180,6 +134,156 @@ export const TEXTS = {
     connectWithUsTitle: "გახდი ჩვენი გუნდის ნაწილი ",
     connectWithUsText:
       "დარჩით ჩვენთან დაკავშირებული და იყავით მუდმივად ინფორმირებული BestSoft-ის სიახლეებზე, განახლებებსა და პროექტებზე. შემოგვიერთდით სოციალურ ქსელებში, იყავით ჩვენი საზოგადოების ნაწილი და ნახეთ, როგორ ვცვლით ციფრულ გამოცდილებას ყოველდღიურად.",
+    services: {
+      titleHeader: "გაეცანით ჩვენს სერვისებს",
+      frontend: {
+        title: "FRONT - END დეველოპმენტი",
+        description: "ვებ-გვერდისა და აპლიკაციების წინა მხარის განვითარება",
+        features: [
+          "ვებსაიტების შექმნა HTML, CSS და JavaScript/Typescript-ის გამოყენებით",
+          "სივი/პორტფოლიოს საიტები, ლენდინგ ფეიჯები, ბლოგები და ბიზნესის ვებსაიტები",
+          "რეაქტიული (Responsive) დიზაინი, რომელიც ყველა მოწყობილობაზე კარგად გამოიყურება",
+          "ვებ-ანიმაციები და ინტერაქტიული ელემენტები, რაც საიტის ვიზუალურ მხარეს გაამრავალფეროვნებს",
+          "ტექნოლოგიები და ხელსაწყოები (React, Angular, Next.js) რთული ვებსაიტების ან აპლიკაციების შესაქმნელად",
+          "კროს-ბრაუზერული თავსებადობა, რათა საიტი ყველგან კარგად მუშაობდეს",
+        ],
+        uxui: {
+          title: "UX/UI ინტეგრაცია",
+          features: [
+            "UX/UI დიზაინის იმპლემენტაცია და ოპტიმიზაცია, რომ საიტი იყოს მოსახერხებელი და ვიზუალურად მიმზიდველი",
+            "ქსელის ოპტიმიზაცია და გვერდების ჩატვირთვის სისწრაფის გაუმჯობესება",
+            "ინტერაქტიული კომპონენტების დამატება, როგორიცაა ნავიგაცია, ფორმები, ღილაკები და სხვა ელემენტები",
+          ],
+        },
+        optimization: {
+          title: "ვებსაიტების ოპტიმიზაცია",
+          features: [
+            "SEO ოპტიმიზაცია, რათა საიტი საძიებო სისტემებში მაღალ პოზიციაზე იყოს",
+            "პროგრესული ვებ აპლიკაციების (PWA) განვითარება, რომ საიტი იმუშაოს როგორც ნატურალური აპლიკაცია",
+            "ვებსაიტის წვდომის გაუმჯობესება და შშმ პირებისთვის ხელმისაწვდომი დიზაინი",
+          ],
+        },
+        support: {
+          title: "მუდმივი მხარდაჭერა და განახლება",
+          features: [
+            "ვებსაიტის ტექნიკური მხარდაჭერა და რეგულარული განახლებები",
+            "ახალი ფუნქციების დამატება, როგორიცაა ფორუმი, გალერეა, სოციალური მედიის ინტეგრაცია და სხვა",
+            "საიტის რეგულარული ტესტირება და გაუმჯობესება",
+          ],
+        },
+      },
+      backend: {
+        title: "BACK - END დეველოპმენტი",
+        description: "სერვერის მხარის განვითარება და მენეჯმენტი",
+        features: [
+          "ვებ აპლიკაციების სერვერის მხარის განვითარება",
+          "ფორუმი, ბლოგი, კომუნიკაციის სისტემები და ჩეთები",
+          "გადახდის სისტემები, სერვერის არქიტექტურა და API-ების შემუშავება",
+          "მონაცემთა ბაზის დიზაინი და მართვა (SQL და NoSQL)",
+          "უსაფრთხოების მექანიზმების იმპლემენტაცია",
+        ],
+        integration: {
+          title: "ინტეგრაცია და მასშტაბურობა",
+          features: [
+            "მონაცემთა მასშტაბირებადი სისტემების შექმნა",
+            "ქლაუდ სერვისების ინტეგრაცია",
+            "რეალურ დროში მონაცემების მართვა",
+          ],
+        },
+        security: {
+          title: "უსაფრთხოება და შესრულება",
+          features: [
+            "სერვერის უსაფრთხოების გაუმჯობესება",
+            "სერვერის პერფორმანსის ოპტიმიზაცია",
+            "ხარვეზების აღმოფხვრა და სისტემის გაუმჯობესება",
+          ],
+        },
+        support: {
+          title: "მუდმივი მხარდაჭერა და ტექნიკური მომსახურება",
+          features: [
+            "სერვერის და მონაცემთა ბაზის მუდმივი ტექნიკური მხარდაჭერა",
+            "ახალი ფუნქციების დამატება და სისტემის განახლება",
+            "სერვერის რეგულარული მონიტორინგი და გაუმჯობესება",
+          ],
+        },
+      },
+      design: {
+        title: "გრაფიკული დიზაინი",
+        branding: {
+          title: "ლოგოსა და ბრენდის იდენტობის დიზაინი",
+          features: [
+            "ლოგოს შექმნა",
+            "სრული ბრენდ-იდენტობის პაკეტი",
+            "სავიზიტო ბარათები",
+            "სოციალური მედიის ბრენდინგი",
+          ],
+        },
+        print: {
+          title: "ბეჭდვითი დიზაინი",
+          features: [
+            "ბროშურები, ფლაერები და პოსტერი",
+            "პროდუქტის შეფუთვის დიზაინი",
+            "ღონისძიების მასალები",
+            "პროდუქციის დიზაინი",
+          ],
+        },
+        marketing: {
+          title: "მარკეტინგის მასალები",
+          features: [
+            "გაყიდვების პრეზენტაციები და პიჩ-დეკები",
+            "კორპორაციული ბროშურები",
+            "სარეკლამო პოსტერები და ბანერები",
+          ],
+        },
+        illustration: {
+          title: "ილუსტრაციები",
+          features: [
+            "ილუსტრაციები რედაქტორისთვის",
+            "პერსონალური ილუსტრაციები",
+            "წიგნის ილუსტრაციები",
+          ],
+        },
+      },
+      uxui: {
+        title: "UX/UI დიზაინი",
+        ux: {
+          title: "UX დიზაინი",
+          features: [
+            "მომხმარებლის კვლევა",
+            "ინფორმაციის არქიტექტურა",
+            "ვაირფრემები და პროტოტიპები",
+            "მომხმარებლის ტესტირება",
+            "ინტერაქციული დიზაინი",
+          ],
+        },
+        ui: {
+          title: "UI დიზაინი",
+          features: [
+            "ვიზუალური დიზაინი",
+            "რესფონსიული დიზაინი",
+            "დიზაინის სისტემები",
+            "მაღალი ხარისხის მოქაფები",
+          ],
+        },
+        website: {
+          title: "ვებსაიტისა და აპლიკაციის დიზაინი",
+          features: [
+            "ლენდინგ გვერდები",
+            "ეკომერსის გვერდები",
+            "მობილური აპლიკაციის ინტერფეისი",
+          ],
+        },
+        optimization: {
+          title: "განახლება და ოპტიმიზაცია",
+          features: [
+            "UX აუდიტები",
+            "მომხმარებლისთვის მორგებული განახლებები",
+            "A/B ტესტირება",
+          ],
+        },
+      },
+      priceButton: "გამოითვალე ფასი",
+    },
   },
 
   en: {
@@ -255,8 +359,8 @@ export const TEXTS = {
     teamMembers: {
       ani: "Ani Beroshvili is a skilled Front-End Developer at BestSoft, known for her passion for creating responsive and interactive user interfaces. With expertise in HTML5, CSS3, JavaScript,node.js, mongoDB and frameworks such as React, Angular, Next.js and express.js, Ani brings web designs to life with precision and creativity. She is dedicated to ensuring that every website is both visually appealing and highly functional, providing users with an exceptional browsing experience. Ani's commitment to staying updated with the latest front-end technologies ensures that BestSoft's solutions are always cutting-edge.",
       teo: "Teona Kartvelishvili is a professional web developer with expertise in HTML, CSS, JavaScript, React and Angular. Her strength Express.js, Node.js, C# and Python enables her to build robust, secure, and scalable back-end solutions. She is also proficient in databases, including MongoDB, Microsoft SQL, and PostgreSQL.Her experience in UI/UX design and ethical hacking enhances the user experience and ensures security and performance in digital products. Teona's innovative approach and attention to detail make her a reliable partner for executing complex projects.",
-      nino: "I’m Nino, a graphic and UX/UI designer. I’ve been working in both graphic design and user-centered digital experiences, creating unique branding, logos, and responsive UX/UI designs. My aim is to design websites and applications that are not only visually appealing but also simple and intuitive to use.",
-      mari: "I’m Mari, a graphic designer . I have been working in the field of visual arts, creating innovative branding, logos, marketing materials, and social media graphics. My aim is to develop a visual identity that gives a unique and emotional connection to your brand.",
+      nino: "Nino is a graphic and UX/UI designer who has been working in both graphic design and user-centered digital experiences. She creates unique branding, logos, and responsive UX/UI designs. Her aim is to design websites and applications that are not only visually appealing but also simple and intuitive to use.",
+      mari: "Mari is a graphic designer who has been working in the field of visual arts, creating innovative branding, logos, marketing materials, and social media graphics. Her aim is to develop a visual identity that gives a unique and emotional connection to your brand.",
     },
     socialMediaLinks: "Social Media Links ",
     names: {
@@ -266,50 +370,7 @@ export const TEXTS = {
       mari: " Mariam Lavrelashvili",
     },
     portfolio: "Portfolio",
-    frontEnd: "Front-End Development",
-    frontEndDescription:
-      "Building responsive, interactive interfaces that provide an excellent user experience.",
-    overview: "Overview",
-    overview1: "Introduction to front-end development and its importance.",
-    overview2:
-      "Explanation of how front-end development enhances user experience and interaction.",
-    technologies: "Technologies Used",
-    technologies1: "HTML, CSS, JavaScript, Typescript",
-    technologies2:
-      "Frameworks and libraries: React, Angular, Next.js, Bootstrap, etc.",
-    keyFeatures: "Key Features",
-    keyFeatures1: "Responsive design",
-    keyFeatures2: "Cross-browser compatibility",
-    keyFeatures3: "Performance optimization",
-    keyFeatures4: "Accessibility",
-    process: "Process",
-    process1: "Initial consultation and understanding client requirements",
-    process2: "Wireframing and prototyping",
-    process3: "Design and development",
-    process4: "Testing and quality assurance",
-    process5: "Deployment and support",
-    backEnd: "Back-End Development",
-    backEndDescription:
-      "Developing robust, scalable, and secure server-side solutions to power your applications.",
-    technologiesUsed: "Technologies Used",
-    technologiesUsed1: "Programming languages: Node.js, Python, C#, etc.",
-    technologiesUsed2: "Databases: MsSQL, PostgreSQL, MongoDB, etc",
-    technologiesUsed3: "Frameworks: Express, Django, ASP.NET, etc.",
-    graphicDesign: "Graphic Design",
-    graphicDesignDescription:
-      "Creating eye-catching graphics and visual content that leave a lasting impression.",
-    servicesOffered: "Services Offered",
-    servicesOffered1: "Logo design",
-    servicesOffered2: "Branding and identity",
-    servicesOffered3: "Print design (brochures, flyers, posters, etc.)",
-    servicesOffered4:
-      "Digital design (social media graphics, website graphics, etc.)",
-    uxUiDesign: "UX/UI Design",
-    uxUiDesignDescription:
-      "Crafting visually appealing, user-friendly interfaces that reflect your brand identity.",
-    toolsUsed: "Technologies and Tools Used",
-    toolsUsed1: "Design tools: Sketch, Figma, Adobe XD, InVision, etc.",
-    toolsUsed2: "Prototyping tools: Axure, Marvel, etc.",
+
     introText:
       "We're here to help you bring your digital visions to life. Whether you have a project in mind, need technical support, or just want to learn more about our services, feel free to reach out to us. We look forward to hearing from you!",
     reachOut: "Reach Out to Us",
@@ -351,5 +412,154 @@ export const TEXTS = {
     connectWithUsTitle: "Connect with Us",
     connectWithUsText:
       "Stay connected and keep up to date with the latest news, updates, and projects from BestSoft. Follow us on social media to join our community and see how we're transforming digital experiences every day.",
+
+    services: {
+      titleHeader: "Explore Our Services",
+      frontend: {
+        title: "FRONT-END Development",
+        description:
+          "Development of the front side of websites and applications",
+        features: [
+          "Creating websites using HTML, CSS, and JavaScript/Typescript",
+          "CV/portfolio sites, landing pages, blogs, and business websites",
+          "Responsive design that looks good on all devices",
+          "Web animations and interactive elements to enhance the visual aspect",
+          "Technologies and tools (React, Angular, Next.js) for building complex websites or applications",
+          "Cross-browser compatibility to ensure the site works everywhere",
+        ],
+        uxui: {
+          title: "UX/UI Integration",
+          features: [
+            "Implementation and optimization of UX/UI design to make the site user-friendly and visually appealing",
+            "Network optimization and page load speed improvement",
+            "Adding interactive components like navigation, forms, buttons, and more",
+          ],
+        },
+        optimization: {
+          title: "Website Optimization",
+          features: [
+            "SEO optimization to rank high on search engines",
+            "Progressive web applications (PWA) development to work like native apps",
+            "Improving accessibility for users with disabilities",
+          ],
+        },
+        support: {
+          title: "Ongoing Support and Updates",
+          features: [
+            "Technical support and regular updates",
+            "Adding new features like forums, galleries, social media integration, and more",
+            "Regular site testing and improvements",
+          ],
+        },
+      },
+      backend: {
+        title: "BACK-END Development",
+        description: "Development and management of the server side",
+        features: [
+          "Development of the server side of web applications",
+          "Forums, blogs, communication systems, and chats",
+          "Payment systems for purchasing products",
+          "Server architecture design and API development",
+          "Database design and management (SQL and NoSQL)",
+          "Implementation of security mechanisms to protect user data",
+        ],
+        integration: {
+          title: "Integration and Scalability",
+          features: [
+            "Creating scalable systems to handle large user traffic",
+            "Cloud service integration (AWS, Google Cloud, Azure) for reliability and speed",
+            "Real-time data management (WebSockets, chats, notifications)",
+          ],
+        },
+        security: {
+          title: "Security and Performance",
+          features: [
+            "Enhancing server security",
+            "Optimizing server performance",
+            "Bug fixes and system improvements",
+          ],
+        },
+        support: {
+          title: "Ongoing Support and Maintenance",
+          features: [
+            "Technical support for servers and databases",
+            "Regular updates and adding new features",
+            "Server monitoring and improvement",
+          ],
+        },
+      },
+      design: {
+        title: "Graphic Design",
+        branding: {
+          title: "Logo and Brand Identity Design",
+          features: [
+            "Logo creation",
+            "Full brand identity package",
+            "Business cards",
+            "Social media branding",
+          ],
+        },
+        print: {
+          title: "Print Design",
+          features: [
+            "Brochures, flyers, and posters",
+            "Product packaging design",
+            "Event materials",
+            "Merchandise design",
+          ],
+        },
+        marketing: {
+          title: "Marketing Materials",
+          features: [
+            "Sales presentations and pitch decks",
+            "Corporate brochures",
+            "Ad posters and banners",
+          ],
+        },
+        illustration: {
+          title: "Illustrations",
+          features: [
+            "Editorial illustrations",
+            "Personalized illustrations",
+            "Book illustrations",
+          ],
+        },
+      },
+      uxui: {
+        title: "UX/UI Design",
+        ux: {
+          title: "UX Design",
+          features: [
+            "User research",
+            "Information architecture",
+            "Wireframes and prototypes",
+            "User testing",
+            "Interactive design",
+          ],
+        },
+        ui: {
+          title: "UI Design",
+          features: [
+            "Visual design",
+            "Responsive design",
+            "Design systems",
+            "High-fidelity mockups",
+          ],
+        },
+        website: {
+          title: "Website & App Design",
+          features: [
+            "Landing pages",
+            "E-commerce sites",
+            "Mobile app interfaces",
+          ],
+        },
+        optimization: {
+          title: "Optimization & Updates",
+          features: ["UX audits", "User-centered updates", "A/B testing"],
+        },
+      },
+      priceButton: "Calculate Price",
+    },
   },
 };
