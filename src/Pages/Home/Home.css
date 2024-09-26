@@ -58,8 +58,8 @@
   align-items: center;
 }
 .homeCont1 img {
-  width: 45%;
-  height: 65vh;
+  width: 30%;
+  max-height: 100%;
   align-self: center;
 }
 @-moz-document url-prefix() {
@@ -82,8 +82,8 @@
   top: 15%;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   /* height: 50%;
   width: 50%; */
   align-self: flex-start;
@@ -100,19 +100,20 @@
   font-weight: 400;
   line-height: normal;
   font-family: "BPG Irubaqidze", sans-serif;
+  white-space: nowrap;
 }
 .en .homeCont1Texts h2 {
   font-family: "Nanum Brush Script";
-  font-size: 40px;
+  font-size: 52px;
 }
 .ge .homeCont1Texts h2 {
-  font-size: 34px;
+  font-size: 44px;
 }
 
 .homeCont1Texts p {
   text-align: center;
   max-width: 70%;
-  font-size: 1rem;
+  font-size: 1.7rem;
   line-height: 1.1;
   color: rgba(255, 255, 255, 1);
   margin-bottom: 30px;
@@ -163,13 +164,13 @@
   font-size: 16px;
   width: 200px;
   padding: 12px;
-  border: 2px solid rgba(255, 99, 146, 1); 
+  border: 2px solid rgba(255, 99, 146, 1);
   border-radius: 18px;
 }
 
 .priceButton {
   background-color: rgba(255, 99, 146, 0.6);
-  border: 2px solid white; 
+  border: 2px solid white;
 }
 .homeContTexts button:hover,
 .priceButton:hover {
@@ -177,13 +178,33 @@
   background-color: rgba(244, 193, 199, 1);
 }
 
+@media screen and (max-width: 1300px) {
+  .en .homeCont1Texts h2 {
+    font-family: "Nanum Brush Script";
+    font-size: 48px;
+  }
+  .ge .homeCont1Texts h2 {
+    font-size: 40px;
+  }
+
+  .homeCont1Texts p {
+    font-size: 1.4rem;
+  }
+}
 @media screen and (max-width: 1100px) {
   .homeCont1 img {
     height: auto;
     align-self: center;
   }
   .ge .homeCont1Texts h2 {
-    font-size: 26px;
+    font-size: 34px;
+  }
+  .en .homeCont1Texts h2 {
+    font-family: "Nanum Brush Script";
+    font-size: 44px;
+  }
+  .homeCont1Texts p {
+    font-size: 1.1rem;
   }
 }
 
@@ -273,5 +294,23 @@
   .homeCont5 {
     display: flex;
     flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 510px) {
+  .en .homeCont1Texts h2 {
+    font-family: "Nanum Brush Script";
+    font-size: 32px;
+  }
+  .ge .homeCont1Texts h2 {
+    font-size: 26px;
+  }
+
+  .homeCont1Texts p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .homeCont1Texts h2 {
+    white-space: wrap;
   }
 }

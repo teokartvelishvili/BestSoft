@@ -18,94 +18,103 @@
   background-color: rgba(3, 63, 93, 1);
   color: #5aa9e6;
 }
-.pageService ul {
-  margin-left: 20px;
-}
 
 .pageService .image {
   width: 100%;
   height: auto;
 }
-.servBox {
-  display: flex;
-  gap: 10px;
+.serviceCardsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+  margin: 0 auto;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
-.servText {
-  text-align: center;
-  margin-bottom: 95px;
-}
-.servText h1,
-#webSites {
-  color: #ff6392;
-  text-align: center;
-  font-family: "Montserrat Alternates";
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.servText p {
-  text-align: center;
-  font-family: "Montserrat Alternates";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  margin-top: 34px;
-}
-.overview-container {
-  gap: 10px;
+
+.serviceCard {
+  border-radius: 12px;
+  padding: 40px;
+  font-size: 16px;
+  color: white;
   display: flex;
   flex-direction: column;
-  font-family: "Montserrat Alternates";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  justify-content: flex-start;
+  height: 100%;
 }
-.boxImage {
-  max-width: 463px;
-  height: 376px;
+
+.serviceCard:hover {
+  cursor: pointer;
+  transform: scale(1.07);
+  transition: transform 1.8s ease;
 }
-.servBox2 {
-  gap: 30px;
+
+.GD {
+  background-color: rgba(255, 99, 146, 1);
 }
-.lineServ {
-  max-width: 80vw;
+
+.UX {
+  background-color: rgba(90, 169, 230, 1);
 }
-.overview-section ul li {
-  align-items: flex-start;
+
+.FR {
+  background-color: rgba(123, 97, 255, 1);
 }
-@media screen and (max-width: 800px) {
-  .pageService .image {
-    height: auto;
-  }
-  .servBox {
-    flex-direction: column-reverse;
-  }
-  .boxImage {
-    height: auto;
-    align-self: center;
-  }
-  .servSect2 {
-    padding: 2% 8%;
+
+.BK {
+  background-color: rgba(255, 222, 61, 1);
+}
+
+.serviceCard h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.serviceCard p {
+  margin: 10px 0;
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .serviceCardsGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  .pageService h1 {
-    font-size: 2rem;
+  .serviceCard {
+    padding: 30px;
+    font-size: 14px;
   }
-  .overview-container {
-    font-size: 12px;
+
+  .serviceCard h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
   }
-  .boxImage {
-    max-width: 90%;
+
+  .serviceCard:hover {
+    transform: scale(1.05);
+    transition: transform 0.8s ease;
   }
-  .pageService,
-  .contact,
-  .prices {
-    font-size: 1.5rem;
-    padding: 3% 0%;
+}
+
+@media (max-width: 480px) {
+  .serviceCard {
+    padding: 20px;
+    font-size: 13px;
+  }
+
+  .serviceCard h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .serviceCardsGrid {
+    gap: 30px;
+  }
+
+  .serviceCard p {
+    margin: 5px 0;
   }
 }
 
