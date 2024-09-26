@@ -85,6 +85,8 @@
     }
     display: none;
   }
+  .ToggleGR {
+max-width: 80px; }
   .lang {
     width: 120%;
   }

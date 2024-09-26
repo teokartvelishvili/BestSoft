@@ -156,16 +156,23 @@
   justify-content: space-between;
 }
 
-.homeContTexts button {
+.homeContTexts button,
+.priceButton {
   background-color: rgba(255, 99, 146, 0.6);
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
   width: 200px;
   padding: 12px;
-  border: 2px solid rgba(255, 99, 146, 1); /* შავი ფერი ბორდერისთვის */
+  border: 2px solid rgba(255, 99, 146, 1); 
   border-radius: 18px;
 }
-.homeContTexts button:hover {
+
+.priceButton {
+  background-color: rgba(255, 99, 146, 0.6);
+  border: 2px solid white; 
+}
+.homeContTexts button:hover,
+.priceButton:hover {
   cursor: pointer;
   background-color: rgba(244, 193, 199, 1);
 }

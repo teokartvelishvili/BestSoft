@@ -1,0 +1,150 @@
+/* ძირითადი სტილები */
+.calculation-page {
+  font-family: 'Montserrat', sans-serif;
+  padding: 2rem;
+  background-color: white;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.calculation-pageh1 {
+  text-align: center;
+  color: #ff6392;
+  font-size: 3rem;
+  font-family: 'Nanum Brush Script', cursive;
+}
+
+.calculation-page h2,
+.calculation-page h3 {
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.calculation-page h2 {
+  color: #ff6392;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.calculation-page h3 {
+  color: #5aa9e6;
+  font-size: 1.5rem;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+/* ჩეკბოქსების სტილები */
+.calculation-page label {
+  display: block;
+  margin: 0.5rem 0;
+  padding-left: 40px;
+  position: relative;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.calculation-page input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.calculation-page input[type="checkbox"]:checked + label {
+  color: #ff6392;
+}
+
+/* Drop-down list */
+.sub-category {
+  padding-left: 20px;
+  margin-bottom: 1rem;
+}
+
+/* მონიშნული სერვისების სტილები */
+.selected-services {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 2px solid #ff6392;
+  border-radius: 8px;
+}
+
+.selected-services textarea {
+  width: 100%;
+  height: 100px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  resize: none;
+  font-size: 1rem;
+}
+
+/* შეტყობინების ყუთის სტილი */
+.message-box textarea {
+  width: 100%;
+  height: 100px;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: 2px solid #5aa9e6;
+  background-color: #fff;
+  resize: none;
+}
+
+/* ღილაკი */
+.submit-button {
+  margin-top: 2rem;
+  background-color: #ff6392;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submit-button:hover {
+  background-color: #e85680;
+}
+
+/* ადაპტური დიზაინი */
+@media (max-width: 800px) {
+  .calculation-page {
+    padding: 1rem;
+  }
+
+  .calculation-page h1 {
+    font-size: 2.5rem;
+  }
+
+  .calculation-page h2 {
+    font-size: 1.8rem;
+  }
+
+  .calculation-page h3 {
+    font-size: 1.3rem;
+  }
+
+  .calculation-page label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .calculation-page h1 {
+    font-size: 2rem;
+  }
+
+  .calculation-page h2 {
+    font-size: 1.5rem;
+  }
+
+  .calculation-page h3 {
+    font-size: 1.2rem;
+  }
+}
