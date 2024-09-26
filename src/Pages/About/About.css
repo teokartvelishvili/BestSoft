@@ -23,6 +23,7 @@
   flex-direction: column;
   align-items: center;
   gap: 90px;
+  font-family: "Montserrat Alternates";
 }
 .aboutCont1 {
   display: flex;
@@ -64,6 +65,14 @@
   font-family: "Nanum Brush Script";
   font-size: 96px;
 }
+.ge .aboutCont2 h1,
+.ge .aboutCont3 h1,
+.ge #aboutUsMainH1 {
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "BPG Irubaqidze", sans-serif;
+}
 
 .aboutCont3 p {
   text-align: start;
@@ -104,9 +113,21 @@
   .aboutCont2 h1,
   .aboutCont3 h1,
   #aboutUsMainH1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .teamMember {
     gap: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .aboutCont2 h1,
+  .aboutCont3 h1,
+  #aboutUsMainH1 {
+    font-size: 2rem;
+    margin-top: 7%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: "BPG Irubaqidze", sans-serif;
   }
 }

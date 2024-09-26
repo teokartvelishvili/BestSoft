@@ -85,7 +85,7 @@ const Contact = () => {
         <div className="border"></div>
       </div>
       <div className="sect2Contact">
-        <p>{TEXTS[language].introText}</p>
+        <p className="alignCenter">{TEXTS[language].introText}</p>
         <h1 id="contactForm">{TEXTS[language].reachOut}</h1>
 
         <form onSubmit={handleSubmit} className="contact-form">

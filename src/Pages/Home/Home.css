@@ -13,6 +13,9 @@
   font-weight: 500;
   line-height: normal;
 }
+.homeCont1Texts p {
+  font-family: "Montserrat Alternates";
+}
 
 .homeCont1,
 .homeCont2,
@@ -36,7 +39,7 @@
   background-color: rgba(90, 169, 230, 0.6);
 }
 
-.homeCont1 img,
+/* .homeCont1 img, */
 .homeCont2 img,
 .homeCont3 img,
 .homeCont4 img,
@@ -55,8 +58,23 @@
   align-items: center;
 }
 .homeCont1 img {
-  height: 70vh;
+  width: 45%;
+  height: 65vh;
   align-self: center;
+}
+@-moz-document url-prefix() {
+  /* სტილები, რომლებიც უნდა მოქმედებდეს მხოლოდ Firefox-ში */
+  .homeCont1 img {
+    width: 40vw;
+  }
+  .homeCont1Texts h2 {
+    margin-bottom: 3%;
+  }
+  @media screen and (max-width: 800px) {
+    .homeCont1Texts h2 {
+      margin-bottom: 0%;
+    }
+  }
 }
 
 .homeCont1Texts {
@@ -73,16 +91,15 @@
 }
 
 .homeCont1Texts h2 {
-  max-width: 85%; /* გაფართოვებული სიგანე h2-სთვის */
+  max-width: 85%;
   align-items: center;
   text-align: center;
   color: rgba(255, 99, 146, 1);
   text-align: center;
-  font-family: "3D Unicode", sans-serif;
-  font-style: italic;
-  /* font-style: normal; */
+  font-style: normal;
   font-weight: 400;
   line-height: normal;
+  font-family: "BPG Irubaqidze", sans-serif;
 }
 .en .homeCont1Texts h2 {
   font-family: "Nanum Brush Script";
@@ -165,6 +182,9 @@
     height: auto;
     align-self: center;
   }
+  .ge .homeCont1Texts h2 {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -210,6 +230,7 @@
   .homeCont1 {
     align-self: center;
     align-items: center;
+    margin-top: 0%;
   }
 
   .homeCont1Texts,

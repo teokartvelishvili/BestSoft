@@ -28,14 +28,28 @@
 .contact p {
   margin-left: 6%;
 }
+
+.contactTextLast p,
+.alignCenter {
+  text-align: center;
+  font-family: "Montserrat Alternates";
+  font-size: 1.15rem;
+}
 .contact h1 {
   color: #ff6392;
   text-align: center;
-  font-family: "Nanum Brush Script";
   font-size: 6rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-bottom: -20px;
+}
+
+.en .contact h1 {
+  font-family: "Nanum Brush Script";
+}
+.ge .contact h1 {
+  font-family: "BPG Irubaqidze", sans-serif;
 }
 
 .contact-form-container {
@@ -159,9 +173,6 @@ textarea {
   width: 100%;
 }
 
-.contact h1 {
-  padding-bottom: -20px;
-}
 .contactTextLast h1 {
   padding-bottom: 50px;
 }
