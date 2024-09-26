@@ -28,6 +28,7 @@ const Service = () => {
           className="image"
         />
       </div>
+      <h2 className="serviceH2"> გაეცანით ჩვენს სერვისებს</h2>
       <div className="serviceCardsGrid">
         <div className="serviceCard FR">
           <h2>FRONT - END დეველოპმენტი</h2>
