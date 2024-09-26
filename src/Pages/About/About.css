@@ -53,8 +53,8 @@
 .serviceH2 {
   color: rgba(255, 99, 146, 1);
   text-align: center;
-  font-family: "3D Unicode", sans-serif;
-  font-style: italic;
+  /* font-family: "3D Unicode", sans-serif;
+  font-style: italic; */
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
@@ -113,11 +113,17 @@
     gap: 30px;
   }
 
-  .aboutCont2 h1,
-  .aboutCont3 h1,
-  #aboutUsMainH1,
+  .ge .aboutCont2 h1,
+  .ge .aboutCont3 h1,
+  .ge #aboutUsMainH1,
   .ge .serviceH2 {
     font-size: 2.5rem;
+  }
+  .en .aboutCont2 h1,
+  .en .aboutCont3 h1,
+  .en #aboutUsMainH1,
+  .en .serviceH2 {
+    font-size: 2.8rem;
   }
   .teamMember {
     gap: 20px;
