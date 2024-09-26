@@ -1,27 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
+@import url("//cdn.web-fonts.ge/fonts/bpg-irubaqidze/css/bpg-irubaqidze.min.css");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-@font-face {
-  font-family: "3D Unicode";
-  src: url("https://fonts.ge/font_data/638/3D-Unicode.eot"); /* EOT ფაილი ძველი ბრაუზერებისთვის */
-  src: url("https://fonts.ge/font_data/638/3D-Unicode.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE fix */ url("https://fonts.ge/font_data/638/3D-Unicode.woff2")
-      format("woff2"),
-    /* WOFF2 ფაილი */ url("https://fonts.ge/font_data/638/3D-Unicode.woff")
-      format("woff"),
-    /* WOFF ფაილი */ url("https://fonts.ge/font_data/638/3D-Unicode.ttf")
-      format("truetype"),
-    /* TTF ფაილი */
-      url("https://fonts.ge/font_data/638/3D-Unicode.svg#3D-Unicode")
-      format("svg"); /* SVG ფაილი */
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
@@ -31,19 +15,11 @@
   font-style: normal;
 }
 
-/* @font-face {
-  font-family: "ana kalandadze", sans-serif;
-  src: url("./Ana-Kalandadze_2.ttf");
-  font-weight: normal;
-  font-style: italic;
-} */
 body.ge {
   font-family: "BPGNinoMtavruliNormal", sans-serif;
-  /* background-color: rgb(30, 31, 32); */
 }
 body.en {
   font-family: "Montserrat Alternates" !important;
-  /* background-color: rgb(30, 31, 32); */
 }
 .pageService.ge,
 .contact.ge,
