@@ -1,6 +1,7 @@
 .prices {
   display: flex;
   align-items: center;
+  background-color: white;
 }
 
 @media screen and (max-width: 800px) {
