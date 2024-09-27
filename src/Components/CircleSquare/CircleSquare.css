@@ -8,12 +8,7 @@
   border: 1px solid rgba(255, 99, 146, 1);
 }
 .dark .moving-square-with-words {
-  position: relative;
-  width: 90vw;
-  height: 70vh;
   background-color: #5aa9e6;
-  overflow: hidden;
-  border: 1px solid rgba(255, 99, 146, 1);
 }
 
 .pricing-container {
