@@ -1,11 +1,14 @@
 .prices {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: white;
+  padding: 2% 10%;
 }
 
 @media screen and (max-width: 800px) {
   .prices {
     padding: 2% 0%;
+    width: 100vh;
   }
 }

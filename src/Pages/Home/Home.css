@@ -102,6 +102,10 @@
   font-family: "BPG Irubaqidze", sans-serif;
   white-space: nowrap;
 }
+.light .homeCont1Texts h2 {
+  color: #033f5d;
+ 
+}
 .en .homeCont1Texts h2 {
   font-family: "Nanum Brush Script";
   font-size: 52px;
@@ -117,6 +121,9 @@
   line-height: 1.1;
   color: rgba(255, 255, 255, 1);
   margin-bottom: 30px;
+}
+.light .homeCont1Texts p {
+  color: #033f5d;
 }
 
 .homeContTexts {

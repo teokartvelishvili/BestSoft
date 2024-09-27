@@ -1,6 +1,5 @@
 .pageService,
-.contact,
-.prices {
+.contact{
   /* background-color: #fff; */
   padding: 2% 10%;
   display: flex;

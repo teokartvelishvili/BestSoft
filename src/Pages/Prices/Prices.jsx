@@ -9,7 +9,7 @@ const Prices = () => {
   return (
     <div className="prices">
       <CircleEffect />
-      <div className="servSect1 contactSect1 priceSect1">
+      <div className="">
         {/* <img alt="contactImage" src={headPicture} className="image" />{" "} */}
         <CircleSquare/>
         <CalculationPage/>
