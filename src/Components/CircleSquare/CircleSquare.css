@@ -21,7 +21,8 @@
   
   .pricing-letter {
     margin: 0 5px; 
-    font-size: 180px; 
+    font-size: 140px; 
+    font-family: "Montserrat Alternates" ;
     color: rgba(255, 99, 146, 1); 
     text-shadow: 
         3px 3px 0 yellow,  
