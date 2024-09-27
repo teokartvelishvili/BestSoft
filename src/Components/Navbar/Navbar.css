@@ -25,6 +25,7 @@
   position: relative;
   min-width: 120px; /* მინიმალური სიგანე */
   text-align: center; /* ტექსტის ცენტრში გასწორება */
+  color: #033f5d;
 }
 
 .UlCont li a::after {
@@ -116,6 +117,7 @@ hr {
     opacity: 1;
     transform: translateY(0);
   }
+
 
   .hamburger-menu {
     display: block;
