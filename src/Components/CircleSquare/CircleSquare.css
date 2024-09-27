@@ -34,7 +34,7 @@
       -3px 0 0 yellow,   
       0 3px 0 yellow,   
       0 -3px 0 yellow;   
-  z-index: 2;
+  z-index: 1;
   cursor: pointer;
 }
 
