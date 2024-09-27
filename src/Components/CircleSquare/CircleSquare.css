@@ -1,56 +1,53 @@
+/* ძირითადი სტილები */
 .moving-square-with-words {
-    position: relative;
-    width: 90vw;
-    height: 70vh;
-    background-color: rgba(243, 217, 220, 1);
-    overflow: hidden;
-    border: 1px solid  rgba(255, 99, 146, 1);
-  }
-  
-  .pricing-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    background-color: transparent; 
-  }
-  
-  .pricing-letter {
-    margin: 0 5px; 
-    font-size: 140px; 
-    font-family: "Montserrat Alternates" ;
-    color: rgba(255, 99, 146, 1); 
-    text-shadow: 
-        3px 3px 0 yellow,  
-        -3px 3px 0 yellow, 
-        3px -3px 0 yellow, 
-        -3px -3px 0 yellow, 
-        3px 0 0 yellow,    
-        -3px 0 0 yellow,   
-        0 3px 0 yellow,   
-        0 -3px 0 yellow;   
-    /* transition: transform 0.2s ease, color 0.2s ease;  */
-    z-index: 2;
-    cursor: pointer;
+  position: relative;
+  width: 90vw;
+  height: 70vh;
+  background-color: rgba(243, 217, 220, 1);
+  overflow: hidden;
+  border: 1px solid rgba(255, 99, 146, 1);
 }
 
+.pricing-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background-color: transparent; 
+}
 
-  
-  .pricing-letter.hovered {
-    color: rgba(90, 169, 230, 1);
-    /* transform: scale(1.1);  */
+.pricing-letter {
+  margin: 0 5px; 
+  font-size: 140px; 
+  font-family: "Montserrat Alternates";
+  color: rgba(255, 99, 146, 1); 
+  text-shadow: 
+      3px 3px 0 yellow,  
+      -3px 3px 0 yellow, 
+      3px -3px 0 yellow, 
+      -3px -3px 0 yellow, 
+      3px 0 0 yellow,    
+      -3px 0 0 yellow,   
+      0 3px 0 yellow,   
+      0 -3px 0 yellow;   
+  z-index: 2;
+  cursor: pointer;
+}
+
+.pricing-letter.hovered {
+  color: rgba(90, 169, 230, 1);
+}
+
+@media (max-width: 768px) {
+  .pricing-letter {
+      font-size: 70px;
+      pointer-events: none;    
   }
-  
-  .moving-circle {
-    transition: transform 0.2s ease-out;
+  .moving-square-with-words {
+      height: 50vh; 
   }
-  
-  .moving-word {
-    transition: transform 0.2s ease-out;
-    
-  }
-  
+}
