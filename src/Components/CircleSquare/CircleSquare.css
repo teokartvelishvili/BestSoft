@@ -42,17 +42,3 @@
   color: rgba(90, 169, 230, 1);
 }
 
-@media (max-width: 768px) {
-  .moving-square-with-words{
-    width: 100vw;
-    height: 50vh
-  }
-  .pricing-letter {
-      font-size: 70px;
-      pointer-events: none;  
-      margin: 0;
-  }
-  .moving-square-with-words {
-      height: 50vh; 
-  }
-}
