@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './CircleSquare.css';
 
-const colors = ['rgba(255, 99, 146, 1)', 'rgba(90, 169, 230, 1)', 'rgba(123, 97, 255, 1)', 'rgba(255, 222, 61, 1)'];
+const colors = ['rgba(255, 99, 146, 1)', 'rgba(3, 63, 93, 1)', 'rgba(123, 97, 255, 1)', 'rgba(255, 222, 61, 1)'];
 const words = ['HTML', 'CSS', 'JS', 'React','Angular', 'Next.js', 'Node.js', 'C#', 'Python', 'MongoDB', 'SQL', 'UX/UI', 'Figma', 'Photoshop', 'Illustrator'];
 const getRandomDirection = () => Math.random() * 0.3 - 0.15; // Slower random direction between -0.15 and 0.15
 const sizes = [40, 80, 120, 160]; // Small, Medium, Large, Extra Large

@@ -14,7 +14,9 @@
 }
 
 .dark .pageService,
-.dark .contact {
+.dark .contact,
+.dark .prices,
+.dark .calculation-page {
   background-color: rgba(3, 63, 93, 1);
   color: #5aa9e6;
 }
