@@ -29,7 +29,8 @@ const Home = () => {
 
         <div className={`homeCont2 ${theme}`}>
           <div className={`homeContTexts ${theme}`}>
-            <h1>{TEXTS[language].frontEnd}</h1>
+            <h1>{TEXTS[language].webSites} </h1>
+            <h5>({TEXTS[language].frontEnd})</h5>
             <p>{TEXTS[language].frontEndDescription}</p>
             <img src={img28} alt="html/js/php" className="dsNone" />
             <LinkButton
@@ -45,7 +46,8 @@ const Home = () => {
 
         <div className={`homeCont3 ${theme}`}>
           <div className={`homeContTexts ${theme}`}>
-            <h1>{TEXTS[language].backEnd}</h1>
+            <h1>{TEXTS[language].appHelp}</h1>
+            <h5>({TEXTS[language].backEnd})</h5>
             <p>{TEXTS[language].backEndDescription}</p>
             <img src={img29} alt="computer" className="dsNone" />
             <LinkButton

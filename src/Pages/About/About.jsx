@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { ThemeContext } from "../../Hooks/ThemeContext";
 import { LanguageContext } from "../../Hooks/LanguageContext";
 import { TEXTS } from "../../Hooks/Languages";
 import "./About.css";
+import CollapsibleText from "../../Components/CollapsibleText/CollapsibleText";
 import TeamMember from "../../Components/TeamMember/TeamMember";
 import aboutPoster from "../../Assets/aboutPagePoster.png";
 import aboutPosterdark from "../../Assets/aboutPagePosterDark.png";
@@ -27,19 +28,18 @@ const About = () => {
         </div>
         <div className={`aboutCont2 ${theme}`}>
           <h1 className="colorPink">{TEXTS[language].aboutUs}</h1>
-          <p>{TEXTS[language].aboutP1}</p>
+          <CollapsibleText text={TEXTS[language].aboutP1} />
         </div>
 
         <div className={`aboutCont3 ${theme}`}>
           <h1 className="colorPink">{TEXTS[language].mission}</h1>
-          <p>{TEXTS[language].vision}</p>
-
-          <p>{TEXTS[language].mission2}</p>
+          <CollapsibleText text={TEXTS[language].vision} />
+          <CollapsibleText text={TEXTS[language].mission2} />
         </div>
 
         <div className={`members ${theme}`}>
           <h1 id="aboutUsMainH1"> {TEXTS[language].meetTeam}</h1>
-          <p>{TEXTS[language].team}</p>
+          <CollapsibleText text={TEXTS[language].team} />
 
           <TeamMember
             name={TEXTS[language].names.ani}
