@@ -152,7 +152,8 @@
   /* word-spacing: 3px;  */
   letter-spacing: 1.1px; /* ასოებს შორის 1px მანძილი */
 }
-.homeContTexts p {
+.homeContTexts p,
+h5 {
   color: rgba(90, 169, 230, 1);
 }
 .homeCont2,
