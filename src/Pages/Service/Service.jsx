@@ -7,6 +7,7 @@ import darkImage1 from "./Images/serviceImageDark.png";
 import lightImage1 from "./Images/serviceImage.png";
 import LinkButton from "../../Components/LinkButton/LinkButton";
 import { Link } from "react-router-dom";
+import BigAnimLogo from "../../Components/BigAnimLogo/BigAnimLogo";
 const Service = () => {
   const { theme } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
@@ -20,6 +21,7 @@ const Service = () => {
 
   return (
     <div className={`pageService ${theme}`}>
+      <BigAnimLogo />
       <div className="servSect1">
         <img
           alt="serviceImage"

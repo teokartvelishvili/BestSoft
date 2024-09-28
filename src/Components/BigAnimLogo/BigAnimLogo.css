@@ -1,0 +1,62 @@
+/* საერთო სტილები */
+.bolt-container {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .bolt-image {
+    width: 100%;
+    animation: spin 10s linear infinite;
+  }
+  
+  /* სურათის ზომების შესაბამისი კლასი */
+  .small {
+    width: 50px;
+  }
+  
+  .medium {
+    width: 100px;
+  }
+  
+  .large {
+    width: 150px;
+  }
+  
+  /* ტრიალის მიმართულებები */
+  .rotate-right .bolt-image {
+    animation-direction: normal;
+  }
+  
+  .rotate-left .bolt-image {
+    animation-direction: reverse;
+  }
+  
+  /* ანიმაციის საკვანძო კადრები */
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* ძირითადი კომპონენტის განლაგების სტილები */
+  .main-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .top-bolt {
+    margin-bottom: -20px; /* საშუალო ჭანჭიკის ქვედა დაშორება */
+    margin-left: 180px;
+  }
+  
+  .bottom-bolts {
+    display: flex;
+    gap: 0px; /* ჭანჭიკების შორის დაშორების შემცირება */
+    width: 80px; /* ბოლტების კონტეინერის სიგანე */
+  }
+  
