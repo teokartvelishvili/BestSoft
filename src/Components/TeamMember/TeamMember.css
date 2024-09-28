@@ -63,21 +63,23 @@
   font-weight: 700;
   line-height: normal;
   text-align: center;
-  text-shadow: 0px 4px 4px rgba(255, 99, 146, 0.78);
 }
 .teamMemberInfo button:hover {
   cursor: pointer;
   background-color: rgba(244, 193, 199, 1);
+  transform: scale(1.05);
+  text-shadow: 0px 4px 4px rgba(255, 99, 146, 0.78);
 }
 .teamMemberInfo button:nth-of-type(2) {
   background-color: transparent;
   color: rgba(90, 169, 230, 1);
   border: 2px solid rgba(90, 169, 230, 1);
+}
+.teamMemberInfo button:nth-of-type(2):hover {
+  box-shadow: 0px 4px 4px #5aa9e6;
+  transform: scale(1.05);
   text-shadow: 0px 4px 4px #5aa9e6;
 }
-/* .teamMemberInfo button:nth-of-type(2):hover {
-  background-color: rgba(244, 193, 199, 1);
-} */
 
 .teamMemberInfo h2,
 .teamMemberInfo p {
@@ -86,6 +88,9 @@
 
 .teamMemberInfo h1 {
   font-family: "Montserrat Alternates";
+}
+button {
+  transition: transform 0.4s ease;
 }
 
 @media (max-width: 800px) {
