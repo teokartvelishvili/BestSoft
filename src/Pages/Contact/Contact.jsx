@@ -55,27 +55,58 @@ const Contact = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (validateForm()) {
       setSubmitted(true);
-      setTimeout(() => {
-        setSubmitted(false);
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: "",
+
+      // Prepare form data for Formspree
+      const formDataToSend = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        subject: formData.subject,
+        message: formData.message,
+      };
+
+      try {
+        const response = await fetch("https://formspree.io/f/xyzgrjly", {
+          // Correct Formspree endpoint
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formDataToSend),
         });
-      }, 5000);
+
+        if (response.ok) {
+          console.log("Form submitted successfully");
+          // Optionally reset form fields after submission
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            subject: "",
+            message: "",
+          });
+
+          // Show submitted image for 5 seconds
+          setTimeout(() => {
+            setSubmitted(false);
+          }, 5000);
+        } else {
+          console.error("Error submitting the form");
+        }
+      } catch (error) {
+        console.error("Submission error:", error);
+      }
     }
   };
 
   return (
     <div className="contact">
-       <CircleEffect />
+      <CircleEffect />
       <div className="servSect1 contactSect1">
         <img
           alt="contactImage"

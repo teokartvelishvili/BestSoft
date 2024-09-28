@@ -1,6 +1,5 @@
 .pageService,
-.contact
-{
+.contact {
   /* background-color: #fff; */
   padding: 2% 5%;
   display: flex;
@@ -87,6 +86,13 @@
   border: 2px solid rgba(255, 255, 255, 1);
   border-radius: 18px;
   margin-top: 5%;
+  transition: transform 0.2s ease;
+}
+.priceButton:hover {
+  box-shadow: 0px 4px 4px #dce5ec;
+  background-color: transparent;
+  transform: scale(1.05);
+  text-shadow: 0px 4px 4px #dce5ec;
 }
 .pageService a {
   align-self: center;
