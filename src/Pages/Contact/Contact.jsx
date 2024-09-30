@@ -32,8 +32,33 @@ const Contact = () => {
     return regex.test(email);
   };
 
+  // const handleChange = (e) => {
+  //   setFormData({ ...formData, [e.target.name]: e.target.value });
+  // };
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+
+    // შეასრულე ვალიდაცია ყოველი ცვლილებისას
+    const newErrors = { ...errors };
+
+    if (!value.trim()) {
+      newErrors[name] = TEXTS[language].errors[name];
+    } else {
+      delete newErrors[name];
+    }
+
+    if (name === "email" && value.trim() && !validateEmail(value)) {
+      newErrors.email = TEXTS[language].errors.invalidEmail;
+    }
+
+    if (name === "phone" && value.trim().length < 9) {
+      newErrors.phone = TEXTS[language].errors.invalidPhoneLength;
+    } else if (name === "phone") {
+      delete newErrors.phone;
+    }
+
+    setErrors(newErrors);
   };
 
   const validateForm = () => {
@@ -45,15 +70,23 @@ const Contact = () => {
     } else if (!validateEmail(formData.email)) {
       newErrors.email = TEXTS[language].errors.invalidEmail;
     }
-    if (!formData.phone.trim()) newErrors.phone = TEXTS[language].errors.phone;
+    if (!formData.phone.trim()) {
+      newErrors.phone = TEXTS[language].errors.phone;
+    } else if (formData.phone.trim().length < 9) {
+      newErrors.phone = TEXTS[language].errors.invalidPhoneLength;
+    }
     if (!formData.subject.trim())
       newErrors.subject = TEXTS[language].errors.subject;
     if (!formData.message.trim())
       newErrors.message = TEXTS[language].errors.message;
 
     setErrors(newErrors);
+
     return Object.keys(newErrors).length === 0;
   };
+  console.log(TEXTS[language].errors);
+  console.log(language);
+  console.log(errors); // აქ ჩანს თუ შევსებულია errors ობიექტი
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -127,6 +160,7 @@ const Contact = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
+            className={errors.name ? "input-error" : ""}
             // placeholder={TEXTS[language].formPlaceholders.name}
           />
           {errors.name && <p className="error-message">{errors.name}</p>}
@@ -139,7 +173,6 @@ const Contact = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder="abc@gmail.com"
-            required
           />
           {errors.email && <p className="error-message">{errors.email}</p>}
 
@@ -151,7 +184,6 @@ const Contact = () => {
             value={formData.phone}
             onChange={handleChange}
             placeholder="555 55 55 55 "
-            required
           />
           {errors.phone && <p className="error-message">{errors.phone}</p>}
 
@@ -163,7 +195,6 @@ const Contact = () => {
             value={formData.subject}
             onChange={handleChange}
             placeholder={TEXTS[language].formPlaceholders.subject}
-            required
           />
           {errors.subject && <p className="error-message">{errors.subject}</p>}
 
@@ -174,7 +205,6 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
             // placeholder={TEXTS[language].formPlaceholders.message}
-            required
           />
           {errors.message && <p className="error-message">{errors.message}</p>}
 
