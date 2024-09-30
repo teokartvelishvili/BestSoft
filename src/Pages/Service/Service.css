@@ -22,7 +22,7 @@
 
 .pageService .image {
   width: 100%;
-  height: auto;
+  height: 55vh;
 }
 .serviceCardsGrid {
   display: grid;
