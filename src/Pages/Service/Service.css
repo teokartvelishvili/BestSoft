@@ -38,20 +38,38 @@
   border-radius: 12px;
   padding: 40px;
   font-size: 16px;
-  color: #757575;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
+}
+
+.light .serviceCard {
   background-color: #f9f9f9;
   box-shadow: 0px 4px 4px #e0e0e0;
+  color: #757575;
+}
+.dark .serviceCard {
+  background-color: #1e90ff;
+  /* background: #a0d468; */
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.1);
 }
 .serviceCard h2,
 .serviceCard h3 {
   color: #0d47a1;
 }
-.serviceH2 {
+.dark .serviceCard h2,
+.dark .serviceCard h3 {
+  color: #004b87;
+}
+.light .serviceH2 {
   color: #333333;
+}
+
+.dark .serviceH2 {
+  color: #5aa9e6;
 }
 .serviceCard:hover {
   cursor: pointer;
@@ -87,8 +105,7 @@
 }
 .priceButton {
   min-width: 100%;
-  background: #1e88e5;
-  color: #ffffff;
+
   font-size: 16px;
   width: 200px;
   padding: 12px;
@@ -98,11 +115,21 @@
   transition: transform 0.2s ease;
   border: none;
 }
+
+.light .priceButton {
+  background: #1565c0;
+  color: #ffffff;
+}
+
 .priceButton:hover {
   box-shadow: 0px 4px 4px #1565c0;
-  background-color: #1565c0;
+  background-color: #1e88e5;
   transform: scale(1.01);
   /* text-shadow: 0px 4px 4px #dce5ec; */
+}
+.dark .priceButton {
+  background: #ff9800;
+  color: #ffffff;
 }
 .pageService a {
   align-self: center;
