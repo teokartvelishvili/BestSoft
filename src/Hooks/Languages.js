@@ -145,14 +145,14 @@ export const TEXTS = {
           "ვებსაიტების შექმნა HTML, CSS და JavaScript/Typescript-ის გამოყენებით",
           "სივი/პორტფოლიოს საიტები, ლენდინგ ფეიჯები, ბლოგები და ბიზნესის ვებსაიტები",
           "რეაქტიული (Responsive) დიზაინი, რომელიც ყველა მოწყობილობაზე კარგად გამოიყურება",
-          "ვებ-ანიმაციები და ინტერაქტიული ელემენტები, რაც საიტის ვიზუალურ მხარეს გაამრავალფეროვნებს",
-          "ტექნოლოგიები და ხელსაწყოები (React, Angular, Next.js) რთული ვებსაიტების ან აპლიკაციების შესაქმნელად",
-          "კროს-ბრაუზერული თავსებადობა, რათა საიტი ყველგან კარგად მუშაობდეს",
+          "ვებ-ანიმაციები და ინტერაქტიული ელემენტები",
+          "ტექნოლოგიები და ხელსაწყოები (React, Angular, Next.js)",
+          "კროს-ბრაუზერული თავსებადობა",
         ],
         uxui: {
           title: "UX/UI ინტეგრაცია",
           features: [
-            "UX/UI დიზაინის იმპლემენტაცია და ოპტიმიზაცია, რომ საიტი იყოს მოსახერხებელი და ვიზუალურად მიმზიდველი",
+            "UX/UI დიზაინის იმპლემენტაცია და ოპტიმიზაცია",
             "ქსელის ოპტიმიზაცია და გვერდების ჩატვირთვის სისწრაფის გაუმჯობესება",
             "ინტერაქტიული კომპონენტების დამატება, როგორიცაა ნავიგაცია, ფორმები, ღილაკები და სხვა ელემენტები",
           ],
@@ -161,8 +161,7 @@ export const TEXTS = {
           title: "ვებსაიტების ოპტიმიზაცია",
           features: [
             "SEO ოპტიმიზაცია, რათა საიტი საძიებო სისტემებში მაღალ პოზიციაზე იყოს",
-            "პროგრესული ვებ აპლიკაციების (PWA) განვითარება, რომ საიტი იმუშაოს როგორც ნატურალური აპლიკაცია",
-            "ვებსაიტის წვდომის გაუმჯობესება და შშმ პირებისთვის ხელმისაწვდომი დიზაინი",
+            "პროგრესული ვებ აპლიკაციების (PWA) განვითარება",
           ],
         },
         support: {
@@ -427,14 +426,14 @@ export const TEXTS = {
           "Creating websites using HTML, CSS, and JavaScript/Typescript",
           "CV/portfolio sites, landing pages, blogs, and business websites",
           "Responsive design that looks good on all devices",
-          "Web animations and interactive elements to enhance the visual aspect",
-          "Technologies and tools (React, Angular, Next.js) for building complex websites or applications",
-          "Cross-browser compatibility to ensure the site works everywhere",
+          "Web animations and interactive elements",
+          "Technologies and tools (React, Angular, Next.js)",
+          "Cross-browser compatibility",
         ],
         uxui: {
           title: "UX/UI Integration",
           features: [
-            "Implementation and optimization of UX/UI design to make the site user-friendly and visually appealing",
+            "Implementation and optimization of UX/UI design",
             "Network optimization and page load speed improvement",
             "Adding interactive components like navigation, forms, buttons, and more",
           ],
@@ -443,8 +442,7 @@ export const TEXTS = {
           title: "Website Optimization",
           features: [
             "SEO optimization to rank high on search engines",
-            "Progressive web applications (PWA) development to work like native apps",
-            "Improving accessibility for users with disabilities",
+            "Progressive web applications (PWA) development",
           ],
         },
         support: {
