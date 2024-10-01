@@ -47,14 +47,14 @@
 
 .light .serviceCard {
   background-color: rgba(243, 217, 220, 1);
-  box-shadow: 0px 4px 4px #e0e0e0;
+  box-shadow: 0px 4px 4px rgb(245 225 227);
   color: #4a4a4a;
 }
 .dark .serviceCard {
   background-color: #033f5d;
   /* background: #a0d468; */
   color: #e0e0e0;
-  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px #add8e6;
 }
 .serviceCard h2,
 .serviceCard h3 {
@@ -69,7 +69,7 @@
 }
 
 .dark .serviceH2 {
-  color: #5aa9e6;
+  color: rgba(255, 99, 146, 1);
 }
 .serviceCard:hover {
   cursor: pointer;
@@ -121,17 +121,24 @@
   color: #ffffff;
 }
 .dark .priceButton {
-  background: #0d47a1;
-  color: #add8e6;
+  background-color: rgba(255, 99, 146, 0.6);
+  color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(255, 99, 146, 1);
+  border-radius: 18px;
 }
 
 .priceButton:hover {
-  box-shadow: 0px 4px 4px #0d47a1;
+  /* box-shadow: 0px 4px 4px #0d47a1; */
   /* background-color: #1e88e5; */
   transform: scale(1.01);
-  text-shadow: 0px 4px 4px #0d47a1;
-  background: #f3d9dc;
-  color: #0d47a1;
+  /* text-shadow: 0px 4px 4px #0d47a1; */
+  /* background: #f3d9dc;
+  color: #0d47a1; */
+  cursor: pointer;
+}
+.dark .priceButton:hover {
+  background-color: rgba(244, 193, 199, 1);
+  color: rgba(3, 63, 93, 1);
 }
 .light .priceButton:hover {
   background-color: #1e88e5;
