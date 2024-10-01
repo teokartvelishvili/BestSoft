@@ -8,7 +8,7 @@ import lightImage1 from "./Images/serviceImage.png";
 import LinkButton from "../../Components/LinkButton/LinkButton";
 import { Link } from "react-router-dom";
 import BigAnimLogo from "../../Components/BigAnimLogo/BigAnimLogo";
-import serviceImg from "./serviceImg.png";
+import serviceImg from "./servImage.png";
 import serviceImg2 from "./serviceImg2.webp";
 
 const Service = () => {
