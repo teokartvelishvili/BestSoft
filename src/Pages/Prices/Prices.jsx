@@ -10,11 +10,11 @@ const Prices = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 800);
     };
 
     window.addEventListener("resize", handleResize);
-    
+
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -27,6 +27,7 @@ const Prices = () => {
           <img alt="contactImage" src={headPicture} className="image" />
         ) : null}
         {!isMobile && <CircleSquare />}
+
         <CalculationPage />
       </div>
     </div>

@@ -2,6 +2,9 @@
   padding: 3% 10%;
 }
 
+.disNone {
+  display: none;
+}
 .contactSect1 {
   position: relative;
 }
@@ -81,8 +84,8 @@ label {
   font-size: 1.2rem;
 }
 
-input,
-textarea {
+.contact input,
+.contact textarea {
   width: 100%;
   padding: 1rem;
   border-radius: 12px;
@@ -95,8 +98,8 @@ textarea {
   background: rgba(255, 255, 255, 0.5);
 }
 
-input::placeholder,
-textarea::placeholder {
+.contact input::placeholder,
+.contact textarea::placeholder {
   color: #c4c4c4;
 }
 
