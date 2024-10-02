@@ -245,6 +245,14 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
       </div>
       <div className="CalcSection2">
         <form onSubmit={handleSubmit} className="contact-form">
+        <div className="selected-services">
+            <h3>მონიშნული სერვისები:</h3>
+            <textarea
+              value={selectedServices.join(", ")}
+              readOnly
+              placeholder="აქ გამოჩნდება მონიშნული სერვისები..."
+            />
+          </div>
           <label htmlFor="email">{TEXTS[language].formLabels.email}:</label>
           <input
             type="email"
@@ -266,14 +274,7 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
             placeholder="555 55 55 55 "
           />
           {errors?.phone && <p className="error-message">{errors.phone}</p>}
-          <div className="selected-services">
-            <h3>მონიშნული სერვისები:</h3>
-            <textarea
-              value={selectedServices.join(", ")}
-              readOnly
-              placeholder="აქ გამოჩნდება მონიშნული სერვისები..."
-            />
-          </div>
+          
 
           <div className="message-box">
             <label>

@@ -6,6 +6,7 @@
 }
 .calculation-page textarea {
   width: 100%;
+  height: auto;
 }
 .CalcSection2 {
   margin-top: 80px;
@@ -31,7 +32,6 @@
 }
 .categories {
   display: flex;
- 
   min-width: 100%;
   justify-content: center;
   gap: 10vw;
@@ -73,7 +73,7 @@
   display: block;
 }
 
-.submit-button {
+.submit2-button {
   background-color: #156eb3;
   color: #fff;
   border: none;
@@ -83,7 +83,7 @@
   margin-top: 20px;
 }
 
-.submit-button:hover {
+.submit2-button:hover {
   background-color: #104a85;
 }
 .calculation-page input[type="checkbox"] {
@@ -144,11 +144,10 @@
   border: 2px solid #ff6392;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width: 800px) {
   .categories {
-    
     flex-wrap: wrap;
-    
+
     gap: 1vw;
   }
 }
