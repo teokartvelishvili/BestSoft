@@ -11,6 +11,7 @@ import Linkedin from "./images/LinkedIn.png";
 import contactLogo from "./images/contactLogo.png";
 import submitImage from "./images/submit.png";
 import CircleEffect from "../../Components/CircleEffect/CircleEffect";
+import CalculationPage from "../Calculator/Calculation";
 
 const Contact = () => {
   const { theme } = useContext(ThemeContext);
@@ -274,6 +275,14 @@ const Contact = () => {
         <div className="contactLogo">
           <img alt="logo" src={contactLogo} />
         </div>
+      </div>
+      <div className="disNone">
+        <CalculationPage
+          formData={formData}
+          handleChange={handleChange}
+          handleSubmit={handleSubmit}
+          errors={errors}
+        />
       </div>
     </div>
   );
