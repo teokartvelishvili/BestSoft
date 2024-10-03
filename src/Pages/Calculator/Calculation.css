@@ -4,6 +4,24 @@
   flex-direction: column;
   align-items: center;
 }
+.calculation-page h1 {
+  color: #ff6392;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.en .calculation-page h1 {
+  font-family: "Nanum Brush Script";
+}
+.ge .calculation-page h1 {
+  font-family: "BPG Irubaqidze", sans-serif;
+}
+
 .calculation-page textarea {
   width: 100%;
   height: auto;
@@ -21,12 +39,23 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  color: #fff;
+
   cursor: pointer;
   border-radius: 20px 20px 0px 0px;
   border: 2px solid #ff6392;
-  background: rgba(255, 99, 146, 0.5);
 }
+.light .calculation-page .category h2,
+.light .calculation-page .category h3 {
+  background: rgba(255, 99, 146, 0.5);
+  color: #fff;
+}
+
+.dark .calculation-page .category h2,
+.dark .calculation-page .category h3 {
+  background: rgba(90, 169, 230, 0.5);
+  color: #ff6392;
+}
+
 .calculation-page .category h3 {
   border-radius: 0px 0px 0px 0px;
   border: none;
@@ -35,7 +64,7 @@
 .categories {
   display: flex;
   flex-wrap: wrap;
-  min-width: 60%;
+  width: 50%;
   justify-content: center;
   gap: 1px;
 }
@@ -51,20 +80,32 @@
   border-radius: 5px;
   margin-bottom: 10px;
 }
-.CalcSection2 textarea::placeholder,
-.CalcSection2 input::placeholder {
-  color: #ff6392;
+.light .CalcSection2 textarea::placeholder,
+.light .CalcSection2 input::placeholder {
+  color: #f4c3d2;
+}
+.dark .CalcSection2 textarea::placeholder,
+.dark .CalcSection2 input::placeholder {
+  color: #5e9bba;
 }
 .calcForm {
   gap: 0.5rem;
+  width: 50%;
 }
 .CalcSection2 textarea,
 .CalcSection2 input {
   color: #ff6392;
-  border: 1px solid rgba(255, 99, 146, 1);
-  padding: 2px 7px;
-  border-radius: 5px;
+  border: 3px solid rgba(255, 99, 146, 1);
+  padding: 10px 7px;
+  border-radius: 5%;
+  font-weight: bold;
 }
+.dark .CalcSection2 textarea,
+.dark .CalcSection2 input {
+  color: #033f5d;
+  font-weight: bold;
+}
+
 .CalcSection2 label {
   font-size: 15px;
 }
@@ -132,8 +173,14 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: white;
+  background: #0d47a1;
   transform: translate(-50%, -50%);
+}
+.light .calculation-page input[type="checkbox"]:checked::after {
+  background: #0d47a1;
+}
+.dark .calculation-page input[type="checkbox"]:checked::after {
+  background: #ff6392;
 }
 .sub-category-content.expand label {
   flex-direction: row-reverse;
@@ -166,6 +213,9 @@
   flex-direction: column;
   display: flex;
   border: 1px solid pink;
+}
+.dark .sub-category-content.expand {
+  color: #fff;
 }
 
 @media screen and (max-width: 800px) {
