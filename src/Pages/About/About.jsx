@@ -17,7 +17,7 @@ const About = () => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <div className={`aboutMainCont ${theme}`}>
+    <div id="aboutPage" className={`aboutMainCont ${theme}`}>
       <div className={`aboutConts ${theme}`}>
         <div className={`aboutCont1 ${theme}`}>
           <img

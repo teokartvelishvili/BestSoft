@@ -19,7 +19,7 @@ const Prices = () => {
   }, []);
 
   return (
-    <div className="prices">
+    <div id="pricesPage" className="prices">
       {!isMobile && <CircleEffect />}
 
       <div className="servSect1 contactSect1 priceSect1">

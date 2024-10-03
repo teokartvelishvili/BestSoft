@@ -24,7 +24,7 @@ const Service = () => {
   };
 
   return (
-    <div className={`pageService ${theme}`}>
+    <div id="servicePage" className={`pageService ${theme}`}>
       <BigAnimLogo />
       <div className="servSect1">
         <img

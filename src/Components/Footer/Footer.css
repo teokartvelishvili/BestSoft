@@ -1,3 +1,11 @@
+.footerLinkButton {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
 .footerContainer {
   display: flex;
   flex-direction: column;
@@ -68,24 +76,28 @@
   line-height: 1.9;
 }
 
-.footerContent2 li a {
+.footerContent2 li a,
+.footerLinkButton {
   text-decoration: none;
   color: #033f5d;
 }
 
-.dark .footerContent2 li a {
+.dark .footerContent2 li a,
+.dark .footerLinkButton {
   color: rgba(90, 169, 230, 1);
 }
 
 .dark .footerContent2 li a:hover,
+.dark .footerLinkButton:hover,
 .dark .footerContent3 ul li:hover {
   color: rgb(144, 192, 229);
 }
 
 .footerContent2 li a:hover,
+.footerLinkButton:hover,
 .footerContent3 ul li:hover {
   text-decoration: none;
-  color: #033f5d;
+  color: #006a9e;
 }
 .footerContent3 ul {
   text-align: start;
