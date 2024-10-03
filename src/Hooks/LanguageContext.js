@@ -1,4 +1,4 @@
-// LanguageContext.js
+
 import { createContext, useContext, useEffect, useState } from "react";
 
 export const LanguageContext = createContext({});
