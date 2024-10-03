@@ -9,7 +9,7 @@
   height: auto;
 }
 .CalcSection2 {
-  margin-top: 80px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -34,9 +34,10 @@
 }
 .categories {
   display: flex;
-  min-width: 100%;
+  flex-wrap: wrap;
+  min-width: 60%;
   justify-content: center;
-  gap: 10vw;
+  gap: 1px;
 }
 .category {
   width: 100%;
