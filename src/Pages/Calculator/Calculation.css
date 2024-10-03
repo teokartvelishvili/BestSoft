@@ -29,6 +29,8 @@
 }
 .calculation-page .category h3 {
   border-radius: 0px 0px 0px 0px;
+  border: none;
+  margin-bottom: 0.1px;
 }
 .categories {
   display: flex;
@@ -47,6 +49,23 @@
   color: #fff;
   border-radius: 5px;
   margin-bottom: 10px;
+}
+.CalcSection2 textarea::placeholder,
+.CalcSection2 input::placeholder {
+  color: #ff6392;
+}
+.calcForm {
+  gap: 0.5rem;
+}
+.CalcSection2 textarea,
+.CalcSection2 input {
+  color: #ff6392;
+  border: 1px solid rgba(255, 99, 146, 1);
+  padding: 2px 7px;
+  border-radius: 5px;
+}
+.CalcSection2 label {
+  font-size: 15px;
 }
 
 .calculation-page .checkbox-label input {
@@ -71,6 +90,10 @@
 
 .calculation-page .checkbox-label input:checked + .custom-checkbox svg {
   display: block;
+}
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 .submit2-button {
@@ -97,7 +120,7 @@
 }
 
 .calculation-page input[type="checkbox"]:checked {
-  background-color: #156eb3; /* Change background to blue when checked */
+  background-color: #156eb3;
 }
 
 .calculation-page input[type="checkbox"]:checked::after {
@@ -108,15 +131,15 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: white; /* Change check icon color to white */
+  background: white;
   transform: translate(-50%, -50%);
 }
-
 .sub-category-content.expand label {
   flex-direction: row-reverse;
   display: flex;
   justify-content: space-between;
-  margin: 10px 22px;
+  padding: 10px 22px;
+  border-bottom: 1px solid pink;
 }
 
 .icon {
@@ -141,7 +164,7 @@
   opacity: 1;
   flex-direction: column;
   display: flex;
-  border: 2px solid #ff6392;
+  border: 1px solid pink;
 }
 
 @media screen and (max-width: 800px) {
