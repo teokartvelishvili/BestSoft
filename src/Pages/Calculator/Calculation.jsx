@@ -244,42 +244,43 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
         </div>
       </div>
       <div className="CalcSection2">
-        <form onSubmit={handleSubmit} className="contact-form">
-        <div className="selected-services">
-            <h3>მონიშნული სერვისები:</h3>
+        <form onSubmit={handleSubmit} className="contact-form calcForm">
+          <div className="selected-services">
+            {/* <h3>მონიშნული სერვისები:</h3> */}
             <textarea
               value={selectedServices.join(", ")}
               readOnly
-              placeholder="აქ გამოჩნდება მონიშნული სერვისები..."
+              placeholder="არჩეული სერვისები..."
             />
           </div>
-          <label htmlFor="email">{TEXTS[language].formLabels.email}:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData?.email}
-            onChange={handleChange}
-            placeholder="abc@gmail.com"
-          />
-          {errors?.email && <p className="error-message">{errors.email}</p>}
-
-          <label htmlFor="phone">{TEXTS[language].formLabels.phone}:</label>
-          <input
-            type="text"
-            id="phone"
-            name="phone"
-            value={formData?.phone}
-            onChange={handleChange}
-            placeholder="555 55 55 55 "
-          />
-          {errors?.phone && <p className="error-message">{errors.phone}</p>}
-          
-
+          <div className="column">
+            <label htmlFor="email">{TEXTS[language].formLabels.email}:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData?.email}
+              onChange={handleChange}
+              placeholder="abc@gmail.com"
+            />
+            {errors?.email && <p className="error-message">{errors.email}</p>}
+          </div>
+          <div className="column">
+            <label htmlFor="phone">{TEXTS[language].formLabels.phone}:</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              value={formData?.phone}
+              onChange={handleChange}
+              placeholder="555 55 55 55 "
+            />
+            {errors?.phone && <p className="error-message">{errors.phone}</p>}
+          </div>
           <div className="message-box">
             <label>
               დამატებითი შეტყობინება:
-              <textarea placeholder="აქ შეგიძლიათ დამატებითი შეტყობინება დაამატოთ..." />
+              <textarea placeholder="დამატებითი მოთხოვნები" />
             </label>
           </div>
 
