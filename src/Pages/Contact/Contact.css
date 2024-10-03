@@ -83,6 +83,10 @@ label {
   color: #ff6392;
   font-size: 1.2rem;
 }
+/* .dark label {
+  color: #fff;
+  font-size: 1.2rem;
+} */
 
 .contact input,
 .contact textarea {
@@ -98,9 +102,13 @@ label {
   background: rgba(255, 255, 255, 0.5);
 }
 
-.contact input::placeholder,
-.contact textarea::placeholder {
+.light .contact input::placeholder,
+.light .contact textarea::placeholder {
   color: #c4c4c4;
+}
+.dark .contact input::placeholder,
+.dark .contact textarea::placeholder {
+  color: #033f5d;
 }
 
 textarea {
@@ -218,7 +226,8 @@ textarea {
   .socNetworks {
     gap: 25px;
   }
-  .contact h1 {
+  .contact h1,
+  .calculation-page h1 {
     font-size: 4rem;
   }
   .contact-details {
@@ -237,10 +246,12 @@ textarea {
   .contact-form {
     width: 100%;
   }
-  .en .contact h1 {
+  .en .contact h1,
+  .en .calculation-page h1 {
     font-size: 3rem;
   }
-  .ge .contact h1 {
+  .ge .contact h1,
+  .ge .calculation-page h1 {
     font-size: 2rem;
   }
 

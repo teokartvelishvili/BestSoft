@@ -122,6 +122,14 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
                 />
                 სოციალური მედიის ბრენდინგი
               </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="ილუსტრაციები"
+                  onChange={handleCheckboxChange}
+                />
+                ილუსტრაციები
+              </label>
             </div>
 
             <h3 onClick={() => handleSubCategoryClick("webDesign")}>
@@ -183,26 +191,34 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
               <label>
                 <input
                   type="checkbox"
-                  name="HTML/CSS"
+                  name="CV/Portfolio"
                   onChange={handleCheckboxChange}
                 />
-                HTML/CSS
+                CV/Portfolio საიტი
               </label>
               <label>
                 <input
                   type="checkbox"
-                  name="React"
+                  name="5 გვერდამდე"
                   onChange={handleCheckboxChange}
                 />
-                React
+                5 გვერდამდე ბლოგის ტიპის საიტი
               </label>
               <label>
                 <input
                   type="checkbox"
-                  name="Responsive Design"
+                  name="5+ გვერდი"
                   onChange={handleCheckboxChange}
                 />
-                Responsive Design
+                5+ გვერდი ფუნქციური საიტი
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="E-commerce"
+                  onChange={handleCheckboxChange}
+                />
+                E-commerce ტიპის საიტი
               </label>
             </div>
 
@@ -218,26 +234,34 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
               <label>
                 <input
                   type="checkbox"
-                  name="Node.js"
+                  name="ენის თარგმნა"
                   onChange={handleCheckboxChange}
                 />
-                Node.js
+                ენის თარგმნა
               </label>
               <label>
                 <input
                   type="checkbox"
-                  name="SQL Database"
+                  name="თემის ცვლილება"
                   onChange={handleCheckboxChange}
                 />
-                SQL Database
+                თემის ცვლილება
               </label>
               <label>
                 <input
                   type="checkbox"
-                  name="API Development"
+                  name="რეგისტრაცია/ავტორიზაცია"
                   onChange={handleCheckboxChange}
                 />
-                API Development
+                რეგისტრაცია/ავტორიზაცია
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="ადმინ პანელი"
+                  onChange={handleCheckboxChange}
+                />
+                ადმინ პანელი
               </label>
             </div>
           </div>
