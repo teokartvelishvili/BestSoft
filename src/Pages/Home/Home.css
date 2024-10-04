@@ -13,9 +13,6 @@
   font-weight: 500;
   line-height: normal;
 }
-/* .homeCont1Texts p {
-  font-family: "Montserrat Alternates";
-} */
 
 .homeCont1,
 .homeCont2,
@@ -26,9 +23,6 @@
   justify-content: center;
   align-items: flex-start;
   width: 90%;
-}
-.homeCont1{
-  width: 100%;
 }
 .homeCont3,
 .homeCont5 {
@@ -97,7 +91,7 @@
   max-width: 85%;
   align-items: center;
   text-align: center;
-  color: rgb(249, 207, 220);
+  color: rgba(255, 99, 146, 1);
   text-align: center;
   font-style: normal;
   font-weight: 400;
@@ -106,7 +100,7 @@
   white-space: nowrap;
 }
 .light .homeCont1Texts h2 {
-  color: #033f5d;
+  color: #1b0a48;
 }
 .en .homeCont1Texts h2 {
   font-family: "Nanum Brush Script";
@@ -125,7 +119,7 @@
   margin-bottom: 30px;
 }
 .light .homeCont1Texts p {
-  color: #033f5d;
+  color: #1b0a48;
 }
 
 .homeContTexts {
@@ -151,7 +145,7 @@
   margin: 10px auto; /* ზღვარი h2-ის ქვემოთ */
   font-size: 1rem; /* პოტექსტის ზომა */
   line-height: 1.2; /* ხაზებს შორის მანძილი */
-  color: rgba(2, 48, 71, 1);
+  color: #1b0a48;
   /* word-spacing: 3px;  */
   letter-spacing: 1.1px; /* ასოებს შორის 1px მანძილი */
 }

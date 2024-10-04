@@ -1,5 +1,15 @@
 .readMoreBtn {
   border: none;
   background-color: transparent;
-  color: grey;
+  color: rgb(114, 92, 122);
+}
+
+.dark .readMoreBtn {
+  color: #688fad;
+}
+.ge .readMoreBtn {
+  font-family: "firaGo";
+}
+.en .readMoreBtn {
+  font-family: "Montserrat";
 }

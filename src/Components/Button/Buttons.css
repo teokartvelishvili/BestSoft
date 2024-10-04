@@ -40,7 +40,7 @@
   padding: 2% 8%;
 }
 
-.en .contactBtn,
+/* .en .contactBtn,
 .en .ourTeamBtn,
 .en .portfBtn {
   font-family: "Montserrat Alternates";
@@ -49,7 +49,7 @@
 .ge .ourTeamBtn,
 .ge .portfBtn {
   font-family: "BPGNinoMtavruliNormal";
-}
+} */
 .contactBtn:hover {
   cursor: pointer;
   box-shadow: 0px 4px 6px 0px #5aa9e6;
