@@ -11,6 +11,9 @@
   font-weight: 400;
   line-height: normal;
 }
+.serviceH2 {
+  color: rgba(255, 99, 146, 1);
+}
 
 .dark .pageService,
 .dark .contact,
@@ -45,7 +48,7 @@
 }
 
 .light .serviceCard {
-  background-color: rgba(243, 217, 220, 1);
+  background-color: transparent;
   box-shadow: 0px 4px 4px rgb(245 225 227);
   color: #6f648d;
 }
@@ -109,14 +112,16 @@
   padding: 12px;
   /* border: 2px solid rgba(255, 255, 255, 1); */
   border-radius: 18px;
-  margin-top: 5%;
+  margin-top: 7% !important;
   transition: transform 0.2s ease;
   border: none;
 }
 
 .light .priceButton {
-  background: #1b0a48;
-  color: #ffffff;
+  margin: 10px;
+  background-color: rgba(255, 99, 146, 0.6);
+  color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(255, 99, 146, 1);
 }
 .dark .priceButton {
   background-color: rgba(255, 99, 146, 0.6);
@@ -139,8 +144,8 @@
   color: rgba(3, 63, 93, 1);
 }
 .light .priceButton:hover {
-  background-color: #271a4b;
-  color: #f3d9dc;
+  background-color: rgba(248, 46, 107, 0.6);
+  color: #fff;
 }
 
 .pageService a {
