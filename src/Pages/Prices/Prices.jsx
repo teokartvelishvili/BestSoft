@@ -22,14 +22,14 @@ const Prices = () => {
     <div id="pricesPage" className="prices">
       {!isMobile && <CircleEffect />}
 
-      <div className="servSect1 contactSect1 priceSect1">
+      {/* <div className="servSect1 contactSect1 priceSect1">
         {isMobile ? (
           <img alt="contactImage" src={headPicture} className="image" />
         ) : null}
         {!isMobile && <CircleSquare />}
 
-        <CalculationPage />
-      </div>
+      </div> */}
+      <CalculationPage />
     </div>
   );
 };
