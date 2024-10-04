@@ -3,11 +3,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20%;
 }
 .calculation-page h1 {
-  color: #1b0a48;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  color: #ff6392;
+  margin-top: 10%;
+  margin-bottom: 20% !important;
   text-align: center;
   font-size: 6rem;
   font-style: normal;
@@ -48,14 +49,14 @@
 .light .calculation-page .category h2,
 .light .calculation-page .category h3 {
   background: rgba(255, 99, 146, 0.5);
-  color: #1b0a48;
+  color: #3c2d66c9;
   border: 2px solid #ff6392;
 }
 
 .dark .calculation-page .category h2,
 .dark .calculation-page .category h3 {
   background: rgb(90, 169, 230);
-  color: #1b0a48;
+  color: #3c2d66c9;
   border: 2px solid #1b0a48;
 }
 
@@ -85,7 +86,7 @@
 }
 .light .CalcSection2 textarea::placeholder,
 .light .CalcSection2 input::placeholder {
-  color: #1b0a48;
+  color: #b6b0c9;
 }
 .dark .CalcSection2 textarea::placeholder,
 .dark .CalcSection2 input::placeholder {
@@ -99,7 +100,7 @@
 .CalcSection2 textarea,
 .CalcSection2 input {
   color: #1b0a48;
-  border: 3px solid rgba(255, 99, 146, 1);
+  border: 2px solid rgba(255, 99, 146, 1);
   padding: 10px 7px;
   border-radius: 5%;
   font-weight: bold;
@@ -107,7 +108,7 @@
 .dark .CalcSection2 textarea,
 .dark .CalcSection2 input {
   color: #1b0a48;
-  border: 3px solid #1b0a48;
+  border: 2px solid #1b0a48;
   font-weight: bold;
 }
 
@@ -194,9 +195,11 @@
   justify-content: space-between;
   padding: 10px 22px;
   border-bottom: 1px solid pink;
+  align-items: center;
 }
 .dark .sub-category-content.expand label {
   color: #fff;
+  border-bottom: 1px solid #1b0a48;
 }
 
 .icon {
