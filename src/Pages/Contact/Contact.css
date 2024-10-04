@@ -236,6 +236,18 @@ textarea {
   position: relative;
   z-index: 1;
 }
+.contact a,
+.footerContainer a {
+  text-decoration: none;
+}
+.dark .contact a,
+.dark .footerContainer a {
+  color: #5aa9e6;
+}
+.light .contact a,
+.light .footerContainer a {
+  color: #1b0a48;
+}
 
 @media screen and (max-width: 800px) {
   .contact {
