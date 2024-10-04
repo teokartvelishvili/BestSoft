@@ -231,8 +231,14 @@ const Contact = () => {
               <h3>{TEXTS[language].detailsTitle}: </h3>
             </strong>
             <p>{TEXTS[language].address}</p>
-            <p>{TEXTS[language].phone}</p>
-            <p>{TEXTS[language].email}</p>
+            <p>
+              {TEXTS[language].phone}
+              <a href="tel:995551000059">+ (995) 551 00 00 59</a>{" "}
+            </p>
+            <p>
+              {TEXTS[language].email}
+              <a href="mailto:info@bestsoft.ge"> info@bestsoft.ge</a>
+            </p>
           </div>
           <div>
             <strong>

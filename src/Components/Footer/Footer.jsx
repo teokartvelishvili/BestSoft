@@ -122,7 +122,10 @@ const Footer = () => {
                 src={theme === "dark" ? MobileIconDark : MobileIcon}
                 className="logo"
               ></img>
-              <p>+995 555 500 500</p>
+              <p>
+                {" "}
+                <a href="tel:995551000059">+995 551 000 059</a>
+              </p>
             </li>
             <li>
               <img
@@ -130,7 +133,10 @@ const Footer = () => {
                 src={theme === "dark" ? PhoneIcondark : PhoneIcon}
                 className="logo"
               ></img>
-              <p>+995 032 500 500</p>
+              <p>
+                {" "}
+                <a href="tel:995577300480">+995 593 568 663</a>{" "}
+              </p>
             </li>
             <li>
               <img
@@ -138,7 +144,9 @@ const Footer = () => {
                 src={theme === "dark" ? EmailIconDark : EmailIcon}
                 className="logo"
               ></img>
-              <p>BestSoft@gmail.com</p>
+              <p>
+                <a href="mailto:info@bestsoft.ge"> info@bestsoft.ge</a>
+              </p>
             </li>
           </ul>
         </div>

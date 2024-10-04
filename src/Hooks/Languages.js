@@ -127,8 +127,8 @@ export const TEXTS = {
     contactInfoTitle: "ჩვენი საკონტაქტო ინფორმაცია",
     detailsTitle: "დეტალები",
     address: "მისამართი: BestSoft HQ 1234 თბილისი, საქართველო",
-    phone: "ტელეფონი: +(995) 555 56 86 63",
-    email: "ელ.ფოსტა: contact@bestsoft.com",
+    phone: "ტელეფონი: ",
+    email: "ელ.ფოსტა: ",
     workingHoursTitle: "სამუშაო საათები",
     workingHours: {
       weekdays: "ორშაბათი - პარასკევი: 9:00 AM - 6:00 PM",
@@ -408,8 +408,8 @@ export const TEXTS = {
     contactInfoTitle: "Our Contact Information",
     detailsTitle: "Details",
     address: "Address: BestSoft HQ 1234 Tbilisi, Georgia",
-    phone: "Phone: +(995) 555 56 86 63",
-    email: "Email: contact@bestsoft.com",
+    phone: "Phone: ",
+    email: "Email: ",
     workingHoursTitle: "Working Hours",
     workingHours: {
       weekdays: "Monday - Friday: 9:00 AM - 6:00 PM",
