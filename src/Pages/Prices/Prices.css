@@ -5,11 +5,12 @@
   background-color: white;
   padding: 2% 10%;
 }
+.priceSect1 img {
+  width: 100%;
+}
+
 @media screen and (max-width: 800px) {
   .prices {
     padding: 2% 0%;
-  }
-  .priceSect1 img {
-    width: 100%;
   }
 }
