@@ -227,4 +227,13 @@
 
     gap: 1vw;
   }
+  .calcForm {
+    gap: 0.5rem;
+    width: 90%;
+  }
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+  }
 }
