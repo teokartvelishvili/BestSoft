@@ -180,6 +180,10 @@ h5 {
   cursor: pointer;
   background-color: rgba(244, 193, 199, 1);
 }
+.homeCont1 {
+  background-color: rgba(243, 217, 220, 1);
+  width: 100%;
+}
 
 @media screen and (max-width: 1100px) {
   .homeCont1 img {
@@ -204,10 +208,6 @@ h5 {
     height: auto; /* Allow height to adjust based on content */
   }
 
-  .homeCont1 {
-    background-color: rgba(243, 217, 220, 1);
-    width: 100%;
-  }
   .dsNone {
     display: block;
   }

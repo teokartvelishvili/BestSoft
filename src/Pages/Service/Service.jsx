@@ -1,4 +1,3 @@
-
 import React, { useContext } from "react";
 import { ThemeContext } from "../../Hooks/ThemeContext";
 import { LanguageContext } from "../../Hooks/LanguageContext";
@@ -26,13 +25,13 @@ const Service = () => {
   return (
     <div id="servicePage" className={`pageService ${theme}`}>
       <BigAnimLogo />
-      <div className="servSect1">
+      {/* <div className="servSect1">
         <img
           alt="serviceImage"
           src={theme === "dark" ? darkImage1 : serviceImg}
           className="image"
         />
-      </div>
+      </div> */}
       <h2 className="serviceH2">{servicesContent.titleHeader}</h2>
       <div className="serviceCardsGrid">
         {/* Front-End Service Card */}
@@ -68,10 +67,7 @@ const Service = () => {
             to="/Calculation"
             state={{ openCategory: "development", openSubcategory: "frontEnd" }}
           >
-            <LinkButton
-              className="priceButton"
-              sectionId="#categories"
-            >
+            <LinkButton className="priceButton" sectionId="#categories">
               {servicesContent.priceButton}
             </LinkButton>
           </Link>
@@ -110,8 +106,7 @@ const Service = () => {
             to="/Calculation"
             state={{ openCategory: "development", openSubcategory: "backEnd" }}
           >
-            <LinkButton className="priceButton"
-            sectionId="#categories">
+            <LinkButton className="priceButton" sectionId="#categories">
               {servicesContent.priceButton}
             </LinkButton>
           </Link>
@@ -150,9 +145,7 @@ const Service = () => {
             to="/Calculation"
             state={{ openCategory: "design", openSubcategory: "graphicDesign" }}
           >
-            <LinkButton className="priceButton"
-            sectionId="#categories"
-            >
+            <LinkButton className="priceButton" sectionId="#categories">
               {servicesContent.priceButton}
             </LinkButton>
           </Link>
@@ -189,9 +182,7 @@ const Service = () => {
             to="/Calculation"
             state={{ openCategory: "design", openSubcategory: "webDesign" }}
           >
-            <LinkButton className="priceButton"
-            sectionId="#categories"
-            >
+            <LinkButton className="priceButton" sectionId="#categories">
               {servicesContent.priceButton}
             </LinkButton>
           </Link>

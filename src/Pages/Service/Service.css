@@ -66,13 +66,7 @@
 .dark .serviceCard h3 {
   color: #add8e6;
 }
-.light .serviceH2 {
-  color: #1b0a48;
-}
 
-.dark .serviceH2 {
-  color: rgba(255, 99, 146, 1);
-}
 .serviceCard:hover {
   cursor: pointer;
   transform: scale(1.07);
