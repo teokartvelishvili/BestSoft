@@ -25,7 +25,7 @@
   position: relative;
   min-width: 120px; /* მინიმალური სიგანე */
   text-align: center; /* ტექსტის ცენტრში გასწორება */
-  color: #033f5d;
+  color: #1b0a48;
 }
 
 .UlCont li a::after {
@@ -118,7 +118,6 @@ hr {
     transform: translateY(0);
   }
 
-
   .hamburger-menu {
     display: block;
     cursor: pointer;
@@ -152,7 +151,7 @@ hr {
     width: 75%;
   }
   .UlCont li a {
-    color: #023047;
+    color: #1b0a48;
     text-align: end;
   }
   .dark .UlCont li a {
