@@ -8,15 +8,26 @@
   box-sizing: border-box;
 }
 
-@font-face {
+/* @font-face {
   font-family: "BPGNinoMtavruliNormal";
   src: url("./bpg_nino_mtavruli_normal.ttf");
   font-weight: normal;
   font-style: normal;
+} */
+/* firago-latin-400-normal */
+@font-face {
+  font-family: "FiraGO";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(@fontsource/firago/files/firago-latin-400-normal.woff2)
+      format("woff2"),
+    url(@fontsource/firago/files/firago-latin-400-normal.woff) format("woff");
 }
 
 body.ge {
-  font-family: "BPGNinoMtavruliNormal", sans-serif;
+  /* font-family: "BPGNinoMtavruliNormal", sans-serif; */
+  font-family: "FiraGo";
 }
 body.en {
   font-family: "Montserrat Alternates" !important;
@@ -29,7 +40,8 @@ body.en {
 .NavCont.ge,
 footer.ge,
 .header.ge {
-  font-family: "BPGNinoMtavruliNormal", sans-serif !important;
+  /* font-family: "BPGNinoMtavruliNormal", sans-serif !important; */
+  font-family: "FiraGo" !important;
 }
 .pageService.en,
 .contact.en,
