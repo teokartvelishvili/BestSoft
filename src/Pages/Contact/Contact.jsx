@@ -139,7 +139,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div id="contactPage" className="contact">
       <CircleEffect />
       <div className="servSect1 contactSect1">
         <img

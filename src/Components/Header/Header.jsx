@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ThemeContext } from "../../Hooks/ThemeContext";
 import { LanguageContext } from "../../Hooks/LanguageContext";
 import { TEXTS } from "../../Hooks/Languages";
@@ -14,7 +14,28 @@ import gr4 from "../../Assets/Gooey04.png";
 
 const Header = () => {
   const { language, setLanguage } = useContext(LanguageContext);
-  const { theme, toggleTheme } = useContext(ThemeContext); // აქ გამოვიძახებთ toggleTheme
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+
+    if (theme === "dark") {
+      searchParams.set("theme", "dark");
+    } else {
+      searchParams.delete("theme");
+    }
+    
+    if (language === "en") {
+      searchParams.set("lang", "en");
+    } else {
+      searchParams.delete("lang"); 
+    }
+
+    const newSearch = searchParams.toString();
+    navigate(`${location.pathname}${newSearch ? `?${newSearch}` : ""}`, { replace: true });
+  }, [theme, language, location.pathname, navigate]);
 
   const handleLangClick = () => {
     const newLanguage = language === "ge" ? "en" : "ge";
@@ -23,7 +44,7 @@ const Header = () => {
 
   const handleThemeClick = () => {
     const newTheme = theme === "light" ? "dark" : "light";
-    toggleTheme(newTheme); // აქ გამოვიძახებთ toggleTheme-ს, რომელიც კონტექსტშია
+    toggleTheme(newTheme);
   };
 
   return (

@@ -1,3 +1,4 @@
+
 import React, { useContext } from "react";
 import { ThemeContext } from "../../Hooks/ThemeContext";
 import { LanguageContext } from "../../Hooks/LanguageContext";
@@ -23,7 +24,7 @@ const Service = () => {
   };
 
   return (
-    <div className={`pageService ${theme}`}>
+    <div id="servicePage" className={`pageService ${theme}`}>
       <BigAnimLogo />
       <div className="servSect1">
         <img
@@ -34,6 +35,7 @@ const Service = () => {
       </div>
       <h2 className="serviceH2">{servicesContent.titleHeader}</h2>
       <div className="serviceCardsGrid">
+        {/* Front-End Service Card */}
         <div className="serviceCard FR">
           <h2>{servicesContent.frontend.title}</h2>
           <h3>{servicesContent.frontend.description}</h3>
@@ -62,13 +64,20 @@ const Service = () => {
               <li key={index}>{point}</li>
             ))}
           </ul>
-          <Link to="/Calculation">
-            <LinkButton className="priceButton">
+          <Link
+            to="/Calculation"
+            state={{ openCategory: "development", openSubcategory: "frontEnd" }}
+          >
+            <LinkButton
+              className="priceButton"
+              sectionId="#categories"
+            >
               {servicesContent.priceButton}
             </LinkButton>
           </Link>
         </div>
 
+        {/* Backend Service Card */}
         <div className="serviceCard BK">
           <h2>{servicesContent.backend.title}</h2>
           <h3>{servicesContent.backend.description}</h3>
@@ -97,13 +106,18 @@ const Service = () => {
               <li key={index}>{point}</li>
             ))}
           </ul>
-          <Link to="/Calculation">
-            <LinkButton className="priceButton">
+          <Link
+            to="/Calculation"
+            state={{ openCategory: "development", openSubcategory: "backEnd" }}
+          >
+            <LinkButton className="priceButton"
+            sectionId="#categories">
               {servicesContent.priceButton}
             </LinkButton>
           </Link>
         </div>
 
+        {/* Design Service Card */}
         <div className="serviceCard GD">
           <h2>{servicesContent.design.title}</h2>
           <h3>{servicesContent.design.branding.title}</h3>
@@ -132,13 +146,19 @@ const Service = () => {
               )
             )}
           </ul>
-          <Link to="/Calculation">
-            <LinkButton className="priceButton">
+          <Link
+            to="/Calculation"
+            state={{ openCategory: "design", openSubcategory: "graphicDesign" }}
+          >
+            <LinkButton className="priceButton"
+            sectionId="#categories"
+            >
               {servicesContent.priceButton}
             </LinkButton>
           </Link>
         </div>
 
+        {/* UX/UI Service Card */}
         <div className="serviceCard UX">
           <h2>{servicesContent.uxui.title}</h2>
           <h3>{servicesContent.uxui.ux.title}</h3>
@@ -165,8 +185,13 @@ const Service = () => {
               <li key={index}>{point}</li>
             ))}
           </ul>
-          <Link to="/Calculation">
-            <LinkButton className="priceButton">
+          <Link
+            to="/Calculation"
+            state={{ openCategory: "design", openSubcategory: "webDesign" }}
+          >
+            <LinkButton className="priceButton"
+            sectionId="#categories"
+            >
               {servicesContent.priceButton}
             </LinkButton>
           </Link>

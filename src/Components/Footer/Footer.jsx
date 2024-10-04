@@ -4,6 +4,7 @@ import { LanguageContext } from "../../Hooks/LanguageContext";
 import { TEXTS } from "../../Hooks/Languages";
 import { Link } from "react-router-dom";
 import "./Footer.css";
+import LinkButton from "../LinkButton/LinkButton";
 import BSLogo from '../../Assets/BSLogo.png'
 import InstagramIcon from '../../Assets/InstagramIcon.png'
 import FacebookIcon from '../../Assets/FacebookIcon.png';
@@ -57,11 +58,33 @@ const Footer = () => {
         
           <ul>
               <h3>{TEXTS[language].links} </h3>
-                <li><Link to="/">{TEXTS[language].home}</Link> </li>
-                <li><Link to="/Service">{TEXTS[language].service}</Link> </li>
-                <li><Link to="/Prices">{TEXTS[language].prices}</Link> </li>
-                <li><Link to="/About">{TEXTS[language].about}</Link> </li>
-                <li><Link to="/Contact">{TEXTS[language].contact}</Link> </li>
+                <li><Link to="/">        
+                <LinkButton className="footerLinkButton"sectionId="#home">
+              {TEXTS[language].home}
+                </LinkButton></Link> </li>
+                
+                <li><Link to="/Service">
+                <LinkButton className="footerLinkButton"sectionId="#servicePage">
+                {TEXTS[language].service}
+                </LinkButton></Link> </li>
+
+                <li><Link to="/Prices">
+                <LinkButton className="footerLinkButton"sectionId="#pricesPage">
+                {TEXTS[language].prices}
+                </LinkButton>
+                </Link> </li>
+
+                <li><Link to="/About">
+                <LinkButton className="footerLinkButton"sectionId="#aboutPage">
+                {TEXTS[language].about}
+                </LinkButton>
+                </Link> </li>
+
+                <li><Link to="/Contact">
+                <LinkButton className="footerLinkButton"sectionId="#contactPage">
+                {TEXTS[language].contact}
+                </LinkButton>
+                </Link> </li>
             </ul>
         </div>
         <div className={`footerContent3 ${theme}`}>

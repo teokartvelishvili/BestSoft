@@ -15,7 +15,7 @@ const Home = () => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <div className={`homeMainCont ${theme}`}>
+    <div id="home" className={`homeMainCont ${theme}`}>
       <div className={`homeConts ${theme}`}>
         <div className={`homeCont1 ${theme}`}>
           <div className={`homeCont1Texts ${theme}`}>

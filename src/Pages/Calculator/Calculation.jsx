@@ -1,13 +1,31 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "./Calculation.css";
 import { LanguageContext } from "../../Hooks/LanguageContext";
 import { TEXTS } from "../../Hooks/Languages";
+import { useLocation } from "react-router-dom";
 
 const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
   const { language } = useContext(LanguageContext);
+  const location = useLocation();
   const [selectedServices, setSelectedServices] = useState([]);
   const [expandedCategories, setExpandedCategories] = useState({});
   const [expandedSubCategories, setExpandedSubCategories] = useState({});
+
+  useEffect(() => {
+    if (location.state) {
+      const { openCategory, openSubcategory } = location.state;
+      if (openCategory && openSubcategory) {
+        setExpandedCategories((prev) => ({
+          ...prev,
+          [openCategory]: true,
+        }));
+        setExpandedSubCategories((prev) => ({
+          ...prev,
+          [openSubcategory]: true,
+        }));
+      }
+    }
+  }, [location.state]);
 
   const handleCategoryClick = (category) => {
     setExpandedCategories((prev) => {
@@ -18,10 +36,9 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
         [category]: !isCategoryExpanded,
       };
 
-      // თუ კატეგორია იხსნება, დაკეტოს ყველა ქვეკატეგორია
+  
       if (!isCategoryExpanded) {
-        // დავხუროთ ყველა ქვეკატეგორია
-        setExpandedSubCategories({}); // ყველა ქვეკატეგორია დაკეტილი იქნება
+        setExpandedSubCategories({});
       }
 
       return updatedCategories;
@@ -36,10 +53,10 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
         [subCategory]: !isExpanded,
       };
 
-      // Close other expanded sub-categories in the same category
+
       Object.keys(newExpandedSubCategories).forEach((key) => {
         if (key !== subCategory) {
-          newExpandedSubCategories[key] = false; // Close other sections
+          newExpandedSubCategories[key] = false; 
         }
       });
 
@@ -78,8 +95,9 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
 
   return (
     <div className="calculation-page">
-      <h1>ფასების კალკულაცია</h1>
-      <div className="categories">
+      <h1>{TEXTS[language].calculationTitle || "ფასების კალკულაცია"}</h1>
+      <div className="categories" id="categories">
+        {/* Design Category */}
         <div className="category">
           <h2 onClick={() => handleCategoryClick("design")}>
             დიზაინი <CustomIcon isExpanded={expandedCategories.design} />
@@ -89,7 +107,8 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
               expandedCategories.design ? "expand" : ""
             }`}
           >
-            <h3 onClick={() => handleSubCategoryClick("graphicDesign")}>
+            {/* Graphic Design Subcategory */}
+            <h3 id="GD" onClick={() => handleSubCategoryClick("graphicDesign")}>
               გრაფიკული დიზაინი{" "}
               <CustomIcon isExpanded={expandedSubCategories.graphicDesign} />
             </h3>
@@ -132,7 +151,8 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
               </label>
             </div>
 
-            <h3 onClick={() => handleSubCategoryClick("webDesign")}>
+            {/* Web Design Subcategory */}
+            <h3 id="ux" onClick={() => handleSubCategoryClick("webDesign")}>
               ვებ დიზაინი{" "}
               <CustomIcon isExpanded={expandedSubCategories.webDesign} />
             </h3>
@@ -169,6 +189,7 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
           </div>
         </div>
 
+        {/* Development Category */}
         <div className="category">
           <h2 onClick={() => handleCategoryClick("development")}>
             დეველოპმენტი{" "}
@@ -179,7 +200,11 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
               expandedCategories.development ? "expand" : ""
             }`}
           >
-            <h3 onClick={() => handleSubCategoryClick("frontEnd")}>
+            {/* Front-End Subcategory */}
+            <h3
+              id="Front-End"
+              onClick={() => handleSubCategoryClick("frontEnd")}
+            >
               Front-End დეველოპმენტი{" "}
               <CustomIcon isExpanded={expandedSubCategories.frontEnd} />
             </h3>
@@ -222,7 +247,8 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
               </label>
             </div>
 
-            <h3 onClick={() => handleSubCategoryClick("backEnd")}>
+            {/* Back-End Subcategory */}
+            <h3 id="Back-End" onClick={() => handleSubCategoryClick("backEnd")}>
               Back-End დეველოპმენტი{" "}
               <CustomIcon isExpanded={expandedSubCategories.backEnd} />
             </h3>
@@ -266,6 +292,8 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
             </div>
           </div>
         </div>
+
+
       </div>
       <div className="CalcSection2">
         <form onSubmit={handleSubmit} className="contact-form calcForm">
@@ -304,7 +332,12 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
           <div className="message-box">
             <label>
               დამატებითი შეტყობინება:
-              <textarea placeholder="დამატებითი მოთხოვნები" />
+              <textarea
+                name="message"
+                value={formData?.message || ""}
+                onChange={handleChange}
+                placeholder="დამატებითი მოთხოვნები"
+              />
             </label>
           </div>
 
