@@ -5,7 +5,7 @@
   align-items: center;
 }
 .calculation-page h1 {
-  color: #033F5D;
+  color: #1b0a48;
   margin-top: 5%;
   margin-bottom: 5%;
   text-align: center;
@@ -47,13 +47,13 @@
 .light .calculation-page .category h2,
 .light .calculation-page .category h3 {
   background: rgba(255, 99, 146, 0.5);
-  color: #033F5D;
+  color: #1b0a48;
 }
 
 .dark .calculation-page .category h2,
 .dark .calculation-page .category h3 {
   background: rgb(90, 169, 230);
-  color: #033F5D;
+  color: #ff6392;
   border: none;
 }
 
@@ -77,13 +77,13 @@
   align-items: center;
   padding: 10px;
   background-color: #ff6392;
-  color: #033F5D;
+  color: #1b0a48;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 .light .CalcSection2 textarea::placeholder,
 .light .CalcSection2 input::placeholder {
-  color: #033f5d4d;
+  color: #1b0a48;
 }
 .dark .CalcSection2 textarea::placeholder,
 .dark .CalcSection2 input::placeholder {
@@ -95,7 +95,7 @@
 }
 .CalcSection2 textarea,
 .CalcSection2 input {
-  color: #033F5D;
+  color: #1b0a48;
   border: 3px solid rgba(255, 99, 146, 1);
   padding: 10px 7px;
   border-radius: 5%;
@@ -103,14 +103,14 @@
 }
 .dark .CalcSection2 textarea,
 .dark .CalcSection2 input {
-  color: #033f5d;
+  color: #1b0a48;
   font-weight: bold;
   border: none;
 }
 
 .CalcSection2 label {
   font-size: 15px;
-  color: #033F5D;
+  color: #1b0a48;
 }
 
 .calculation-page .checkbox-label input {

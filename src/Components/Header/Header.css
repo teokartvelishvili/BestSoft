@@ -4,19 +4,20 @@
   align-items: center;
   width: 100%;
   background-color: rgba(243, 217, 220, 1);
-  color: #033f5d;
+  /* color: #033f5d; */
+  color: #1b0a48;
   font-size: 20px;
   padding: 4px 6%;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
-/* .en .header {
+.en .header {
   font-family: Montserrat;
 }
 .ge .header {
   font-family: "BPGNinoMtavruliNormal";
-} */
+}
 .dark .header {
   background-color: rgba(2, 48, 71, 1);
   color: rgba(90, 169, 230, 1);

@@ -33,6 +33,7 @@ export const TEXTS = {
     uiUxDesignDescription:
       "ვიზუალურად მიმზიდველი, მოსახერხებელი ინტერფეისის შექმნა, რომელიც ასახავს თქვენი ბრენდის იდენტობას.",
     learnMore: "გაიგე მეტი",
+    close: "დახურვა",
     aboutUs: "ჩვენს შესახებ",
     mission: "ჩვენი მისია და ხედვა",
     meetTeam: "გაიცანით ჩვენი გუნდი",
@@ -322,6 +323,7 @@ export const TEXTS = {
     uiUxDesignDescription:
       "Crafting visually appealing, user-friendly interfaces that reflect your brand identity.",
     learnMore: "Learn more",
+    close: "close",
     aboutUs: "About Us",
     mission: "Our Mission and Vision",
     meetTeam: "Meet Our Team",
@@ -373,7 +375,7 @@ export const TEXTS = {
       nino: "Nino Barjadze",
       mari: " Mariam Lavrelashvili",
     },
-    portfolio: "Portfolio",
+    portfolio: "PORTFOLIO",
 
     introText:
       "We're here to help you bring your digital visions to life. Whether you have a project in mind, need technical support, or just want to learn more about our services, feel free to reach out to us. We look forward to hearing from you!",
