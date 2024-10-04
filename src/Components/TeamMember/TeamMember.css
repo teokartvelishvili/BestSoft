@@ -86,9 +86,9 @@
   margin-top: 3%;
 }
 
-.teamMemberInfo h1 {
+/* .teamMemberInfo h1 {
   font-family: "Montserrat Alternates";
-}
+} */
 button {
   transition: transform 0.4s ease;
 }

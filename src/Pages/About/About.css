@@ -23,7 +23,7 @@
   flex-direction: column;
   align-items: center;
   gap: 90px;
-  font-family: "Montserrat Alternates";
+  /* font-family: "Montserrat Alternates"; */
 }
 .aboutCont1 {
   display: flex;
