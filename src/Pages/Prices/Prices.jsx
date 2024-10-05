@@ -4,8 +4,10 @@ import "./Prices.css";
 import CircleEffect from "../../Components/CircleEffect/CircleEffect";
 import CircleSquare from "../../Components/CircleSquare/CircleSquare";
 import CalculationPage from "../Calculator/Calculation";
+import { useFormContext } from "../../Hooks/FormContext";
 
 const Prices = () => {
+  const { formData, errors, handleChange, handleSubmit } = useFormContext();
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
