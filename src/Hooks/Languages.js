@@ -287,6 +287,7 @@ export const TEXTS = {
       },
       priceButton: "გამოითვალე ფასი",
     },
+    calculationTitle: "ტარიფის კალკულაცია",
   },
 
   en: {
@@ -568,4 +569,5 @@ export const TEXTS = {
       priceButton: "Calculate Price",
     },
   },
+  calculationTitle: "Price Calculation",
 };

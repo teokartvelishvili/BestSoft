@@ -3,11 +3,20 @@ import "./Calculation.css";
 import { LanguageContext } from "../../Hooks/LanguageContext";
 import { TEXTS } from "../../Hooks/Languages";
 import { useLocation } from "react-router-dom";
-
-const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
+import { useForm, useFormContext } from "../../Hooks/FormContext";
+import submitImage from "../Contact/images/submit.png";
+const CalculationPage = () => {
   const { language } = useContext(LanguageContext);
   const location = useLocation();
-  const [selectedServices, setSelectedServices] = useState([]);
+  const {
+    formData,
+    errors,
+    handleChange,
+    handleSubmit,
+    submitted,
+    selectedServices,
+    setSelectedServices,
+  } = useFormContext();
   const [expandedCategories, setExpandedCategories] = useState({});
   const [expandedSubCategories, setExpandedSubCategories] = useState({});
 
@@ -36,7 +45,6 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
         [category]: !isCategoryExpanded,
       };
 
-  
       if (!isCategoryExpanded) {
         setExpandedSubCategories({});
       }
@@ -53,10 +61,9 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
         [subCategory]: !isExpanded,
       };
 
-
       Object.keys(newExpandedSubCategories).forEach((key) => {
         if (key !== subCategory) {
-          newExpandedSubCategories[key] = false; 
+          newExpandedSubCategories[key] = false;
         }
       });
 
@@ -95,7 +102,7 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
 
   return (
     <div className="calculation-page">
-      <h1>{TEXTS[language].calculationTitle || "ფასების კალკულაცია"}</h1>
+      <h1>{TEXTS[language].calculationTitle}</h1>
       <div className="categories" id="categories">
         {/* Design Category */}
         <div className="category">
@@ -292,14 +299,13 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
             </div>
           </div>
         </div>
-
-
       </div>
       <div className="CalcSection2">
         <form onSubmit={handleSubmit} className="contact-form calcForm">
           <div className="selected-services">
             {/* <h3>მონიშნული სერვისები:</h3> */}
             <textarea
+              name="services"
               value={selectedServices.join(", ")}
               readOnly
               placeholder="არჩეული სერვისები..."
@@ -311,7 +317,7 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
               type="email"
               id="email"
               name="email"
-              value={formData?.email}
+              value={formData.email}
               onChange={handleChange}
               placeholder="abc@gmail.com"
             />
@@ -340,9 +346,19 @@ const CalculationPage = ({ handleChange, formData, errors, handleSubmit }) => {
               />
             </label>
           </div>
-
-          <button className="submit-button">გაგზავნა</button>
+          <button type="submit" className="submit-button">
+            {TEXTS[language].formLabels.submit}
+          </button>
         </form>
+        {submitted && (
+          <div className="submit-overlay">
+            <img
+              src={submitImage}
+              alt={TEXTS[language].submissionSuccess}
+              className="submit-image"
+            />
+          </div>
+        )}
       </div>
     </div>
   );
