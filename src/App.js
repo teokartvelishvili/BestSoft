@@ -78,7 +78,7 @@ const AppContent = () => {
                 path="/prices"
                 element={
                   <Layout>
-                    <Prices />
+                    <Prices page="prices" />
                   </Layout>
                 }
               />
@@ -94,7 +94,7 @@ const AppContent = () => {
                 path="/contact"
                 element={
                   <Layout>
-                    <Contact />
+                    <Contact page="contact" />
                   </Layout>
                 }
               />
