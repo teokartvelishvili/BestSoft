@@ -5,6 +5,7 @@ import { TEXTS } from "../../Hooks/Languages";
 import { useLocation } from "react-router-dom";
 import { useForm, useFormContext } from "../../Hooks/FormContext";
 import submitImage from "../Contact/images/submit.png";
+import CircleEffect from "../../Components/CircleEffect/CircleEffect";
 const CalculationPage = () => {
   const { language } = useContext(LanguageContext);
   const location = useLocation();
@@ -121,6 +122,7 @@ const CalculationPage = () => {
 
   return (
     <div className="calculation-page">
+      <CircleEffect />
       <h1>{TEXTS[language].calculationTitle}</h1>
       <div className="categories" id="categories">
         {/* Design Category */}
@@ -161,11 +163,13 @@ const CalculationPage = () => {
                 {TEXTS[language].services2.brandIdentityPackage}
               </label>
               <label>
-                <input
-                  type="checkbox"
-                  name="სოციალური მედიის ბრენდინგი"
-                  onChange={handleCheckboxChange}
-                />
+                <div className="width">
+                  <input
+                    type="checkbox"
+                    name="სოციალური მედიის ბრენდინგი"
+                    onChange={handleCheckboxChange}
+                  />
+                </div>
                 {TEXTS[language].services2.socialMediaBranding}
               </label>
               <label>

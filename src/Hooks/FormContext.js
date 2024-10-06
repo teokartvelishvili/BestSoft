@@ -135,7 +135,7 @@ export const FormProvider = ({ children }) => {
 
           setTimeout(() => {
             setSubmitted(false);
-          }, 5000);
+          }, 3000);
         } else {
           console.error("Error submitting the form", response.statusText);
         }
