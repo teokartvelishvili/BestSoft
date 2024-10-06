@@ -334,7 +334,7 @@ const CalculationPage = () => {
             )}
           </div>
           <div className="column">
-            <label htmlFor="email">{TEXTS[language].formLabels.email}:</label>
+            <label htmlFor="email">{TEXTS[language].formLabel.email}:</label>
             <input
               type="email"
               id="email"
@@ -346,7 +346,7 @@ const CalculationPage = () => {
             {errors?.email && <p className="error-message">{errors.email}</p>}
           </div>
           <div className="column">
-            <label htmlFor="phone">{TEXTS[language].formLabels.phone}:</label>
+            <label htmlFor="phone">{TEXTS[language].formLabel.phone}:</label>
             <input
               type="text"
               id="phone"
@@ -359,7 +359,7 @@ const CalculationPage = () => {
           </div>
           <div className="message-box">
             <label>
-              {TEXTS[language].formLabels.additionalMessage}:
+              {TEXTS[language].formLabel.additionalMessage}:
               <textarea
                 name="message"
                 value={formData?.message || ""}
@@ -372,7 +372,7 @@ const CalculationPage = () => {
             )}
           </div>
           <button type="submit" className="submit-button">
-            {TEXTS[language].formLabels.submit}
+            {TEXTS[language].formLabel.submit}
           </button>
         </form>
         {submitted && (
