@@ -313,7 +313,7 @@ export const TEXTS = {
       registrationAuthorization: "რეგისტრაცია/ავტორიზაცია",
       adminPanel: "ადმინ პანელი",
     },
-    formLabels: {
+    formLabel: {
       email: "ელ. ფოსტა",
       phone: "ტელეფონი",
       additionalMessage: "დამატებითი შეტყობინება",
@@ -633,7 +633,7 @@ export const TEXTS = {
       registrationAuthorization: "Registration/Authorization",
       adminPanel: "Admin Panel",
     },
-    formLabels: {
+    formLabel: {
       email: "Email",
       phone: "Phone",
       additionalMessage: "Additional Message",
