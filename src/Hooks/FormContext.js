@@ -48,6 +48,9 @@ export const FormProvider = ({ children }) => {
     } else if (name === "phone") {
       delete newErrors.phone;
     }
+    if (name === "services" && value.length > 0) {
+      delete newErrors.selectedServices;
+    }
 
     setErrors(newErrors);
   };
@@ -74,6 +77,12 @@ export const FormProvider = ({ children }) => {
     }
     if (!formData.message.trim())
       newErrors.message = TEXTS[language].errors.message;
+    if (selectedServices.length === 0)
+      newErrors.selectedServices = TEXTS[language].errors.selectedServices;
+
+    if (selectedServices.length > 0) {
+      delete newErrors.selectedServices;
+    }
 
     setErrors(newErrors);
 
@@ -133,6 +142,7 @@ export const FormProvider = ({ children }) => {
       value={{
         formData,
         errors,
+        setErrors,
         handleChange,
         handleSubmit,
         submitted,

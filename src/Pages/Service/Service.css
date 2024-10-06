@@ -13,6 +13,7 @@
 }
 .serviceH2 {
   color: rgba(255, 99, 146, 1);
+  margin-top: 7%;
 }
 
 .dark .pageService,
@@ -201,13 +202,13 @@
   }
   .ge .serviceH2 {
     font-size: 40px;
-    margin-top: 1%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .pageService {
     padding: 2% 0%;
+    gap: 0vh;
   }
   .pageService .image {
     height: auto;
