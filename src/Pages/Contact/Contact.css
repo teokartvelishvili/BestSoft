@@ -100,12 +100,13 @@ label {
   border-radius: 12px;
   border: 2px solid #ff6392;
   background: #fff;
-  color: #c4c4c4;
+  color: #1b0a48;
 }
 .dark input,
 .dark textarea {
   background: rgba(255, 255, 255, 0.5);
   border: 2px solid #033f5d;
+  color: #1b0a48;
 }
 
 .light .contact input::placeholder,
@@ -114,7 +115,7 @@ label {
 }
 .dark .contact input::placeholder,
 .dark .contact textarea::placeholder {
-  color: #033f5d;
+  color: #adbec6;
 }
 
 textarea {

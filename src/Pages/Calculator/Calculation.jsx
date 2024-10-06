@@ -16,6 +16,7 @@ const CalculationPage = () => {
     submitted,
     selectedServices,
     setSelectedServices,
+    setErrors,
   } = useFormContext();
   const [expandedCategories, setExpandedCategories] = useState({});
   const [expandedSubCategories, setExpandedSubCategories] = useState({});
@@ -73,11 +74,29 @@ const CalculationPage = () => {
 
   const handleCheckboxChange = (event) => {
     const { name, checked } = event.target;
-    if (checked) {
-      setSelectedServices((prev) => [...prev, name]);
-    } else {
-      setSelectedServices((prev) => prev.filter((service) => service !== name));
-    }
+    setSelectedServices((prev) => {
+      let updatedServices;
+
+      if (checked) {
+        // სერვისი დაემატება, თუ ის უკვე არ არის არჩეული
+        updatedServices = [...prev, name];
+      } else {
+        // სერვისი მოიხსნება, თუ ის არჩეულია
+        updatedServices = prev.filter((service) => service !== name);
+      }
+
+      // ერორის შემოწმება და წაშლა
+      if (updatedServices.length > 0) {
+        // თუ მონიშნულია სერვისი, წავშალოთ ერორი
+        setErrors((prevErrors) => {
+          const newErrors = { ...prevErrors };
+          delete newErrors.selectedServices;
+          return newErrors;
+        });
+      }
+
+      return updatedServices;
+    });
   };
 
   const CustomIcon = ({ isExpanded }) => (
@@ -107,7 +126,8 @@ const CalculationPage = () => {
         {/* Design Category */}
         <div className="category">
           <h2 onClick={() => handleCategoryClick("design")}>
-            დიზაინი <CustomIcon isExpanded={expandedCategories.design} />
+            {TEXTS[language].categories.design}{" "}
+            <CustomIcon isExpanded={expandedCategories.design} />
           </h2>
           <div
             className={`sub-category-content ${
@@ -116,7 +136,7 @@ const CalculationPage = () => {
           >
             {/* Graphic Design Subcategory */}
             <h3 id="GD" onClick={() => handleSubCategoryClick("graphicDesign")}>
-              გრაფიკული დიზაინი{" "}
+              {TEXTS[language].graphicDesign}{" "}
               <CustomIcon isExpanded={expandedSubCategories.graphicDesign} />
             </h3>
             <div
@@ -130,7 +150,7 @@ const CalculationPage = () => {
                   name="ლოგოს შექმნა"
                   onChange={handleCheckboxChange}
                 />
-                ლოგოს შექმნა
+                {TEXTS[language].services2.logoCreation}
               </label>
               <label>
                 <input
@@ -138,7 +158,7 @@ const CalculationPage = () => {
                   name="ბრენდ-იდენტობის პაკეტი"
                   onChange={handleCheckboxChange}
                 />
-                ბრენდ-იდენტობის პაკეტი
+                {TEXTS[language].services2.brandIdentityPackage}
               </label>
               <label>
                 <input
@@ -146,7 +166,7 @@ const CalculationPage = () => {
                   name="სოციალური მედიის ბრენდინგი"
                   onChange={handleCheckboxChange}
                 />
-                სოციალური მედიის ბრენდინგი
+                {TEXTS[language].services2.socialMediaBranding}
               </label>
               <label>
                 <input
@@ -154,13 +174,13 @@ const CalculationPage = () => {
                   name="ილუსტრაციები"
                   onChange={handleCheckboxChange}
                 />
-                ილუსტრაციები
+                {TEXTS[language].services2.illustrations}
               </label>
             </div>
 
             {/* Web Design Subcategory */}
             <h3 id="ux" onClick={() => handleSubCategoryClick("webDesign")}>
-              ვებ დიზაინი{" "}
+              {TEXTS[language].categories.webDesign}{" "}
               <CustomIcon isExpanded={expandedSubCategories.webDesign} />
             </h3>
             <div
@@ -174,7 +194,7 @@ const CalculationPage = () => {
                   name="ლენდინგ გვერდი"
                   onChange={handleCheckboxChange}
                 />
-                ლენდინგ გვერდი
+                {TEXTS[language].services2.landingPage}
               </label>
               <label>
                 <input
@@ -182,7 +202,7 @@ const CalculationPage = () => {
                   name="სივი/პორტფოლიო საიტი"
                   onChange={handleCheckboxChange}
                 />
-                სივი/პორტფოლიო საიტი
+                {TEXTS[language].services2.cvPortfolioSite}
               </label>
               <label>
                 <input
@@ -190,7 +210,7 @@ const CalculationPage = () => {
                   name="ბლოგის საიტი"
                   onChange={handleCheckboxChange}
                 />
-                ბლოგის საიტი
+                {TEXTS[language].services2.blogSite}
               </label>
             </div>
           </div>
@@ -199,7 +219,7 @@ const CalculationPage = () => {
         {/* Development Category */}
         <div className="category">
           <h2 onClick={() => handleCategoryClick("development")}>
-            დეველოპმენტი{" "}
+            {TEXTS[language].categories.development}{" "}
             <CustomIcon isExpanded={expandedCategories.development} />
           </h2>
           <div
@@ -212,7 +232,7 @@ const CalculationPage = () => {
               id="Front-End"
               onClick={() => handleSubCategoryClick("frontEnd")}
             >
-              Front-End დეველოპმენტი{" "}
+              {TEXTS[language].categories.frontEndDevelopment}{" "}
               <CustomIcon isExpanded={expandedSubCategories.frontEnd} />
             </h3>
             <div
@@ -226,7 +246,7 @@ const CalculationPage = () => {
                   name="CV/Portfolio"
                   onChange={handleCheckboxChange}
                 />
-                CV/Portfolio საიტი
+                {TEXTS[language].services2.cvPortfolioSite}
               </label>
               <label>
                 <input
@@ -234,7 +254,7 @@ const CalculationPage = () => {
                   name="5 გვერდამდე"
                   onChange={handleCheckboxChange}
                 />
-                5 გვერდამდე ბლოგის ტიპის საიტი
+                {TEXTS[language].services2.blogSiteUpTo5Pages}
               </label>
               <label>
                 <input
@@ -242,7 +262,7 @@ const CalculationPage = () => {
                   name="5+ გვერდი"
                   onChange={handleCheckboxChange}
                 />
-                5+ გვერდი ფუნქციური საიტი
+                {TEXTS[language].services2.functionalSite5PlusPages}
               </label>
               <label>
                 <input
@@ -250,13 +270,13 @@ const CalculationPage = () => {
                   name="E-commerce"
                   onChange={handleCheckboxChange}
                 />
-                E-commerce ტიპის საიტი
+                {TEXTS[language].services2.eCommerceSite}
               </label>
             </div>
 
             {/* Back-End Subcategory */}
             <h3 id="Back-End" onClick={() => handleSubCategoryClick("backEnd")}>
-              Back-End დეველოპმენტი{" "}
+              {TEXTS[language].categories.backEndDevelopment}{" "}
               <CustomIcon isExpanded={expandedSubCategories.backEnd} />
             </h3>
             <div
@@ -270,7 +290,7 @@ const CalculationPage = () => {
                   name="ენის თარგმნა"
                   onChange={handleCheckboxChange}
                 />
-                ენის თარგმნა
+                {TEXTS[language].services2.languageTranslation}
               </label>
               <label>
                 <input
@@ -278,7 +298,7 @@ const CalculationPage = () => {
                   name="თემის ცვლილება"
                   onChange={handleCheckboxChange}
                 />
-                თემის ცვლილება
+                {TEXTS[language].services2.themeChange}
               </label>
               <label>
                 <input
@@ -286,7 +306,7 @@ const CalculationPage = () => {
                   name="რეგისტრაცია/ავტორიზაცია"
                   onChange={handleCheckboxChange}
                 />
-                რეგისტრაცია/ავტორიზაცია
+                {TEXTS[language].services2.registrationAuthorization}
               </label>
               <label>
                 <input
@@ -294,7 +314,7 @@ const CalculationPage = () => {
                   name="ადმინ პანელი"
                   onChange={handleCheckboxChange}
                 />
-                ადმინ პანელი
+                {TEXTS[language].services2.adminPanel}
               </label>
             </div>
           </div>
@@ -303,13 +323,15 @@ const CalculationPage = () => {
       <div className="CalcSection2">
         <form onSubmit={handleSubmit} className="contact-form calcForm">
           <div className="selected-services">
-            {/* <h3>მონიშნული სერვისები:</h3> */}
             <textarea
               name="services"
               value={selectedServices.join(", ")}
               readOnly
-              placeholder="არჩეული სერვისები..."
+              placeholder={TEXTS[language].placeholder.selectedServices}
             />
+            {errors.selectedServices && (
+              <p className="error-message">{errors.selectedServices}</p>
+            )}
           </div>
           <div className="column">
             <label htmlFor="email">{TEXTS[language].formLabels.email}:</label>
@@ -319,7 +341,7 @@ const CalculationPage = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="abc@gmail.com"
+              placeholder={TEXTS[language].placeholder.email}
             />
             {errors?.email && <p className="error-message">{errors.email}</p>}
           </div>
@@ -331,20 +353,23 @@ const CalculationPage = () => {
               name="phone"
               value={formData?.phone}
               onChange={handleChange}
-              placeholder="555 55 55 55 "
+              placeholder={TEXTS[language].placeholder.phone}
             />
             {errors?.phone && <p className="error-message">{errors.phone}</p>}
           </div>
           <div className="message-box">
             <label>
-              დამატებითი შეტყობინება:
+              {TEXTS[language].formLabels.additionalMessage}:
               <textarea
                 name="message"
                 value={formData?.message || ""}
                 onChange={handleChange}
-                placeholder="დამატებითი მოთხოვნები"
+                placeholder={TEXTS[language].placeholder.additionalMessage}
               />
             </label>
+            {errors.message && (
+              <p className="error-message">{errors.message}</p>
+            )}
           </div>
           <button type="submit" className="submit-button">
             {TEXTS[language].formLabels.submit}
@@ -363,5 +388,4 @@ const CalculationPage = () => {
     </div>
   );
 };
-
 export default CalculationPage;

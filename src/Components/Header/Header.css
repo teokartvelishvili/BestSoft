@@ -76,7 +76,7 @@
   }
 
   .headerLogoCont {
-    transform: translateX(100%);
+    transform: translateX(30vw);
     cursor: pointer;
   }
   .ToggleGR p {
@@ -94,5 +94,10 @@
   }
   .logo {
     width: 30vw;
+  }
+  .headerLogoCont:hover {
+    cursor: pointer;
+    transform: translateX(29vw);
+    transition: transform 0.2s ease;
   }
 }
