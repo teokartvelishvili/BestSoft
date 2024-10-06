@@ -5,6 +5,7 @@ import { TEXTS } from "../../Hooks/Languages";
 import { useLocation } from "react-router-dom";
 import { useForm, useFormContext } from "../../Hooks/FormContext";
 import submitImage from "../Contact/images/submit.png";
+import CircleEffect from "../../Components/CircleEffect/CircleEffect";
 const CalculationPage = () => {
   const { language } = useContext(LanguageContext);
   const location = useLocation();
@@ -121,6 +122,7 @@ const CalculationPage = () => {
 
   return (
     <div className="calculation-page">
+      <CircleEffect />
       <h1>{TEXTS[language].calculationTitle}</h1>
       <div className="categories" id="categories">
         {/* Design Category */}
@@ -145,35 +147,43 @@ const CalculationPage = () => {
               }`}
             >
               <label>
-                <input
-                  type="checkbox"
-                  name="ლოგოს შექმნა"
-                  onChange={handleCheckboxChange}
-                />
+                <div className="width">
+                  <input
+                    type="checkbox"
+                    name="ლოგოს შექმნა"
+                    onChange={handleCheckboxChange}
+                  />
+                </div>
                 {TEXTS[language].services2.logoCreation}
               </label>
               <label>
-                <input
-                  type="checkbox"
-                  name="ბრენდ-იდენტობის პაკეტი"
-                  onChange={handleCheckboxChange}
-                />
+                <div className="width">
+                  <input
+                    type="checkbox"
+                    name="ბრენდ-იდენტობის პაკეტი"
+                    onChange={handleCheckboxChange}
+                  />{" "}
+                </div>
                 {TEXTS[language].services2.brandIdentityPackage}
               </label>
               <label>
-                <input
-                  type="checkbox"
-                  name="სოციალური მედიის ბრენდინგი"
-                  onChange={handleCheckboxChange}
-                />
+                <div className="width">
+                  <input
+                    type="checkbox"
+                    name="სოციალური მედიის ბრენდინგი"
+                    onChange={handleCheckboxChange}
+                  />
+                </div>
                 {TEXTS[language].services2.socialMediaBranding}
               </label>
               <label>
-                <input
-                  type="checkbox"
-                  name="ილუსტრაციები"
-                  onChange={handleCheckboxChange}
-                />
+                <div className="width">
+                  <input
+                    type="checkbox"
+                    name="ილუსტრაციები"
+                    onChange={handleCheckboxChange}
+                  />
+                </div>
                 {TEXTS[language].services2.illustrations}
               </label>
             </div>
@@ -189,27 +199,33 @@ const CalculationPage = () => {
               }`}
             >
               <label>
-                <input
-                  type="checkbox"
-                  name="ლენდინგ გვერდი"
-                  onChange={handleCheckboxChange}
-                />
+                <div className="width">
+                  <input
+                    type="checkbox"
+                    name="ლენდინგ გვერდი"
+                    onChange={handleCheckboxChange}
+                  />
+                </div>
                 {TEXTS[language].services2.landingPage}
               </label>
               <label>
-                <input
-                  type="checkbox"
-                  name="სივი/პორტფოლიო საიტი"
-                  onChange={handleCheckboxChange}
-                />
+                <div className="width">
+                  <input
+                    type="checkbox"
+                    name="სივი/პორტფოლიო საიტი"
+                    onChange={handleCheckboxChange}
+                  />{" "}
+                </div>
                 {TEXTS[language].services2.cvPortfolioSite}
               </label>
               <label>
-                <input
-                  type="checkbox"
-                  name="ბლოგის საიტი"
-                  onChange={handleCheckboxChange}
-                />
+                <div className="width">
+                  <input
+                    type="checkbox"
+                    name="ბლოგის საიტი"
+                    onChange={handleCheckboxChange}
+                  />
+                </div>
                 {TEXTS[language].services2.blogSite}
               </label>
             </div>
@@ -241,35 +257,43 @@ const CalculationPage = () => {
               }`}
             >
               <label>
-                <input
-                  type="checkbox"
-                  name="CV/Portfolio"
-                  onChange={handleCheckboxChange}
-                />
+                <div className="width">
+                  <input
+                    type="checkbox"
+                    name="CV/Portfolio"
+                    onChange={handleCheckboxChange}
+                  />
+                </div>
                 {TEXTS[language].services2.cvPortfolioSite}
               </label>
               <label>
-                <input
-                  type="checkbox"
-                  name="5 გვერდამდე"
-                  onChange={handleCheckboxChange}
-                />
+                <div className="width">
+                  <input
+                    type="checkbox"
+                    name="5 გვერდამდე"
+                    onChange={handleCheckboxChange}
+                  />
+                </div>
                 {TEXTS[language].services2.blogSiteUpTo5Pages}
               </label>
               <label>
-                <input
-                  type="checkbox"
-                  name="5+ გვერდი"
-                  onChange={handleCheckboxChange}
-                />
+                <div className="width">
+                  <input
+                    type="checkbox"
+                    name="5+ გვერდი"
+                    onChange={handleCheckboxChange}
+                  />
+                </div>
                 {TEXTS[language].services2.functionalSite5PlusPages}
               </label>
               <label>
-                <input
-                  type="checkbox"
-                  name="E-commerce"
-                  onChange={handleCheckboxChange}
-                />
+                <div className="width">
+                  <input
+                    type="checkbox"
+                    name="E-commerce"
+                    onChange={handleCheckboxChange}
+                  />
+                </div>
                 {TEXTS[language].services2.eCommerceSite}
               </label>
             </div>
@@ -285,35 +309,43 @@ const CalculationPage = () => {
               }`}
             >
               <label>
-                <input
-                  type="checkbox"
-                  name="ენის თარგმნა"
-                  onChange={handleCheckboxChange}
-                />
+                <div className="width">
+                  <input
+                    type="checkbox"
+                    name="ენის თარგმნა"
+                    onChange={handleCheckboxChange}
+                  />
+                </div>
                 {TEXTS[language].services2.languageTranslation}
               </label>
               <label>
-                <input
-                  type="checkbox"
-                  name="თემის ცვლილება"
-                  onChange={handleCheckboxChange}
-                />
+                <div className="width">
+                  <input
+                    type="checkbox"
+                    name="თემის ცვლილება"
+                    onChange={handleCheckboxChange}
+                  />
+                </div>
                 {TEXTS[language].services2.themeChange}
               </label>
               <label>
-                <input
-                  type="checkbox"
-                  name="რეგისტრაცია/ავტორიზაცია"
-                  onChange={handleCheckboxChange}
-                />
+                <div className="width">
+                  <input
+                    type="checkbox"
+                    name="რეგისტრაცია/ავტორიზაცია"
+                    onChange={handleCheckboxChange}
+                  />
+                </div>
                 {TEXTS[language].services2.registrationAuthorization}
               </label>
               <label>
-                <input
-                  type="checkbox"
-                  name="ადმინ პანელი"
-                  onChange={handleCheckboxChange}
-                />
+                <div className="width">
+                  <input
+                    type="checkbox"
+                    name="ადმინ პანელი"
+                    onChange={handleCheckboxChange}
+                  />
+                </div>
                 {TEXTS[language].services2.adminPanel}
               </label>
             </div>

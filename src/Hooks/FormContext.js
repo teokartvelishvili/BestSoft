@@ -1,6 +1,7 @@
 import React, { createContext, useState, useContext } from "react";
 import { TEXTS } from "./Languages";
 import { LanguageContext } from "./LanguageContext";
+import { useLocation } from "react-router-dom";
 
 // FormContext შექმნა
 const FormContext = createContext();
@@ -55,9 +56,13 @@ export const FormProvider = ({ children }) => {
     setErrors(newErrors);
   };
 
-  const validateForm = (page) => {
+  const location = useLocation();
+  const isContactPage = location.pathname === "/Contact";
+  const isPricePage = location.pathname === "/Prices";
+
+  console.log(location.pathname);
+  const validateForm = () => {
     const newErrors = {};
-    const isContactPage = page === "contact";
 
     if (isContactPage && !formData.name.trim()) {
       newErrors.name = TEXTS[language].errors.name;
@@ -77,23 +82,26 @@ export const FormProvider = ({ children }) => {
     }
     if (!formData.message.trim())
       newErrors.message = TEXTS[language].errors.message;
-    if (selectedServices.length === 0)
+    if (isPricePage && selectedServices.length === 0) {
       newErrors.selectedServices = TEXTS[language].errors.selectedServices;
-
-    if (selectedServices.length > 0) {
+    } else if (isContactPage) {
       delete newErrors.selectedServices;
     }
+
+    // if (selectedServices.length > 0) {
+    //   delete newErrors.selectedServices;
+    // }
 
     setErrors(newErrors);
 
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e, page) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Submitting form...");
 
-    if (validateForm(page)) {
+    if (validateForm()) {
       setSubmitted(true);
       console.log("Form is valid, proceeding...");
       const formDataToSend = {
@@ -127,7 +135,7 @@ export const FormProvider = ({ children }) => {
 
           setTimeout(() => {
             setSubmitted(false);
-          }, 5000);
+          }, 3000);
         } else {
           console.error("Error submitting the form", response.statusText);
         }
