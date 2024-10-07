@@ -9,6 +9,7 @@ import img29 from "../../Assets/Rectangle 29.png";
 import img30 from "../../Assets/Rectangle 30.png";
 import img31 from "../../Assets/Rectangle 31.png";
 import LinkButton from "../../Components/LinkButton/LinkButton";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
@@ -16,6 +17,15 @@ const Home = () => {
 
   return (
     <div id="home" className={`homeMainCont ${theme}`}>
+      <Helmet>
+        <title>{TEXTS[language].welcomeText} | BestSoft</title>
+        <meta name="description" content={TEXTS[language].weTransform} />
+        <meta
+          name="keywords"
+          content="BestSoft, software, development, services"
+        />
+      </Helmet>
+
       <div className={`homeConts ${theme}`}>
         <div className={`homeCont1 ${theme}`}>
           <div className={`homeCont1Texts ${theme}`}>
