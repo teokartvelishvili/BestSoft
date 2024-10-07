@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import BigAnimLogo from "../../Components/BigAnimLogo/BigAnimLogo";
 import serviceImg from "./servImage.png";
 import serviceImg2 from "./serviceImg2.webp";
+import { Helmet } from "react-helmet-async";
 
 const Service = () => {
   const { theme } = useContext(ThemeContext);
@@ -24,6 +25,17 @@ const Service = () => {
 
   return (
     <div id="servicePage" className={`pageService ${theme}`}>
+      <Helmet>
+        <title>Our Services - BestSoft</title>
+        <meta
+          name="description"
+          content="Explore our wide range of software development services, including web, mobile, and graphic design."
+        />
+        <meta
+          name="keywords"
+          content="services, software development, web design, mobile apps, graphic design,სერვისები, პროგრამული უზრუნველყოფა, ვებ დეველოპმენტი, მობილური აპლიკაციები, გრაფიკული დიზაინი"
+        />
+      </Helmet>
       <BigAnimLogo />
       {/* <div className="servSect1">
         <img

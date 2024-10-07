@@ -11,6 +11,7 @@ import ani from "../../Assets/ani.png";
 import teo from "../../Assets/teo.png";
 import nino from "../../Assets/nino.png";
 import mari from "../../Assets/mari.png";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   const { theme } = useContext(ThemeContext);
@@ -18,6 +19,17 @@ const About = () => {
 
   return (
     <div id="aboutPage" className={`aboutMainCont ${theme}`}>
+      <Helmet>
+        <title>About BestSoft - Learn More About Us</title>
+        <meta
+          name="description"
+          content="Learn more about BestSoft, our mission, values, and how we help businesses grow through innovative software solutions."
+        />
+        <meta
+          name="keywords"
+          content="about us, BestSoft, software solutions, company, mission,ჩვენს შესახებ, BestSoft, პროგრამული უზრუნველყოფა, მისია, კომპანია"
+        />
+      </Helmet>
       <div className={`aboutConts ${theme}`}>
         <div className={`aboutCont1 ${theme}`}>
           <img

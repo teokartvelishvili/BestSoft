@@ -58,14 +58,14 @@
   display: none;
 }
 
-hr {
-  color: grey;
-}
 .burger,
 .UlCont li img,
 .UlCont hr,
 .mobileImageNavbar {
   display: none;
+}
+.UlCont li img {
+  width: 2.1rem;
 }
 
 /* Media queries for responsiveness */
@@ -159,7 +159,7 @@ hr {
   }
 
   .UlCont hr {
-    background: rgba(255, 255, 255, 0.3);
+    background: #0c022229;
     height: 1px;
     z-index: 999999;
     width: 90%;
