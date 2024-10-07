@@ -4,6 +4,7 @@ import "./Prices.css";
 import CircleEffect from "../../Components/CircleEffect/CircleEffect";
 // import CircleSquare from "../../Components/CircleSquare/CircleSquare";
 import CalculationPage from "../Calculator/Calculation";
+import { Helmet } from "react-helmet-async";
 
 const Prices = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -20,6 +21,17 @@ const Prices = () => {
 
   return (
     <div id="pricesPage" className="prices">
+      <Helmet>
+        <title>Prices - BestSoft Service Pricing</title>
+        <meta
+          name="description"
+          content="Discover the pricing for our software development services and get the best offers for your business."
+        />
+        <meta
+          name="keywords"
+          content="prices, BestSoft, service pricing, offers, software development"
+        />
+      </Helmet>
       {!isMobile && <CircleEffect />}
 
       {/* <div className="servSect1 contactSect1 priceSect1">

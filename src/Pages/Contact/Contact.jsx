@@ -12,6 +12,7 @@ import Linkedin from "./images/LinkedIn.png";
 import contactLogo from "./images/contactLogo.png";
 import submitImage from "./images/submit.png";
 import CircleEffect from "../../Components/CircleEffect/CircleEffect";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   const { theme } = useContext(ThemeContext);
@@ -21,6 +22,17 @@ const Contact = () => {
 
   return (
     <div id="contactPage" className="contact">
+      <Helmet>
+        <title>Contact - დაგვიკავშირდით BestSoft-ის გუნდს</title>
+        <meta
+          name="description"
+          content="Contact BestSoft's team for any inquiries or support. We're always ready to assist with your needs."
+        />
+        <meta
+          name="keywords"
+          content="contact, BestSoft, get in touch, support, consultation,კონტაქტი, BestSoft, დაგვიკავშირდით, დახმარება, კონსულტაცია"
+        />
+      </Helmet>
       <CircleEffect />
       <div className="servSect1 contactSect1">
         <img
