@@ -64,9 +64,9 @@
 .mobileImageNavbar {
   display: none;
 }
-.UlCont li img {
+/* .UlCont li img {
   width: 2.1rem;
-}
+} */
 
 /* Media queries for responsiveness */
 @media (max-width: 800px) {
