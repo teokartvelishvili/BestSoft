@@ -25,7 +25,12 @@ const Footer = () => {
     <footer className={`footerContainer ${theme}`}>
       <div className="footerContents">
         <div className={`footerContent1 ${theme}`}>
-          <img alt="logo" src={BSLogo} className="logo"></img>
+          <img
+            alt=" bestSoft logo"
+            src={BSLogo}
+            className="logo"
+            loading="lazy"
+          ></img>
 
           <div className={`socialIcons ${theme}`}>
             <a
@@ -33,21 +38,36 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img alt="logo" src={InstagramIcon} className="logo"></img>
+              <img
+                alt=" Instagram logo"
+                src={InstagramIcon}
+                loading="lazy"
+                className="logo"
+              ></img>
             </a>
             <a
               href="https://www.facebook.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img alt="logo" src={FacebookIcon} className="logo"></img>
+              <img
+                alt="Facebook logo"
+                src={FacebookIcon}
+                loading="lazy"
+                className="logo"
+              ></img>
             </a>
             <a
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img alt="logo" src={LinkedinIcon} className="logo"></img>
+              <img
+                alt="Linkedin logo"
+                src={LinkedinIcon}
+                loading="lazy"
+                className="logo"
+              ></img>
             </a>
           </div>
         </div>
@@ -110,17 +130,19 @@ const Footer = () => {
 
             <li>
               <img
-                alt="logo"
+                alt="BestSoft location logo"
                 src={theme === "dark" ? LocationIcondark : LocationIcon}
+                loading="lazy"
                 className="logo"
               ></img>
               <p>{TEXTS[language].geoTB}</p>
             </li>
             <li>
               <img
-                alt="logo"
+                alt="Mobile phone logo icon "
                 src={theme === "dark" ? MobileIconDark : MobileIcon}
                 className="logo"
+                loading="lazy"
               ></img>
               <p>
                 {" "}
@@ -129,9 +151,10 @@ const Footer = () => {
             </li>
             <li>
               <img
-                alt="logo"
+                alt="logo phone icon"
                 src={theme === "dark" ? PhoneIcondark : PhoneIcon}
                 className="logo"
+                loading="lazy"
               ></img>
               <p>
                 {" "}
@@ -140,9 +163,10 @@ const Footer = () => {
             </li>
             <li>
               <img
-                alt="logo"
+                alt="email icon bestsoft"
                 src={theme === "dark" ? EmailIconDark : EmailIcon}
                 className="logo"
+                loading="lazy"
               ></img>
               <p>
                 <a href="mailto:info@bestsoft.ge"> info@bestsoft.ge</a>

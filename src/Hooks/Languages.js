@@ -325,6 +325,27 @@ export const TEXTS = {
       phone: "555 55 55 55",
       additionalMessage: "დამატებითი მოთხოვნები",
     },
+    pricesTitle: "ფასები - BestSoft-ის სერვისების ფასები",
+    pricesDescription:
+      "გაიგეთ ჩვენი პროგრამული უზრუნველყოფის სერვისების ფასები და მიიღეთ საუკეთესო შეთავაზებები თქვენი ბიზნესისთვის.",
+    pricesKeywords:
+      "ფასები, BestSoft, სერვისების ფასები, შეთავაზებები, პროგრამული უზრუნველყოფა",
+    servicesTitle: "ჩვენი სერვისები - BestSoft",
+    servicesDescription:
+      "შეისწავლეთ ჩვენი მრავალფეროვანი პროგრამული უზრუნველყოფის სერვისები, მათ შორის ვებ, მობილური და გრაფიკული დიზაინი.",
+    servicesKeywords:
+      "სერვისები, პროგრამული უზრუნველყოფა, ვებ დეველოპმენტი, მობილური აპლიკაციები, გრაფიკული დიზაინი",
+    contactTitle: "დაგვიკავშირდით - BestSoft-ის გუნდთან კონტაქტი",
+    contactDescription:
+      "დაგვიკავშირდით BestSoft-ის გუნდს ნებისმიერი შეკითხვის ან დახმარებისათვის. ჩვენ ყოველთვის მზად ვართ დაგეხმაროთ.",
+    contactKeywords:
+      "კონტაქტი, BestSoft, დაგვიკავშირდით, დახმარება, კონსულტაცია",
+
+    aboutTitle: "BestSoft - ჩვენს შესახებ",
+    aboutDescription:
+      "გაიგეთ მეტი BestSoft-ის შესახებ, ჩვენი მისია, ღირებულებები და როგორ ვეხმარებით ბიზნესებს განვითარებაში ინოვაციური პროგრამული გადაწყვეტილებებით.",
+    aboutKeywords:
+      "ჩვენს შესახებ, BestSoft, პროგრამული უზრუნველყოფა, მისია, კომპანია",
   },
 
   en: {
@@ -645,5 +666,25 @@ export const TEXTS = {
       phone: "555 55 55 55",
       additionalMessage: "Additional Requirements",
     },
+
+    pricesTitle: "Prices - BestSoft Service Pricing",
+    pricesDescription:
+      "Discover the pricing for our software development services and get the best offers for your business.",
+    pricesKeywords:
+      "prices, BestSoft, service pricing, offers, software development",
+    servicesTitle: "Our Services - BestSoft",
+    servicesDescription:
+      "Explore our wide range of software development services, including web, mobile, and graphic design.",
+    servicesKeywords:
+      "services, software development, web design, mobile apps, graphic design",
+    contactTitle: "Contact - Get in touch with BestSoft's team",
+    contactDescription:
+      "Contact BestSoft's team for any inquiries or support. We're always ready to assist with your needs.",
+    contactKeywords: "contact, BestSoft, get in touch, support, consultation",
+
+    aboutTitle: "About BestSoft - Learn More About Us",
+    aboutDescription:
+      "Learn more about BestSoft, our mission, values, and how we help businesses grow through innovative software solutions.",
+    aboutKeywords: "about us, BestSoft, software solutions, company, mission",
   },
 };

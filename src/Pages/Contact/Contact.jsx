@@ -23,21 +23,16 @@ const Contact = () => {
   return (
     <div id="contactPage" className="contact">
       <Helmet>
-        <title>Contact - დაგვიკავშირდით BestSoft-ის გუნდს</title>
-        <meta
-          name="description"
-          content="Contact BestSoft's team for any inquiries or support. We're always ready to assist with your needs."
-        />
-        <meta
-          name="keywords"
-          content="contact, BestSoft, get in touch, support, consultation,კონტაქტი, BestSoft, დაგვიკავშირდით, დახმარება, კონსულტაცია"
-        />
+        <title>{TEXTS[language].contactTitle}</title>
+        <meta name="description" content={TEXTS[language].contactDescription} />
+        <meta name="keywords" content={TEXTS[language].contactKeywords} />
       </Helmet>
       <CircleEffect />
       <div className="servSect1 contactSect1">
         <img
-          alt="contactImage"
+          alt="contact bestSoft poster "
           src={theme === "dark" ? contactImageDark : contactImage}
+          loading="lazy"
           className="image"
         />
         <div className="border"></div>
@@ -112,6 +107,7 @@ const Contact = () => {
             <img
               src={submitImage}
               alt={TEXTS[language].submissionSuccess}
+              loading="lazy"
               className="submit-image"
             />
           </div>
@@ -153,26 +149,41 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img alt="logo" src={facebook} className="logo" />
+            <img
+              alt=" facebook bestSoft logo"
+              src={facebook}
+              loading="lazy"
+              className="logo"
+            />
           </a>
           <a
             href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img alt="logo" src={instagram} className="logo" />
+            <img
+              alt="instagram bestSoft logo icon"
+              src={instagram}
+              loading="lazy"
+              className="logo"
+            />
           </a>
           <a
             href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img alt="logo" src={Linkedin} className="logo" />
+            <img
+              alt="Linkedin bestSoft logo icon"
+              src={Linkedin}
+              loading="lazy"
+              className="logo"
+            />
           </a>
         </div>
 
         <div className="contactLogo">
-          <img alt="logo" src={contactLogo} />
+          <img alt="bestSoft logo icon" src={contactLogo} loading="lazy" />
         </div>
       </div>
     </div>

@@ -26,15 +26,17 @@ const Header = () => {
     } else {
       searchParams.delete("theme");
     }
-    
+
     if (language === "en") {
       searchParams.set("lang", "en");
     } else {
-      searchParams.delete("lang"); 
+      searchParams.delete("lang");
     }
 
     const newSearch = searchParams.toString();
-    navigate(`${location.pathname}${newSearch ? `?${newSearch}` : ""}`, { replace: true });
+    navigate(`${location.pathname}${newSearch ? `?${newSearch}` : ""}`, {
+      replace: true,
+    });
   }, [theme, language, location.pathname, navigate]);
 
   const handleLangClick = () => {
@@ -54,7 +56,8 @@ const Header = () => {
           <img
             alt="logo"
             src={theme === "dark" ? logoDark : logoLight}
-            className="logo"
+            className="logo bestSoft main logo bestsoft.ge"
+            loading="lazy"
           />
         </Link>
       </div>
@@ -66,8 +69,9 @@ const Header = () => {
             <img
               className="lang"
               src={language === "ge" ? gr2 : gr1}
-              alt="lang"
+              alt="language switch bestsoft.ge bestSoft"
               onClick={handleLangClick}
+              loading="lazy"
             />
             <p>{TEXTS[language].eng}</p>
           </div>
@@ -77,8 +81,9 @@ const Header = () => {
             <img
               className="lang"
               src={theme === "light" ? gr3 : gr4}
-              alt="theme"
+              alt="theme switch bestSoft "
               onClick={handleThemeClick}
+              loading="lazy"
             />
             <p>{TEXTS[language].dark}</p>
           </div>

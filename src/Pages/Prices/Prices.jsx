@@ -1,13 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 // import headPicture from "./head picture.png";
 import "./Prices.css";
 import CircleEffect from "../../Components/CircleEffect/CircleEffect";
 // import CircleSquare from "../../Components/CircleSquare/CircleSquare";
 import CalculationPage from "../Calculator/Calculation";
 import { Helmet } from "react-helmet-async";
+import { LanguageContext } from "../../Hooks/LanguageContext"; // Importing language context
+import { TEXTS } from "../../Hooks/Languages"; //
 
 const Prices = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const { language } = useContext(LanguageContext);
 
   useEffect(() => {
     const handleResize = () => {
@@ -22,15 +25,9 @@ const Prices = () => {
   return (
     <div id="pricesPage" className="prices">
       <Helmet>
-        <title>Prices - BestSoft Service Pricing</title>
-        <meta
-          name="description"
-          content="Discover the pricing for our software development services and get the best offers for your business."
-        />
-        <meta
-          name="keywords"
-          content="prices, BestSoft, service pricing, offers, software development"
-        />
+        <title>{TEXTS[language].pricesTitle}</title>
+        <meta name="description" content={TEXTS[language].pricesDescription} />
+        <meta name="keywords" content={TEXTS[language].pricesKeywords} />
       </Helmet>
       {!isMobile && <CircleEffect />}
 

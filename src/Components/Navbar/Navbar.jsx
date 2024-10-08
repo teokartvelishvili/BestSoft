@@ -46,7 +46,7 @@ const Navbar = () => {
     <div className={`NavCont ${theme}`}>
       <div className="hamburger-menu" onClick={toggleMenu}>
         <div className={`burger ${isOpen ? "open" : ""}`}>
-          <img alt="icon" src={BurgerMenu} />
+          <img alt="icon bestSoft navbar " src={BurgerMenu} loading="lazy" />
         </div>
       </div>
 
@@ -57,12 +57,14 @@ const Navbar = () => {
             alt="close icon"
             src={theme === "dark" ? xLight : x}
             onClick={closeMenu}
+            loading="lazy"
           />
         )}
         <li onClick={closeMenu}>
           <img
             src={theme === "dark" ? homeIconLight : homeIcon}
-            alt="homeIcon"
+            alt="home icon poster bestSoft bestsoft.ge"
+            loading="lazy"
           />
           <Link to="/">{TEXTS[language].home}</Link>{" "}
         </li>
@@ -70,7 +72,8 @@ const Navbar = () => {
         <li onClick={closeMenu}>
           <img
             src={theme === "dark" ? sercvIconLight : sercvIcon}
-            alt="sersvIcon"
+            alt="service icon navbar icon bestsoft.ge bestSoft"
+            loading="lazy"
           />
           <Link to="/Service">{TEXTS[language].ourService}</Link>{" "}
         </li>
@@ -78,7 +81,8 @@ const Navbar = () => {
         <li onClick={closeMenu}>
           <img
             src={theme === "dark" ? priceIconLight : priceIcon}
-            alt="priceIcon"
+            alt="priceIcon icon navbar icon bestsoft.ge bestSoft"
+            loading="lazy"
           />
           <Link to="/Prices">{TEXTS[language].prices}</Link>{" "}
         </li>
@@ -86,7 +90,8 @@ const Navbar = () => {
         <li onClick={closeMenu}>
           <img
             src={theme === "dark" ? aboutIconLight : aboutIcon}
-            alt="aboutIcon"
+            alt="aboutIcon icon navbar icon bestsoft.ge bestSoft"
+            loading="lazy"
           />
           <Link to="/About">{TEXTS[language].about}</Link>{" "}
         </li>
@@ -99,7 +104,12 @@ const Navbar = () => {
           <Link to="/Contact">{TEXTS[language].contact}</Link>{" "}
         </li>
         <hr />
-        <img className="mobileImageNavbar" alt="logo" src={mobImage} />
+        <img
+          className="mobileImageNavbar"
+          alt="logo icon navbar icon bestsoft.ge bestSoft"
+          loading="lazy"
+          src={mobImage}
+        />
       </ul>
     </div>
   );
