@@ -3,14 +3,14 @@ import { ThemeContext } from "../../Hooks/ThemeContext";
 import { LanguageContext } from "../../Hooks/LanguageContext";
 import { TEXTS } from "../../Hooks/Languages";
 import "./Service.css";
-import darkImage1 from "./Images/serviceImageDark.png";
-import lightImage1 from "./Images/serviceImage.png";
+import { Helmet } from "react-helmet-async";
 import LinkButton from "../../Components/LinkButton/LinkButton";
 import { Link } from "react-router-dom";
 import BigAnimLogo from "../../Components/BigAnimLogo/BigAnimLogo";
-import serviceImg from "./servImage.png";
-import serviceImg2 from "./serviceImg2.webp";
-import { Helmet } from "react-helmet-async";
+// import serviceImg from "./servImage.png";
+// import serviceImg2 from "./serviceImg2.webp";
+// import darkImage1 from "./Images/serviceImageDark.png";
+// import lightImage1 from "./Images/serviceImage.png";
 
 const Service = () => {
   const { theme } = useContext(ThemeContext);
@@ -26,15 +26,12 @@ const Service = () => {
   return (
     <div id="servicePage" className={`pageService ${theme}`}>
       <Helmet>
-        <title>Our Services - BestSoft</title>
+        <title>{TEXTS[language].servicesTitle}</title>
         <meta
           name="description"
-          content="Explore our wide range of software development services, including web, mobile, and graphic design."
+          content={TEXTS[language].servicesDescription}
         />
-        <meta
-          name="keywords"
-          content="services, software development, web design, mobile apps, graphic design,სერვისები, პროგრამული უზრუნველყოფა, ვებ დეველოპმენტი, მობილური აპლიკაციები, გრაფიკული დიზაინი"
-        />
+        <meta name="keywords" content={TEXTS[language].servicesKeywords} />
       </Helmet>
       <BigAnimLogo />
       {/* <div className="servSect1">

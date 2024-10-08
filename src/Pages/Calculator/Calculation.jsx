@@ -412,6 +412,7 @@ const CalculationPage = () => {
             <img
               src={submitImage}
               alt={TEXTS[language].submissionSuccess}
+              loading="lazy"
               className="submit-image"
             />
           </div>

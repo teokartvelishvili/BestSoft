@@ -32,10 +32,18 @@ const Home = () => {
             <div className={`homeCont1Texts ${theme}`}>
               <h2>{TEXTS[language].welcomeText}</h2>
               <br />
-              <img src={mainPoster} alt="mainPoster" className="dsNone" />
+              <img
+                src={mainPoster}
+                alt="Main software solutions poster from BestSoft"
+                className="dsNone"
+              />
               <p>{TEXTS[language].weTransform}</p>
             </div>
-            <img src={mainPoster} alt="mainPoster" className="dsBlock" />
+            <img
+              src={mainPoster}
+              alt="Main software solutions poster from BestSoft"
+              className="dsBlock"
+            />
           </div>
 
           <div className={`homeCont2 ${theme}`}>
@@ -43,7 +51,11 @@ const Home = () => {
               <h1>{TEXTS[language].webSites} </h1>
               <h5>({TEXTS[language].frontEnd})</h5>
               <p>{TEXTS[language].frontEndDescription}</p>
-              <img src={img28} alt="html/js/php" className="dsNone" />
+              <img
+                src={img28}
+                alt="HTML, JavaScript, PHP development example"
+                className="dsNone"
+              />
               <LinkButton
                 href="/Service"
                 sectionId="#frontEnd"
@@ -60,7 +72,12 @@ const Home = () => {
               <h1>{TEXTS[language].appHelp}</h1>
               <h5>({TEXTS[language].backEnd})</h5>
               <p>{TEXTS[language].backEndDescription}</p>
-              <img src={img29} alt="computer" className="dsNone" />
+              <img
+                src={img29}
+                alt="Backend development process"
+                className="dsNone"
+                loading="lazy"
+              />
               <LinkButton
                 href="/Service"
                 sectionId="#backEnd"
@@ -69,14 +86,24 @@ const Home = () => {
                 {TEXTS[language].learnMore}
               </LinkButton>
             </div>
-            <img src={img29} alt="computer" className="dsBlock" />
+            <img
+              src={img29}
+              alt="computer"
+              loading="lazy"
+              className="dsBlock"
+            />
           </div>
 
           <div className={`homeCont4 ${theme}`}>
             <div className={`homeContTexts ${theme}`}>
               <h1>{TEXTS[language].graphicDesign}</h1>
               <p>{TEXTS[language].graphicDesignDescription}</p>
-              <img src={img30} alt="graphicDesign" className="dsNone" />
+              <img
+                src={img30}
+                alt="Graphic design example from BestSoft"
+                loading="lazy"
+                className="dsNone"
+              />
               <LinkButton
                 href="/Service"
                 sectionId="#graphic"
@@ -85,19 +112,34 @@ const Home = () => {
                 {TEXTS[language].learnMore}
               </LinkButton>
             </div>
-            <img src={img30} alt="graphicDesign" className="dsBlock" />
+            <img
+              src={img30}
+              alt="Graphic design example from BestSoft"
+              loading="lazy"
+              className="dsBlock"
+            />
           </div>
 
           <div className={`homeCont5 ${theme}`}>
             <div className={`homeContTexts ${theme}`}>
               <h1>{TEXTS[language].uiUxDesign}</h1>
               <p>{TEXTS[language].uiUxDesignDescription}</p>
-              <img src={img31} alt="UX/UI Design" className="dsNone" />
+              <img
+                src={img31}
+                alt="UI/UX design preview from BestSoft"
+                loading="lazy"
+                className="dsNone"
+              />
               <LinkButton href="/Service" sectionId="#ux" className="mobButton">
                 {TEXTS[language].learnMore}
               </LinkButton>
             </div>
-            <img src={img31} alt="UX/UI Design" className="dsBlock" />
+            <img
+              src={img31}
+              alt="UI/UX design preview from BestSoft"
+              loading="lazy"
+              className="dsBlock"
+            />
           </div>
         </div>
       </div>

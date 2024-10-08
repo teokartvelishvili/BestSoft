@@ -20,21 +20,16 @@ const About = () => {
   return (
     <div id="aboutPage" className={`aboutMainCont ${theme}`}>
       <Helmet>
-        <title>About BestSoft - Learn More About Us</title>
-        <meta
-          name="description"
-          content="Learn more about BestSoft, our mission, values, and how we help businesses grow through innovative software solutions."
-        />
-        <meta
-          name="keywords"
-          content="about us, BestSoft, software solutions, company, mission,ჩვენს შესახებ, BestSoft, პროგრამული უზრუნველყოფა, მისია, კომპანია"
-        />
+        <title>{TEXTS[language].aboutTitle}</title>
+        <meta name="description" content={TEXTS[language].aboutDescription} />
+        <meta name="keywords" content={TEXTS[language].aboutKeywords} />
       </Helmet>
       <div className={`aboutConts ${theme}`}>
         <div className={`aboutCont1 ${theme}`}>
           <img
-            alt="logo"
+            alt="About BestSoft poster  BestSoft-ის შესახებ პოსტერის სურათი"
             src={theme === "dark" ? aboutPosterdark : aboutPoster}
+            loading="lazy"
             className="logo"
           />
         </div>

@@ -36,19 +36,19 @@ const TeamMember = ({
 
   const handleContactClick = () => {
     navigate("/contact"); // გადადით contact გვერდზე
-  
+
     setTimeout(() => {
       const contactSection = document.getElementById("contactForm");
       if (contactSection) {
         contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
       }
-    }, 100); 
+    }, 100);
   };
 
   return (
     <div className={`teamMember ${className}`} id={id}>
       <div className="teamMemberImage">
-        <img src={image} alt={name} />
+        <img src={image} alt={name} loading="lazy" />
       </div>
       <div className="teamMemberInfo">
         <h1>{title}</h1>
@@ -63,7 +63,11 @@ const TeamMember = ({
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={getSocialIcon(link)} alt="social-icon" />
+              <img
+                src={getSocialIcon(link)}
+                alt="social-icon bestSoft about page"
+                loading="lazy"
+              />
             </a>
           ))}
         </div>
