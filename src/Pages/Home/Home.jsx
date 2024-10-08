@@ -23,7 +23,7 @@ const Home = () => {
           <meta name="description" content={TEXTS[language].weTransform} />
           <meta
             name="keywords"
-            content="BestSoft, software, development, services,ვებსაიტების დამზადება, დიზაინი, პროგრამირება, გრაფიკული დიზაინი,პროგრამული უზრუნველყოფა, დეველოპმენტი, ვებ-გვერდები, მობილური აპლიკაციები, BestSoft"
+            content="BestSoft, software, development, services,ვებსაიტების დამზადება, დიზაინი, პროგრამირება, გრაფიკული დიზაინი,პროგრამული უზრუნველყოფა, დეველოპმენტი, ვებ-გვერდები, მობილური აპლიკაციები, BestSoft, ბესთსოფთ, ბესთსოფთი, ბესთ სოფთი"
           />
         </Helmet>
 
