@@ -282,14 +282,14 @@ h5 {
     font-size: 32px;
   }
   .ge .homeCont1Texts h2 {
-    font-size: 25px;
+    font-size: 26px;
   }
 
   .homeCont1Texts p {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .homeCont1Texts h2 {
     white-space: wrap;
   }
