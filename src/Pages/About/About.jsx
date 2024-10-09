@@ -101,9 +101,9 @@ const About = () => {
             portfolioLink="https://www.instagram.com/"
             contactLink="https://mari-contact.com"
             socialMediaLinks={[
-              "https://www.facebook.com/ninuca.barjadze?mibextid=LQQJ4d",
-              "https://www.instagram.com/",
-              "https://linkedin.com/nino",
+              "https://www.facebook.com/lavrelashvilimari",
+              "https://www.instagram.com/mariamlavrelashvili/profilecard/?igsh=MXRpM3p4cXB6ZWhsYw==",
+              "https://linkedin.com",
             ]}
             className={`member ${theme}`} // Custom className
             id="mari" // Custom ID
