@@ -17,6 +17,7 @@ import Prices from "./Pages/Prices/Prices.jsx";
 import Calculation from "./Pages/Calculator/Calculation.jsx";
 import { FormProvider } from "./Hooks/FormContext.js";
 import { HelmetProvider } from "react-helmet-async";
+import ReactPixel from "react-facebook-pixel";
 
 const AppContent = () => {
   const [theme, setTheme] = useState("light");
@@ -118,6 +119,12 @@ const AppContent = () => {
 };
 
 function App() {
+  useEffect(() => {
+    // ჩაანაცვლეთ თქვენი Pixel ID
+    ReactPixel.init("1202180340893975");
+    ReactPixel.pageView(); // თვალყურის დევნა გვერდების ჩატვირთვაზე
+  }, []);
+
   return (
     <Router>
       <AppContent />
