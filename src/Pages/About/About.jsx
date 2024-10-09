@@ -68,12 +68,12 @@ const About = () => {
             title="Full-stack Developer"
             bio={TEXTS[language].teamMembers.teo}
             image={teo}
-            portfolioLink="https://nino-portfolio.com"
-            contactLink="https://nino-contact.com"
+            portfolioLink="https://teona-kartvelishvili.vercel.app/"
+            contactLink="tel:+995551999055"
             socialMediaLinks={[
-              "https://facebook.com/nino",
-              "https://instagram.com/nino",
-              "https://linkedin.com/nino",
+              "https://www.facebook.com/teo.qartvel",
+              "https://www.instagram.com/teo.kartvel?igsh=dnUzODMxcnZzN3p5&utm_source=qr",
+              "https://www.linkedin.com/in/teona-kartvelishvili-8a4005257",
             ]}
             className={`member ${theme}`} // Custom className
             id="teo" // Custom ID
@@ -99,7 +99,7 @@ const About = () => {
             bio={TEXTS[language].teamMembers.mari}
             image={mari}
             portfolioLink="https://www.instagram.com/"
-            contactLink="https://nino-contact.com"
+            contactLink="https://mari-contact.com"
             socialMediaLinks={[
               "https://www.facebook.com/ninuca.barjadze?mibextid=LQQJ4d",
               "https://www.instagram.com/",
