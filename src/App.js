@@ -18,13 +18,14 @@ import Calculation from "./Pages/Calculator/Calculation.jsx";
 import { FormProvider } from "./Hooks/FormContext.js";
 import { HelmetProvider } from "react-helmet-async";
 import ReactPixel from "react-facebook-pixel";
+import { inject } from "@vercel/analytics";
 
 const AppContent = () => {
   const [theme, setTheme] = useState("light");
   const [language, setLanguage] = useState("ge");
 
   const location = useLocation();
-
+  inject();
   useEffect(() => {
     const searchParams = new URLSearchParams(location.search);
     const urlTheme = searchParams.get("theme");
