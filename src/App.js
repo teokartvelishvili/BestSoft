@@ -17,13 +17,15 @@ import Prices from "./Pages/Prices/Prices.jsx";
 import Calculation from "./Pages/Calculator/Calculation.jsx";
 import { FormProvider } from "./Hooks/FormContext.js";
 import { HelmetProvider } from "react-helmet-async";
+import ReactPixel from "react-facebook-pixel";
+import { inject } from "@vercel/analytics";
 
 const AppContent = () => {
   const [theme, setTheme] = useState("light");
   const [language, setLanguage] = useState("ge");
 
   const location = useLocation();
-
+  inject();
   useEffect(() => {
     const searchParams = new URLSearchParams(location.search);
     const urlTheme = searchParams.get("theme");
@@ -118,6 +120,12 @@ const AppContent = () => {
 };
 
 function App() {
+  useEffect(() => {
+    // ჩაანაცვლეთ თქვენი Pixel ID
+    ReactPixel.init("1202180340893975");
+    ReactPixel.pageView(); // თვალყურის დევნა გვერდების ჩატვირთვაზე
+  }, []);
+
   return (
     <Router>
       <AppContent />
