@@ -150,7 +150,7 @@ const CalculationPage = () => {
                 <div className="width">
                   <input
                     type="checkbox"
-                    name="ლოგოს შექმნა"
+                    name={TEXTS[language].services2.logoCreation}
                     onChange={handleCheckboxChange}
                   />
                 </div>
@@ -160,7 +160,7 @@ const CalculationPage = () => {
                 <div className="width">
                   <input
                     type="checkbox"
-                    name="ბრენდ-იდენტობის პაკეტი"
+                    name={TEXTS[language].services2.brandIdentityPackage}
                     onChange={handleCheckboxChange}
                   />{" "}
                 </div>
@@ -170,7 +170,7 @@ const CalculationPage = () => {
                 <div className="width">
                   <input
                     type="checkbox"
-                    name="სოციალური მედიის ბრენდინგი"
+                    name={TEXTS[language].services2.socialMediaBranding}
                     onChange={handleCheckboxChange}
                   />
                 </div>
@@ -180,7 +180,7 @@ const CalculationPage = () => {
                 <div className="width">
                   <input
                     type="checkbox"
-                    name="ილუსტრაციები"
+                    name={TEXTS[language].services2.illustrations}
                     onChange={handleCheckboxChange}
                   />
                 </div>
@@ -202,7 +202,7 @@ const CalculationPage = () => {
                 <div className="width">
                   <input
                     type="checkbox"
-                    name="ლენდინგ გვერდი"
+                    name={TEXTS[language].services2.landingPage}
                     onChange={handleCheckboxChange}
                   />
                 </div>
@@ -212,7 +212,7 @@ const CalculationPage = () => {
                 <div className="width">
                   <input
                     type="checkbox"
-                    name="სივი/პორტფოლიო საიტი"
+                    name={TEXTS[language].services2.cvPortfolioSite}
                     onChange={handleCheckboxChange}
                   />{" "}
                 </div>
@@ -222,7 +222,7 @@ const CalculationPage = () => {
                 <div className="width">
                   <input
                     type="checkbox"
-                    name="ბლოგის საიტი"
+                    name={TEXTS[language].services2.blogSite}
                     onChange={handleCheckboxChange}
                   />
                 </div>
@@ -260,7 +260,7 @@ const CalculationPage = () => {
                 <div className="width">
                   <input
                     type="checkbox"
-                    name="CV/Portfolio"
+                    name={TEXTS[language].services2.cvPortfolioSite}
                     onChange={handleCheckboxChange}
                   />
                 </div>
@@ -270,7 +270,7 @@ const CalculationPage = () => {
                 <div className="width">
                   <input
                     type="checkbox"
-                    name="5 გვერდამდე"
+                    name={TEXTS[language].services2.blogSiteUpTo5Pages}
                     onChange={handleCheckboxChange}
                   />
                 </div>
@@ -280,7 +280,7 @@ const CalculationPage = () => {
                 <div className="width">
                   <input
                     type="checkbox"
-                    name="5+ გვერდი"
+                    name= {TEXTS[language].services2.functionalSite5PlusPages}
                     onChange={handleCheckboxChange}
                   />
                 </div>
@@ -290,7 +290,7 @@ const CalculationPage = () => {
                 <div className="width">
                   <input
                     type="checkbox"
-                    name="E-commerce"
+                    name={TEXTS[language].services2.eCommerceSite}
                     onChange={handleCheckboxChange}
                   />
                 </div>
@@ -312,7 +312,7 @@ const CalculationPage = () => {
                 <div className="width">
                   <input
                     type="checkbox"
-                    name="ენის თარგმნა"
+                    name={TEXTS[language].services2.languageTranslation}
                     onChange={handleCheckboxChange}
                   />
                 </div>
@@ -322,7 +322,7 @@ const CalculationPage = () => {
                 <div className="width">
                   <input
                     type="checkbox"
-                    name="თემის ცვლილება"
+                    name={TEXTS[language].services2.themeChange}
                     onChange={handleCheckboxChange}
                   />
                 </div>
@@ -332,7 +332,7 @@ const CalculationPage = () => {
                 <div className="width">
                   <input
                     type="checkbox"
-                    name="რეგისტრაცია/ავტორიზაცია"
+                    name={TEXTS[language].services2.registrationAuthorization}
                     onChange={handleCheckboxChange}
                   />
                 </div>
@@ -342,7 +342,7 @@ const CalculationPage = () => {
                 <div className="width">
                   <input
                     type="checkbox"
-                    name="ადმინ პანელი"
+                    name={TEXTS[language].services2.adminPanel}
                     onChange={handleCheckboxChange}
                   />
                 </div>

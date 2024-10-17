@@ -68,7 +68,7 @@
 .categories {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  width: 100%;
   justify-content: center;
   gap: 1px;
 }
@@ -94,7 +94,7 @@
 }
 .calcForm {
   gap: 0.5rem;
-  width: 50%;
+  width: 100%;
   /* border: 3px solid #1b0a48; */
 }
 .CalcSection2 textarea,
