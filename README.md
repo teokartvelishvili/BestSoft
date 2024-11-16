@@ -11,7 +11,9 @@ Welcome to **BestSoft's** official repository, showcasing our dedication to craf
 BestSoft is a team of passionate professionals specializing in front-end development and modern website creation.
 
 ### Our expertise includes:  
-- **Front-End Development**: Building dynamic and responsive websites using React.  
+- **Front-End Development**: Building dynamic and responsive websites using React.
+- **Back-End Development**: Robust server-side applications with Node.js and Nest.js.
+- **UX/UI Design**: Visually appealing and intuitive designs tailored to user needs.  
 - **Custom Forms**: Integrating user-friendly forms with services like FormsFree for seamless submissions.
 
 ---
