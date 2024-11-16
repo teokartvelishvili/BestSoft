@@ -8,7 +8,7 @@ Welcome to **BestSoft's** official repository, showcasing our dedication to craf
 ---
 
 ## About Us  
-BestSoft is a team of passionate professionals specializing in front-end development and modern website creation.
+BestSoft was founded by a group of passionate professionals dedicated to crafting exceptional digital experiences. 
 
 ### Our expertise includes:  
 - **Front-End Development**: Building dynamic and responsive websites using React.
