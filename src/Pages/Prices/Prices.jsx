@@ -28,6 +28,10 @@ const Prices = () => {
         <title>{TEXTS[language].pricesTitle}</title>
         <meta name="description" content={TEXTS[language].pricesDescription} />
         <meta name="keywords" content={TEXTS[language].pricesKeywords} />
+        <meta
+          name="facebook-domain-verification"
+          content="ghhck2ke4iia07bma9rr2q7zny6r10"
+        />
       </Helmet>
       {!isMobile && <CircleEffect />}
 

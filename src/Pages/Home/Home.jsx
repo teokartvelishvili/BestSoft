@@ -25,6 +25,10 @@ const Home = () => {
             name="keywords"
             content="BestSoft, software, development, services,ვებსაიტების დამზადება, დიზაინი, პროგრამირება, გრაფიკული დიზაინი,პროგრამული უზრუნველყოფა, დეველოპმენტი, ვებ-გვერდები, მობილური აპლიკაციები, BestSoft, ბესთსოფთ, ბესთსოფთი, ბესთ სოფთი"
           />
+          <meta
+            name="facebook-domain-verification"
+            content="ghhck2ke4iia07bma9rr2q7zny6r10"
+          />
         </Helmet>
 
         <div className={`homeConts ${theme}`}>
