@@ -26,6 +26,10 @@ const Contact = () => {
         <title>{TEXTS[language].contactTitle}</title>
         <meta name="description" content={TEXTS[language].contactDescription} />
         <meta name="keywords" content={TEXTS[language].contactKeywords} />
+        <meta
+          name="facebook-domain-verification"
+          content="ghhck2ke4iia07bma9rr2q7zny6r10"
+        />
       </Helmet>
       <CircleEffect />
       <div className="servSect1 contactSect1">

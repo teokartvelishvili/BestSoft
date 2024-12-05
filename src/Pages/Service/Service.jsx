@@ -32,6 +32,10 @@ const Service = () => {
           content={TEXTS[language].servicesDescription}
         />
         <meta name="keywords" content={TEXTS[language].servicesKeywords} />
+        <meta
+          name="facebook-domain-verification"
+          content="ghhck2ke4iia07bma9rr2q7zny6r10"
+        />
       </Helmet>
       <BigAnimLogo />
       {/* <div className="servSect1">

@@ -21,6 +21,7 @@ const About = () => {
     <div id="aboutPage" className={`aboutMainCont ${theme}`}>
       <Helmet>
         <title>{TEXTS[language].aboutTitle}</title>
+        <meta name="facebook-domain-verification" content="ghhck2ke4iia07bma9rr2q7zny6r10" />
         <meta name="description" content={TEXTS[language].aboutDescription} />
         <meta name="keywords" content={TEXTS[language].aboutKeywords} />
       </Helmet>
