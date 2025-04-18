@@ -114,6 +114,9 @@
 .dark .dropdown-item {
   color: #fff;
 }
+.dark .portfLink {
+  color: #023047 !important;
+}
 
 .dropdown-item:hover {
   background-color: rgba(255, 99, 146, 0.2);

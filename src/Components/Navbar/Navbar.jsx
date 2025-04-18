@@ -131,7 +131,7 @@ const Navbar = () => {
           <div
             className={`dropdown-menu ${showDropdown ? "show" : ""} ${theme}`}
           >
-            <Link to="/Portfolio" className="dropdown-item" onClick={closeMenu}>
+            <Link to="/Portfolio" className="dropdown-item portfLink" onClick={closeMenu}>
               {TEXTS[language].projects}
             </Link>
           </div>
