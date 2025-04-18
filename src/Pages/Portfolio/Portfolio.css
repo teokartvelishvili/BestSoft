@@ -1,0 +1,246 @@
+.portfolioo {
+  padding: 2% 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  color: #1b0a48;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dark.portfolioo {
+  background-color: rgba(3, 63, 93, 1);
+  color: #5aa9e6;
+}
+
+.portfolioH1 {
+  color: rgba(255, 99, 146, 1);
+  margin-top: 7%;
+  text-align: center;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.en .portfolioH1 {
+  font-family: "Nanum Brush Script";
+}
+
+.ge .portfolioH1 {
+  font-family: "BPG Irubaqidze", sans-serif;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.project {
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-color: transparent;
+}
+
+.light .project {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px rgb(245 225 227);
+  color: #6f648d;
+}
+
+.dark .project {
+  background-color: rgba(3, 63, 93, 0.6);
+  color: #e0e0e0;
+  box-shadow: 0px 4px 4px #add8e6;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(255, 99, 146, 0.3);
+}
+
+.projectImageWrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project:hover .projectImage {
+  transform: scale(1.05);
+}
+
+.projectContent {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.textPortfolio h2 {
+  font-size: 1.5rem;
+  color: #1b0a48;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.dark .textPortfolio h2 {
+  color: #add8e6;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.projectBtn {
+  padding: 8px 16px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: 2px solid;
+  cursor: pointer;
+}
+
+.githubBtn {
+  background-color: transparent;
+  color: rgba(90, 169, 230, 1);
+  border-color: rgba(90, 169, 230, 1);
+}
+
+.githubBtn:hover {
+  box-shadow: 0px 4px 4px #5aa9e6;
+  transform: scale(1.05);
+  text-shadow: 0px 4px 4px #5aa9e6;
+}
+
+.liveBtn {
+  background-color: rgba(255, 99, 146, 0.6);
+  color: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 99, 146, 1);
+}
+
+.liveBtn:hover {
+  background-color: rgba(244, 193, 199, 1);
+  color: rgba(3, 63, 93, 1);
+  transform: scale(1.05);
+}
+
+.dark .liveBtn:hover {
+  background-color: rgba(244, 193, 199, 1);
+  color: rgba(3, 63, 93, 1);
+}
+
+.detailsBtn {
+  background-color: transparent;
+  color: #1b0a48;
+  border-color: #1b0a48;
+  min-width: 120px;
+}
+
+.dark .detailsBtn {
+  color: #5aa9e6;
+  border-color: #5aa9e6;
+}
+
+.detailsBtn:hover {
+  background-color: rgba(27, 10, 72, 0.1);
+  transform: scale(1.05);
+}
+
+.dark .detailsBtn:hover {
+  background-color: rgba(90, 169, 230, 0.2);
+}
+
+.project-details {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  animation: fadeIn 0.5s ease;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}
+
+.project-details h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: rgba(255, 99, 146, 1);
+}
+
+.dark .project-details h3 {
+  color: rgba(255, 99, 146, 1);
+}
+
+.project-description,
+.project-technologies {
+  margin-bottom: 15px;
+}
+
+.project-description p,
+.project-technologies p {
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolioH1 {
+    font-size: 3rem;
+  }
+
+  .project {
+    max-width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectBtn {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolioH1 {
+    font-size: 2.5rem;
+  }
+
+  .textPortfolio h2 {
+    font-size: 1.3rem;
+  }
+}

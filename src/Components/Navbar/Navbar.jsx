@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import { ThemeContext } from "../../Hooks/ThemeContext";
 import { LanguageContext } from "../../Hooks/LanguageContext";
 import { TEXTS } from "../../Hooks/Languages";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import BurgerMenu from "./Icons/burger menu icon.png";
 import x from "./Icons/x (2).png";
@@ -23,6 +23,9 @@ const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const { language, setLanguage } = useContext(LanguageContext);
   const [isOpen, setIsOpen] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -30,17 +33,39 @@ const Navbar = () => {
   const closeMenu = () => {
     setIsOpen(false);
   };
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
-    // Cleanup function to reset body overflow when component unmounts or state changes
     return () => {
       document.body.style.overflow = "auto";
     };
   }, [isOpen]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 800);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleDropdownToggle = (e) => {
+    if (isMobile) {
+      if (e.target.className === "dropdown-toggle") {
+        e.preventDefault();
+        setShowDropdown(!showDropdown);
+        e.stopPropagation();
+      }
+    }
+  };
+
+  const navigateToAbout = () => {
+    closeMenu();
+  };
 
   return (
     <div className={`NavCont ${theme}`}>
@@ -87,13 +112,29 @@ const Navbar = () => {
           <Link to="/Prices">{TEXTS[language].prices}</Link>{" "}
         </li>
         <hr />
-        <li onClick={closeMenu}>
+        <li className="dropdown-container" onClick={handleDropdownToggle}>
           <img
             src={theme === "dark" ? aboutIconLight : aboutIcon}
             alt="aboutIcon icon navbar icon bestsoft.ge bestSoft"
             loading="lazy"
           />
-          <Link to="/About">{TEXTS[language].about}</Link>{" "}
+          <div className="about-link-container">
+            <Link to="/About" onClick={navigateToAbout}>
+              {TEXTS[language].about}
+            </Link>
+            {isMobile && (
+              <span className="dropdown-toggle">
+                {showDropdown ? " ▲" : " ▼"}
+              </span>
+            )}
+          </div>
+          <div
+            className={`dropdown-menu ${showDropdown ? "show" : ""} ${theme}`}
+          >
+            <Link to="/Portfolio" className="dropdown-item" onClick={closeMenu}>
+              {TEXTS[language].projects}
+            </Link>
+          </div>
         </li>
         <hr />
         <li onClick={closeMenu}>
