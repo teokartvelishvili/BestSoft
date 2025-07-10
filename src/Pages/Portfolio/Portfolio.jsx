@@ -26,7 +26,7 @@ import fishHunt from "./my projects/fishhunt.jpg";
 import SoulArt from "./my projects/soulart.jpg";
 import Ezobana from "./my projects/ezobana.png";
 import Silhoutte from "./my projects/siluete.png";
-import myHunter from "./my projects/myhunter.png";
+import myHunter from "./my projects/myHunter.png";
 
 const Portfolio = () => {
   const { language } = useContext(LanguageContext);
