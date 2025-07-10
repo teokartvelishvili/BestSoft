@@ -26,6 +26,7 @@ import fishHunt from "./my projects/fishhunt.jpg";
 import SoulArt from "./my projects/soulart.jpg";
 import Ezobana from "./my projects/ezobana.png";
 import Silhoutte from "./my projects/siluete.png";
+import myHunter from "./my projects/myhunter.png";
 
 const Portfolio = () => {
   const { language } = useContext(LanguageContext);
@@ -37,17 +38,26 @@ const Portfolio = () => {
   };
 
   const projects = [
-     {
+    {
+      imageUrl: myHunter,
+      projectTitle: "My Hunter",
+      description:
+        "E-commerce platform with comprehensive admin panel featuring category management, color and size attributes, CRUD operations, product management, user order tracking, and banner management",
+      technologies:
+        "Next.js, Nest.js, TypeScript, RestApi, Swagger, Docker, Cloudinary, AWS, BogPay, AIChat, Socket, nodemailer, Auth/Registration, GoogleAuth, Stripe, PayPal, Responsive Design, Animations",
+      githubLink: "https://github.com/anano303/myhunter",
+      projectLink: "https://www.myhunter.ge/",
+    },
+    {
       imageUrl: Silhoutte,
       projectTitle: "Silhoutte",
-      description:
-        "Landing page for handmade items with an elegant design ",
+      description: "Landing page for handmade items with an elegant design ",
       technologies:
         "Next.js,TypeScript,Responsive Design, Animations,Formspree, Firebase",
       githubLink: "https://github.com/anano303/silhoutte",
       projectLink: "https://silhoutte.vercel.app/",
     },
-        {
+    {
       imageUrl: SoulArt,
       projectTitle: "SoulArt (Work In Progress)",
       description:
@@ -57,7 +67,7 @@ const Portfolio = () => {
       githubLink: "https://github.com/anano303/soul-art",
       projectLink: "https://soulart.ge/",
     },
-   
+
     {
       imageUrl: Ezobana,
       projectTitle: "Birthday Celebration Center",
