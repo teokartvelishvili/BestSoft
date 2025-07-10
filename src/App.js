@@ -15,6 +15,7 @@ import {
 import Service from "./Pages/Service/Service.jsx";
 import Prices from "./Pages/Prices/Prices.jsx";
 import Calculation from "./Pages/Calculator/Calculation.jsx";
+import Portfolio from "./Pages/Portfolio/Portfolio.jsx";
 import { FormProvider } from "./Hooks/FormContext.js";
 import { HelmetProvider } from "react-helmet-async";
 import ReactPixel from "react-facebook-pixel";
@@ -107,6 +108,14 @@ const AppContent = () => {
                   element={
                     <Layout>
                       <Calculation />
+                    </Layout>
+                  }
+                />
+                <Route
+                  path="/Portfolio"
+                  element={
+                    <Layout>
+                      <Portfolio />
                     </Layout>
                   }
                 />
