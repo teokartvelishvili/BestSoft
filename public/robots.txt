@@ -1,3 +1,9 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://bestsoft.ge/sitemap.xml
+
+# Crawl-delay (optional - seconds between requests)
+Crawl-delay: 1

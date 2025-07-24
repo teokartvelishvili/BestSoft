@@ -21,9 +21,75 @@ const About = () => {
     <div id="aboutPage" className={`aboutMainCont ${theme}`}>
       <Helmet>
         <title>{TEXTS[language].aboutTitle}</title>
-        <meta name="facebook-domain-verification" content="ghhck2ke4iia07bma9rr2q7zny6r10" />
         <meta name="description" content={TEXTS[language].aboutDescription} />
         <meta name="keywords" content={TEXTS[language].aboutKeywords} />
+        <meta name="author" content="BestSoft Team" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://bestsoft.ge/about" />
+        
+        {/* Open Graph მეტა თაგები */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={TEXTS[language].aboutTitle} />
+        <meta property="og:description" content={TEXTS[language].aboutDescription} />
+        <meta property="og:url" content="https://bestsoft.ge/about" />
+        <meta property="og:site_name" content="BestSoft" />
+        <meta property="og:image" content="https://bestsoft.ge/logo192.png" />
+        <meta property="og:locale" content={language === 'ge' ? 'ka_GE' : 'en_US'} />
+        
+        {/* Twitter Card მეტა თაგები */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={TEXTS[language].aboutTitle} />
+        <meta name="twitter:description" content={TEXTS[language].aboutDescription} />
+        <meta name="twitter:image" content="https://bestsoft.ge/logo192.png" />
+        
+        {/* Geo meta tags */}
+        <meta name="geo.region" content="GE-TB" />
+        <meta name="geo.placename" content="Tbilisi, Georgia" />
+        <meta name="geo.position" content="41.7151;44.8271" />
+        <meta name="ICBM" content="41.7151, 44.8271" />
+        
+        {/* Structured Data for About Page */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": TEXTS[language].aboutTitle,
+            "description": TEXTS[language].aboutDescription,
+            "url": "https://bestsoft.ge/about",
+            "mainEntity": {
+              "@type": "Organization",
+              "name": "BestSoft",
+              "description": TEXTS[language].aboutDescription,
+              "foundingDate": "2023",
+              "numberOfEmployees": "4",
+              "founder": [
+                {
+                  "@type": "Person",
+                  "name": "Nino Barjadze"
+                },
+                {
+                  "@type": "Person", 
+                  "name": "Ani Beroshvili"
+                },
+                {
+                  "@type": "Person",
+                  "name": "Teona Kartvelishvili"
+                },
+                {
+                  "@type": "Person",
+                  "name": "Mariam Lavrelashvili"
+                }
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "GE",
+                "addressLocality": "Tbilisi"
+              }
+            }
+          })}
+        </script>
+        
+        <meta name="facebook-domain-verification" content="ghhck2ke4iia07bma9rr2q7zny6r10" />
       </Helmet>
       <div className={`aboutConts ${theme}`}>
         <div className={`aboutCont1 ${theme}`}>

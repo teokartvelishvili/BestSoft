@@ -26,6 +26,65 @@ const Contact = () => {
         <title>{TEXTS[language].contactTitle}</title>
         <meta name="description" content={TEXTS[language].contactDescription} />
         <meta name="keywords" content={TEXTS[language].contactKeywords} />
+        <meta name="author" content="BestSoft Team" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://bestsoft.ge/contact" />
+        
+        {/* Open Graph მეტა თაგები */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={TEXTS[language].contactTitle} />
+        <meta property="og:description" content={TEXTS[language].contactDescription} />
+        <meta property="og:url" content="https://bestsoft.ge/contact" />
+        <meta property="og:site_name" content="BestSoft" />
+        <meta property="og:image" content="https://bestsoft.ge/logo192.png" />
+        <meta property="og:locale" content={language === 'ge' ? 'ka_GE' : 'en_US'} />
+        
+        {/* Twitter Card მეტა თაგები */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={TEXTS[language].contactTitle} />
+        <meta name="twitter:description" content={TEXTS[language].contactDescription} />
+        <meta name="twitter:image" content="https://bestsoft.ge/logo192.png" />
+        
+        {/* Contact Page Specific Meta Tags */}
+        <meta name="contact:phone" content="+995551999055" />
+        <meta name="contact:email" content="info@bestsoft.ge" />
+        <meta name="contact:address" content="Tbilisi, Georgia" />
+        
+        {/* Geo meta tags */}
+        <meta name="geo.region" content="GE-TB" />
+        <meta name="geo.placename" content="Tbilisi, Georgia" />
+        <meta name="geo.position" content="41.7151;44.8271" />
+        <meta name="ICBM" content="41.7151, 44.8271" />
+        
+        {/* Structured Data for Contact Page */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": TEXTS[language].contactTitle,
+            "description": TEXTS[language].contactDescription,
+            "url": "https://bestsoft.ge/contact",
+            "mainEntity": {
+              "@type": "Organization",
+              "name": "BestSoft",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+995551999055",
+                "contactType": "customer service",
+                "email": "info@bestsoft.ge",
+                "availableLanguage": ["Georgian", "English"],
+                "areaServed": "GE"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "GE",
+                "addressLocality": "Tbilisi",
+                "addressRegion": "Tbilisi"
+              }
+            }
+          })}
+        </script>
+        
         <meta
           name="facebook-domain-verification"
           content="ghhck2ke4iia07bma9rr2q7zny6r10"
