@@ -1,8 +1,8 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { ThemeContext } from "../../Hooks/ThemeContext";
 import { LanguageContext } from "../../Hooks/LanguageContext";
 import { TEXTS } from "../../Hooks/Languages";
-import { useForm, useFormContext } from "../../Hooks/FormContext";
+import { useFormContext } from "../../Hooks/FormContext";
 import "./Contact.css";
 import contactImage from "./images/contactPhoto.png";
 import contactImageDark from "./images/contactImageDark.png";
