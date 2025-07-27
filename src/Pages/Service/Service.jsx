@@ -32,6 +32,60 @@ const Service = () => {
           content={TEXTS[language].servicesDescription}
         />
         <meta name="keywords" content={TEXTS[language].servicesKeywords} />
+        <meta name="author" content="BestSoft Team" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://bestsoft.ge/service" />
+        
+        {/* Open Graph მეტა თაგები */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={TEXTS[language].servicesTitle} />
+        <meta property="og:description" content={TEXTS[language].servicesDescription} />
+        <meta property="og:url" content="https://bestsoft.ge/service" />
+        <meta property="og:site_name" content="BestSoft" />
+        <meta property="og:image" content="https://bestsoft.ge/logo192.png" />
+        <meta property="og:locale" content={language === 'ge' ? 'ka_GE' : 'en_US'} />
+        
+        {/* Twitter Card მეტა თაგები */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={TEXTS[language].servicesTitle} />
+        <meta name="twitter:description" content={TEXTS[language].servicesDescription} />
+        <meta name="twitter:image" content="https://bestsoft.ge/logo192.png" />
+        
+        {/* Service Page Specific Meta Tags */}
+        <meta name="service:types" content="web development, graphic design, ui/ux design, backend development" />
+        
+        {/* Geo meta tags */}
+        <meta name="geo.region" content="GE-TB" />
+        <meta name="geo.placename" content="Tbilisi, Georgia" />
+        <meta name="geo.position" content="41.7151;44.8271" />
+        <meta name="ICBM" content="41.7151, 44.8271" />
+        
+        {/* Structured Data for Service Page */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": TEXTS[language].servicesTitle,
+            "description": TEXTS[language].servicesDescription,
+            "url": "https://bestsoft.ge/service",
+            "provider": {
+              "@type": "Organization",
+              "name": "BestSoft",
+              "url": "https://bestsoft.ge"
+            },
+            "serviceType": [
+              "Web Development",
+              "Graphic Design", 
+              "UI/UX Design",
+              "Backend Development"
+            ],
+            "areaServed": {
+              "@type": "Country",
+              "name": "Georgia"
+            }
+          })}
+        </script>
+        
         <meta
           name="facebook-domain-verification"
           content="ghhck2ke4iia07bma9rr2q7zny6r10"

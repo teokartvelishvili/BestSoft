@@ -14,6 +14,7 @@ export const TEXTS = {
     light: "დღე",
     dark: "ღამე",
     welcomeText: "მოგესალმებით BestSoft - ის ოჯახში!",
+    customSeoKeywords: "ვებ გვერდების დამზადება, ვებ გვერდის დამზადება, ვებ საიტების დამზადება, ვებ საიტის დამზადება, როგორ დავამზადო ვებ გვერდი, სად დავამზადო ვებ საიტი, რა ღირს ვებ გვერდის დამზადება, რა ღირს ვებ საიტის დამზადება, ვებ დიზაინი, ui/ux დიზაინი, გრაფიკული დიზაინი, ლოგოს დამზადება, BestSoft, ბესთსოფთ, ბესთსოფთი, ბესთ სოფთი, პროფესიონალური ვებ-გვერდები, ხარისხიანი IT სერვისები, საუკეთესო ციფრული გადაწყვეტილებები",
     weTransform:
       "ჩვენ ვაქცევთ იდეებს ციფრულ რეალობად. BestSoft- ეს არის 4 საუკეთესო მეგობრისგან შექმნილი მჭიდრო გუნდი, რომელიც თქვენს ხედვას ციფრულ ხელოვნებად გარდაქმნის.  ჩვენთან ერთად თქვენი ციფრული წარმატება იწყება",
     webSites: "ვებ-გვერდების შექმნა",
@@ -329,17 +330,17 @@ export const TEXTS = {
     pricesDescription:
       "გაიგეთ ჩვენი პროგრამული უზრუნველყოფის სერვისების ფასები და მიიღეთ საუკეთესო შეთავაზებები თქვენი ბიზნესისთვის.",
     pricesKeywords:
-      "ფასები, BestSoft, ბესთსოფთ, ბესთსოფთი ბესთ სოფთი, სერვისების ფასები, შეთავაზებები, პროგრამული უზრუნველყოფა",
+      "ფასები, BestSoft, ბესთსოფთ, ბესთსოფთი ბესთ სოფთი, სერვისების ფასები, შეთავაზებები, პროგრამული უზრუნველყოფა, რა ღირს ვებ გვერდის დამზადება, რა ღირს ვებ საიტის დამზადება, ვებ დიზაინის ფასი, ui/ux დიზაინის ფასი, გრაფიკული დიზაინის ფასი, ლოგოს დამზადების ფასი",
     servicesTitle: "ჩვენი სერვისები - BestSoft",
     servicesDescription:
       "შეისწავლეთ ჩვენი მრავალფეროვანი პროგრამული უზრუნველყოფის სერვისები, მათ შორის ვებ, მობილური და გრაფიკული დიზაინი.",
     servicesKeywords:
-      "სერვისები,ბესთსოფთ, ბესთსოფთი, ბესთ სოფთი, პროგრამული უზრუნველყოფა, ვებ დეველოპმენტი, მობილური აპლიკაციები, გრაფიკული დიზაინი",
+      "სერვისები,ბესთსოფთ, ბესთსოფთი, ბესთ სოფთი, პროგრამული უზრუნველყოფა, ვებ დეველოპმენტი, მობილური აპლიკაციები, გრაფიკული დიზაინი, ვებ გვერდების დამზადება, ვებ საიტების დამზადება, ვებ დიზაინი, ui/ux დიზაინი, ლოგოს დამზადება, როგორ დავამზადო ვებ გვერდი, რა ღირს ვებ გვერდის დამზადება",
     contactTitle: "დაგვიკავშირდით - BestSoft-ის გუნდთან კონტაქტი",
     contactDescription:
       "დაგვიკავშირდით BestSoft-ის გუნდს ნებისმიერი შეკითხვის ან დახმარებისათვის. ჩვენ ყოველთვის მზად ვართ დაგეხმაროთ.",
     contactKeywords:
-      "კონტაქტი, BestSoft,ბესთსოფთ, ბესთსოფთი, ბესთ სოფთი, დაგვიკავშირდით, დახმარება, კონსულტაცია",
+      "კონტაქტი, BestSoft,ბესთსოფთ, ბესთსოფთი, ბესთ სოფთი, დაგვიკავშირდით, დახმარება, კონსულტაცია, ვებ გვერდების დამზადება, ვებ საიტის დამზადება, სად დავამზადო ვებ საიტი, რა ღირს ვებ გვერდის დამზადება, ვებ დიზაინი, ui/ux დიზაინი, გრაფიკული დიზაინი, ლოგოს დამზადება",
 
     aboutTitle: "BestSoft - ჩვენს შესახებ",
     aboutDescription:
@@ -397,6 +398,7 @@ export const TEXTS = {
     light: "LIGHT",
     dark: "DARK",
     welcomeText: "Welcome to the BestSoft family!",
+    customSeoKeywords: "web page development, web page creation, website development, website creation, how to create a web page, where to create a website, how much does web page development cost, how much does website development cost, web design, ui/ux design, graphic design, logo creation, BestSoft, professional web development, high-quality IT services, best digital solutions",
     weTransform:
       "We transform ideas into digital realities. As a close-knit team of four best friends, we are passionate about bringing your vision to life with our comprehensive suite of services.",
     webSites: "Website Development",
@@ -705,16 +707,16 @@ export const TEXTS = {
     pricesDescription:
       "Discover the pricing for our software development services and get the best offers for your business.",
     pricesKeywords:
-      "prices, BestSoft, service pricing, offers, software development",
+      "prices, BestSoft, service pricing, offers, software development, how much does web development cost, website development cost, web design pricing, ui/ux design pricing, graphic design pricing, logo creation cost",
     servicesTitle: "Our Services - BestSoft",
     servicesDescription:
       "Explore our wide range of software development services, including web, mobile, and graphic design.",
     servicesKeywords:
-      "services, software development, web design, mobile apps, graphic design",
+      "services, software development, web design, mobile apps, graphic design, web page development, website development, ui/ux design, logo creation, how to create a web page, how much does web development cost",
     contactTitle: "Contact - Get in touch with BestSoft's team",
     contactDescription:
       "Contact BestSoft's team for any inquiries or support. We're always ready to assist with your needs.",
-    contactKeywords: "contact, BestSoft, get in touch, support, consultation",
+    contactKeywords: "contact, BestSoft, get in touch, support, consultation, web page development, website creation, where to create a website, how much does web development cost, web design, ui/ux design, graphic design, logo creation",
 
     aboutTitle: "About BestSoft - Learn More About Us",
     aboutDescription:
