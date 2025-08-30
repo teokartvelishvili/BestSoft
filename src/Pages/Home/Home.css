@@ -97,7 +97,7 @@
   /* font-weight: 400; */
   line-height: normal;
   font-family: "BPG Irubaqidze", sans-serif;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 .light .homeCont1Texts h2 {
   color: #1b0a48;
